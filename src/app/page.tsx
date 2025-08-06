@@ -102,9 +102,14 @@ export default function Home() {
     <div className="overflow-hidden relative w-full mt-10">
       <div className="flex animate-slide whitespace-nowrap gap-16">
         {[
+          "/images/logocloud/atea.png",
+          "/images/logocloud/cowi.png",
+          "/images/logocloud/dell.png",
           "/images/logocloud/lego-logo.png",
+          "/images/logocloud/nets.png",
           "/images/logocloud/nordea.png",
           "/images/logocloud/novo-nordisk.png",
+          "/images/logocloud/pandora.png",
           "/images/logocloud/topdanmark.png",
           "/images/logocloud/visma.png",
         ].map((src, i) => (
@@ -112,22 +117,6 @@ export default function Home() {
             key={i}
             src={src}
             alt={`logo-${i}`}
-            width={158}
-            height={48}
-            className="h-24 w-auto object-contain grayscale opacity-70"
-          />
-        ))}
-        {[
-          "/images/logocloud/lego-logo.png",
-          "/images/logocloud/nordea.png",
-          "/images/logocloud/novo-nordisk.png",
-          "/images/logocloud/topdanmark.png",
-          "/images/logocloud/visma.png",
-        ].map((src, i) => (
-          <Image
-            key={`dup-${i}`}
-            src={src}
-            alt={`logo-duplicate-${i}`}
             width={158}
             height={48}
             className="h-24 w-auto object-contain grayscale opacity-70"
