@@ -10,16 +10,35 @@ import {
   LightBulbIcon,
 } from "@heroicons/react/24/outline";
 
-const ApproachItem = ({ Icon, title, children }) => (
-  <div className="flex items-start gap-4">
-    <Icon className="h-6 w-6 flex-shrink-0 text-gray-900 mt-1" aria-hidden="true" />
-    <div>
-      <p>
-        <strong>{title}</strong> {children}
-      </p>
+import type { ComponentType } from "react";
+
+function ApproachItem({
+  Icon,
+  title,
+  children,
+}: {
+  Icon: ComponentType<{ className?: string }>
+  title: string
+  children: React.ReactNode
+}) {
+  return (
+    <div className="flex items-start gap-4">
+      <Icon className="h-6 w-6 flex-shrink-0 text-gray-900 mt-1" aria-hidden="true" />
+      <div>
+        <p>
+          <strong>{title}</strong> {children}
+        </p>
+      </div>
     </div>
-  </div>
-);
+  );
+}
+
+
+// Example usage for a dynamic blog post page:
+// export default function BlogPost({ params }: Props) {
+//   const { slug } = params;
+//   // ...
+// }
 
 export default function Home() {
   return (
@@ -49,7 +68,13 @@ export default function Home() {
       <section className="py-24 px-6 bg-gray-50 text-gray-900">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <img src="/images/profil.jpg" alt="Leadership session" className="w-full h-auto rounded shadow-md object-cover" />
+            <Image
+              src="/images/profil.jpg"
+              alt="Leadership session"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded shadow-md object-cover"
+            />
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
@@ -75,15 +100,45 @@ export default function Home() {
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
     <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+      <Image
+        src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg"
+        alt="Transistor"
+        width={158}
+        height={48}
+        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+      />
 
-      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+      <Image
+        src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg"
+        alt="Reform"
+        width={158}
+        height={48}
+        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+      />
 
-      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+      <Image
+        src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg"
+        alt="Tuple"
+        width={158}
+        height={48}
+        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+      />
 
-      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" />
+      <Image
+        src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg"
+        alt="SavvyCal"
+        width={158}
+        height={48}
+        className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+      />
 
-      <img width="158" height="48" src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" />
+      <Image
+        src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg"
+        alt="Statamic"
+        width={158}
+        height={48}
+        className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+      />
     </div>
   </div>
 </div>
@@ -133,14 +188,26 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <img src="/images/MarieLouise10027847.jpg" alt="Marie Louise i samtale" className="rounded-xl shadow-md w-full object-cover" />
+          <Image
+            src="/images/MarieLouise10027847.jpg"
+            alt="Marie Louise i samtale"
+            width={800}
+            height={600}
+            className="rounded-xl shadow-md w-full object-cover"
+          />
         </div>
       </section>
 
       {/* Samtalen er centrum */}
       <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="order-2 md:order-1">
-          <img src="/images/index-portrait.jpg" alt="Marie Louise i samtale" className="rounded-xl shadow-md w-full object-cover" />
+          <Image
+            src="/images/index-portrait.jpg"
+            alt="Marie Louise i samtale"
+            width={800}
+            height={600}
+            className="rounded-xl shadow-md w-full object-cover"
+          />
         </div>
         <div className="order-1 md:order-2 space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtalen er centrum</h2>
@@ -269,7 +336,13 @@ export default function Home() {
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <article className="flex flex-col items-start justify-between">
               <div className="relative w-full">
-                <img src="/images/index-portrait.jpg" alt="" className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2" />
+                <Image
+                  src="/images/index-portrait.jpg"
+                  alt=""
+                  width={800}
+                  height={450}
+                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
+                />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
               </div>
               <div className="max-w-xl">
@@ -289,7 +362,13 @@ export default function Home() {
 
             <article className="flex flex-col items-start justify-between">
               <div className="relative w-full">
-                <img src="/images/om-mig-cover.jpg" alt="" className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2" />
+                <Image
+                  src="/images/om-mig-cover.jpg"
+                  alt=""
+                  width={800}
+                  height={450}
+                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
+                />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
               </div>
               <div className="max-w-xl">
@@ -309,7 +388,13 @@ export default function Home() {
 
             <article className="flex flex-col items-start justify-between">
               <div className="relative w-full">
-                <img src="/images/foran-whiteboard.jpg" alt="" className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2" />
+                <Image
+                  src="/images/foran-whiteboard.jpg"
+                  alt=""
+                  width={800}
+                  height={450}
+                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
+                />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
               </div>
               <div className="max-w-xl">
@@ -333,7 +418,13 @@ export default function Home() {
 
             <article className="flex flex-col items-start justify-between">
               <div className="relative w-full">
-                <img src="/images/MarieLouise10027847.jpg" alt="" className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2" />
+                <Image
+                  src="/images/MarieLouise10027847.jpg"
+                  alt=""
+                  width={800}
+                  height={450}
+                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
+                />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
               </div>
               <div className="max-w-xl">
@@ -365,7 +456,7 @@ export default function Home() {
         <div className="max-w-xl mx-auto space-y-6">
           <h3 className="text-2xl font-semibold text-gray-900">Klar til at tage næste skridt?</h3>
           <p className="text-lg leading-relaxed text-gray-700">Book en gratis og uforpligtende samtale.</p>
-          <CalendlyPopup />
+          <CalendlyPopup buttonText="Book samtale" />        
         </div>
       </section>
     </main>

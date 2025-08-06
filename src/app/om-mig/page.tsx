@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import coverImage from "../../../public/images/om-mig-cover.jpg";
 
 export default function AboutPage() {
   return (

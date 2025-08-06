@@ -3,7 +3,11 @@
 import { useState } from 'react';
 import { PopupModal } from 'react-calendly';
 
-export default function CalendlyPopup() {
+type CalendlyPopupProps = {
+  buttonText: string;
+};
+
+export default function CalendlyPopup({ buttonText }: CalendlyPopupProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,28 +16,21 @@ export default function CalendlyPopup() {
         onClick={() => setIsOpen(true)}
         className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
       >
-        👉 Book samtale
+        {buttonText}
       </button>
 
-      {isOpen && typeof window !== 'undefined' && (
+      {isOpen && typeof document !== 'undefined' && (
         <PopupModal
           url="https://calendly.com/mads-nordic-agency/30min"
           onModalClose={() => setIsOpen(false)}
           open={isOpen}
-          rootElement={typeof document !== 'undefined' ? document.body : undefined}
+          rootElement={document.body}
           pageSettings={{
             backgroundColor: 'ffffff',
             hideEventTypeDetails: false,
             hideLandingPageDetails: false,
             primaryColor: '4d5055',
             textColor: '000000',
-          }}
-          styles={{
-            height: 'calc(100vh - 40px)',
-            width: '95vw',
-            minWidth: '320px',
-            maxHeight: '90vh',
-            overflow: 'auto',
           }}
         />
       )}

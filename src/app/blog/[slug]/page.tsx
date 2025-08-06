@@ -1,13 +1,18 @@
+// import { type PageProps } from 'next'
+import React from "react"
 import { groq } from 'next-sanity'
 import { client } from '@/sanity/lib/client'
-import { PortableText } from '@portabletext/react'
+import { PortableText, PortableTextBlockComponent } from '@portabletext/react'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
-
-
-type Props = {
-  params: { slug: string }
+export async function generateStaticParams() {
+  const posts = await client.fetch(groq`*[_type == "post"]{ "slug": slug.current }`)
+  return posts.map((post: { slug: string }) => ({
+    slug: post.slug,
+  }))
 }
+
+
 
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
@@ -21,26 +26,27 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
 
 const components = {
   types: {
-    image: ({ value }: any) => (
+    image: ({ value }: { value: { asset?: { _ref?: string }; alt?: string } }) =>
       value?.asset?._ref ? (
-        <img
+        <Image
           src={urlFor(value).width(800).url()}
           alt={value.alt || ' '}
+          width={800}
+          height={600}
           className="my-6 rounded-lg shadow"
         />
-      ) : null
-    ),
+      ) : null,
   },
   marks: {
-    strong: ({ children }: any) => <strong className="font-semibold">{children}</strong>,
+    strong: ({ children }: { children: React.ReactNode }) => <strong className="font-semibold">{children}</strong>,
   },
   block: {
-    normal: ({ children }: any) => <p className="mb-4 text-lg leading-relaxed">{children}</p>,
-  },
+    normal: (({ children }) => <p className="mb-4 text-lg leading-relaxed">{children}</p>) as PortableTextBlockComponent
+  }
 }
 
-export default async function BlogPost(props: Props) {
-  const { slug } = await props.params
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = params
   const post = await client.fetch(query, { slug })
 
   if (!post) {

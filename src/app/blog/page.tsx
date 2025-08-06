@@ -4,17 +4,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
 
-function Header() {
-  return (
-    <header className="w-full px-6 py-4 border-b border-gray-200 flex items-center justify-between">
-      <Link href="/" className="text-lg font-bold text-blue-700">Marie Louise Stokholm</Link>
-      <nav className="flex items-center space-x-6 text-sm text-gray-700">
-        <Link href="/" className="hover:text-blue-700 transition">Forside</Link>
-        <Link href="/blog" className="hover:text-blue-700 transition">Blog</Link>
-        <Link href="/kontakt" className="hover:text-blue-700 transition">Kontakt</Link>
-      </nav>
-    </header>
-  )
+type Post = {
+  _id: string
+  title: string
+  slug: string
+  publishedAt: string
+  excerpt?: string
+  mainImage?: { asset?: { url?: string } }
+  author?: {
+    name?: string
+    image?: { _ref?: string; _type?: string }
+  }
 }
 
 const query = groq`
@@ -44,12 +44,14 @@ export default async function BlogPage() {
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl mb-6 text-center">Seneste indlæg</h2>
             <p className="text-lg leading-relaxed text-gray-700 text-center">Indsigter og fortællinger om forandring, livsfaser og indre bevægelse.</p>
             <div className="mt-16 space-y-6 lg:space-y-20">
-              {posts.map((post: any) => (
+              {posts.map((post: Post) => (
                 <article key={post._id} className="space-y-6 max-w-3xl mx-auto">
                   <Link href={`/blog/${post.slug}`}>
-                    <img
-                      src={post.mainImage?.asset?.url}
+                    <Image
+                      src={post.mainImage?.asset?.url || '/fallback.jpg'}
                       alt={post.title}
+                      width={1280}
+                      height={720}
                       className="rounded-2xl w-full object-cover aspect-video hover:opacity-90 transition"
                     />
                   </Link>
