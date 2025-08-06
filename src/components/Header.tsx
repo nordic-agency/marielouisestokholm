@@ -22,14 +22,14 @@ export default function Header() {
         </nav>
         <Link
           href="/kontakt"
-          className="ml-2 inline-block rounded-md bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 transition"
+          className="inline-block rounded-md bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 transition"
         >
           Kontakt
         </Link>
       </div>
 
       <button
-        className="md:hidden text-gray-600"
+        className="md:hidden text-gray-600 text-4xl px-4 py-3 font-bold"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
