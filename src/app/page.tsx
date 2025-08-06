@@ -1,4 +1,5 @@
-"use client";
+ "use client";
+import { useState } from "react";
 import Image from "next/image";
 import CalendlyPopup from '@/components/CalendlyPopup';
 import {
@@ -41,6 +42,58 @@ function ApproachItem({
 // }
 
 export default function Home() {
+  const testimonials = [
+    {
+      quote: "Jeg har været utrolig glad for mit forløb... Jeg føler mig nu langt bedre rustet til at tage næste skridt i min karriere.",
+      name: "Sofie Mürer, Business Consultant"
+    },
+    {
+      quote: "Marie Louise har været en virkelig god rådgiver... Hun er en af grundene til, at jeg er dér hvor jeg er nu.",
+      name: "Michael Sonnested, Global Product Manager"
+    },
+    {
+      quote: "Allerede fra det første møde følte jeg mig rummet... Jeg gik derfra med empowerment og nye idéer – og jeg fik jobbet!",
+      name: "Jeanne Jensen, Front Desk Manager"
+    },
+    {
+      quote: "Marie Louise er empatisk, udfordrende og knivskarp. Hun hjalp mig med at se mit eget potentiale klart.",
+      name: "Steffen Nielsen, Senioranalytiker"
+    },
+    {
+      quote: "Gennem samtalerne med Marie Louise blev jeg klar på mine værdier og fandt modet til at skifte retning.",
+      name: "Kristina Lindemose, Specialist"
+    },
+    {
+      quote: "Marie Louise har givet mig konkrete værktøjer og hjulpet mig med at styrke min tro på egne evner.",
+      name: "Niclas Blach Møller, Production Manager"
+    },
+    {
+      quote: "Hun forstod præcis, hvor jeg var i processen – og guidede mig nænsomt men målrettet fremad.",
+      name: "Eva Englund, Senior Advisor"
+    },
+    {
+      quote: "Jeg oplevede en nærværende og professionel rådgiver, som virkelig ville mig det bedste.",
+      name: "Kristina Thaulow Pedersen, Teknisk koordinator"
+    },
+    {
+      quote: "Det føltes aldrig som en standardpakke – men som samtaler skabt til mig og min situation.",
+      name: "Anne Brusberg, Contracts and Proposals Director"
+    },
+    // Nye citater:
+    {
+      quote: "Forløbet med Marie Louise har givet mig større indsigt i mine styrker og mod til at gå nye veje.",
+      name: "Lars Birk, Teamleder"
+    },
+    {
+      quote: "Hun formår at stille de spørgsmål, der gør en reel forskel – og som skaber varig udvikling.",
+      name: "Mette Holm, HR Partner"
+    },
+    {
+      quote: "Jeg blev mødt med forståelse og ægte engagement – det har været uvurderligt for min udvikling.",
+      name: "Jonas Bech, Projektleder"
+    }
+  ];
+  const [visibleCount, setVisibleCount] = useState(6);
   return (
     <main className="bg-white text-gray-900">
       {/* Hero */}
@@ -271,41 +324,25 @@ export default function Home() {
       <section className="py-24 px-6 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12">Det siger andre</h2>
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="bg-black/5 p-6 rounded shadow">
-              <Image
-                src="/images/profil.jpg"
-                alt="Testimonial portrait"
-                width={300}
-                height={160}
-                className="w-full h-40 object-cover rounded mb-4"
-              />
-              <p className="italic text-gray-700">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.”</p>
-              <p className="mt-4 font-semibold">– Navn Navnesen</p>
-            </div>
-            <div className="bg-black/5 p-6 rounded shadow">
-              <Image
-                src="/images/profil.jpg"
-                alt="Testimonial portrait"
-                width={300}
-                height={160}
-                className="w-full h-40 object-cover rounded mb-4"
-              />
-              <p className="italic text-gray-700">“Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”</p>
-              <p className="mt-4 font-semibold">– Person Eksempel</p>
-            </div>
-            <div className="bg-black/5 p-6 rounded shadow">
-              <Image
-                src="/images/profil.jpg"
-                alt="Testimonial portrait"
-                width={300}
-                height={160}
-                className="w-full h-40 object-cover rounded mb-4"
-              />
-              <p className="italic text-gray-700">“Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-              <p className="mt-4 font-semibold">– Bruger Citat</p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-12 text-left text-gray-800">
+            {testimonials
+              .slice(0, visibleCount).map((testimonial, index) => (
+              <div key={index} className="bg-white p-6 rounded shadow border">
+                <p className="italic text-gray-700 mb-4">“{testimonial.quote}”</p>
+                <p className="font-semibold text-sm text-gray-900">– {testimonial.name}</p>
+              </div>
+            ))}
           </div>
+          {visibleCount < testimonials.length && (
+            <div className="mt-12 text-center">
+              <button
+                onClick={() => setVisibleCount(visibleCount + 3)}
+                className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-2 px-4 rounded transition"
+              >
+                Vis flere udtalelser
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
