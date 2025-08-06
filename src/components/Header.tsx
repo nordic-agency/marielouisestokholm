@@ -13,13 +13,20 @@ export default function Header() {
         <span className="text-sm font-normal text-gray-400 tracking-wide">Movement Matters</span>
       </Link>
 
-      <nav className="hidden md:flex space-x-6 text-gray-600 font-medium">
-        <Link href="/">Forside</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/hvad-jeg-tilbyder">Hvad jeg tilbyder</Link>
-        <Link href="/om-mig">Om mig</Link>
-        <Link href="/kontakt">Kontakt</Link>
-      </nav>
+      <div className="hidden md:flex items-center space-x-4">
+        <nav className="space-x-6 text-gray-600 font-medium text-sm tracking-wide">
+          <Link href="/">Forside</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/hvad-jeg-tilbyder">Hvad jeg tilbyder</Link>
+          <Link href="/om-mig">Om mig</Link>
+        </nav>
+        <Link
+          href="/kontakt"
+          className="ml-2 inline-block rounded-md bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 transition"
+        >
+          Kontakt
+        </Link>
+      </div>
 
       <button
         className="md:hidden text-gray-600"
@@ -35,7 +42,13 @@ export default function Header() {
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
           <Link href="/hvad-jeg-tilbyder" onClick={() => setMenuOpen(false)}>Hvad jeg tilbyder</Link>
           <Link href="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link>
-          <Link href="/kontakt" onClick={() => setMenuOpen(false)}>Kontakt</Link>
+          <Link
+            href="/kontakt"
+            onClick={() => setMenuOpen(false)}
+            className="inline-block rounded-md bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 transition"
+          >
+            Kontakt
+          </Link>
         </div>
       )}
     </header>
