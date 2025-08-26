@@ -20,7 +20,8 @@
     "react-calendly": "^4.4.0",
     "react-dom": "^19.0.0",
     "sanity": "^3.93.0",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
+    "styled-jsx": "^5.1.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
