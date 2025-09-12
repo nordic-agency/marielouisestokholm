@@ -3,23 +3,30 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
-
-  // tillad assets, favicon og selve coming-soon siden
+  
+  // Tillad assets, favicon og login siden
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/favicon') ||
-    pathname.startsWith('/coming-soon')
+    pathname.startsWith('/login') ||
+    pathname.startsWith('/api/auth')
   ) {
     return NextResponse.next()
   }
 
-  // redirect alt andet til /coming-soon
-  const url = req.nextUrl.clone()
-  url.pathname = '/coming-soon'
-  return NextResponse.rewrite(url)
+  // Tjek om brugeren er logget ind
+  const isLoggedIn = req.cookies.get('authenticated')?.value === 'true'
+  
+  if (!isLoggedIn) {
+    // Redirect til login siden hvis ikke logget ind
+    const url = req.nextUrl.clone()
+    url.pathname = '/login'
+    return NextResponse.redirect(url)
+  }
+
+  return NextResponse.next()
 }
 
-// gælder for hele sitet
 export const config = {
-  matcher: ['/((?!api).*)'], // beskyt alt undtagen api
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 }
