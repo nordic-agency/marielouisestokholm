@@ -92,7 +92,8 @@ export default function Home() {
             Når noget i dit arbejdsliv er i bevægelse
             <br />— eller måske burde være det
           </h1>
-          <p className="text-xl md:text-2xl leading-relaxed text-white font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
+          {/* Updated tagline with bold styling */}
+          <p className="text-xl md:text-2xl leading-relaxed text-gray-300 font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
         </div>
       </section>
 
