@@ -143,14 +143,16 @@ export default function Testimonials() {
       quote: "Trygt rum og taktiske tilgange til vellykket jobsøgning – fleksibel og velforberedt.",
       fullQuote: "Marie Louise er en meget erfaren coach og vejleder, der meget hurtigt satte sig ind i mine kompetencer og forbedringsområder. Hun skabte et trygt rum, hvor jeg kunne åbne op og diskutere mine overvejelser åbent. Hun gav vejledning og tryghed samt taktiske tilgange til en vellykket jobsøgning. Generelt har hun gennem hele vores interaktion været fleksibel, velforberedt og velinformeret om arbejdsmarkedet, hvilket er vigtigt, når man søger specialiserede stillinger.",
       name: "Dimitra Maria Anastasiadou",
-      role: "Project Manager"
+      role: "Project Manager",
+      image: "/images/testomonials/Dimitra Maria Anastasiadou.jpeg"
     },
     {
       id: 18,
       quote: "Samtalerne skaber retning og resultater – de bedste anbefalinger.",
       fullQuote: "Tusinde tak for rigtig god sparring og coaching. Du har været en stor hjælp. Jeg kan kun give Marie Louise de bedste anbefalinger, hvis man har brug for en dygtig coach og sparringspartner, hvor samtalerne skaber retning og resultater.",
       name: "Martin Christensen Fandrup",
-      role: "Konsulent og programchef"
+      role: "Konsulent og programchef",
+      image: "/images/testomonials/Martin Christensen Fandrup.jpeg"
     },
     // Gruppe 4
     {
@@ -158,28 +160,32 @@ export default function Testimonials() {
       quote: "Hun var i mit ringhjørne – til stede, empatisk, motiverende og knivskarp. Medvirkende til at jeg starter virksomhed.",
       fullQuote: "Marie Louise har været en virkelig god rådgiver fra starten af mit forløb. Jeg har virkelig følt, at hun er i mit ringhjørne og ikke andre steder. Hun er til stede, meget alsidig, empatisk, motiverende og knivskarp. Hun er en af grundene til, at jeg er dér hvor jeg i nu og er ved at opstarte egen mindre virksomhed. Jeg kan varmt anbefale Marie Louise som rådgiver. Jeg sætter pris på den meget personlige rådgivning og sparring jeg har fået af Marie Louise.",
       name: "Michael Sonnested",
-      role: "Global Product Manager"
+      role: "Global Product Manager",
+      image: "/images/testomonials/Michael Sonnested.png"
     },
     {
       id: 20,
       quote: "She coached at my pace, improvised when needed, and challenged me – I grew from it. Super happy with the experience.",
       fullQuote: "I really feel that Marie Louise saw me and my situation. She didn't just go through a routine but took the coaching in my tempo, was able to improvise and switch topics if that was needed in a session. and she challenged me, which was not easy in the moment but helped me grow along the way , super happy with the whole coaching experience.",
       name: "Ilary Ranalli",
-      role: "Senior Manager, Supply Chain Decarbonisation"
+      role: "Senior Manager, Supply Chain Decarbonisation",
+      image: "/images/testomonials/ Ilary Ranalli.jpeg"
     },
     {
       id: 21,
       quote: "Følte mig set, forstået og udfordret på den rigtige måde – vil til enhver tid anbefale.",
       fullQuote: "Jeg vil virkelig gerne takke dig for din støtte, inspiration og gode råd under mit forløb! Jeg havde hele tiden følelsen af at blive set og forstået, og udfordret på den helt rigtige måde. Synes jeg var heldig som fik dig som rådgiver, og ville til en hver tid anbefale dig!",
       name: "Eva Englund",
-      role: "Senior Advisor"
+      role: "Senior Advisor",
+      image: "/images/testomonials/Eva Englund.jpeg"
     },
     {
       id: 22,
       quote: "Professionel, kompetent, nærværende og forstående – jeg følte mig tryg og hørt.",
       fullQuote: "Marie Louise har været en fantastisk coach og rådgiver, intet mindre. Professionel, kompetent, nærværende og forstående. Har følt mig meget tryg og hørt i mit forløb.",
       name: "Kristina Thaulow Pedersen",
-      role: "Teknisk Manager"
+      role: "Teknisk Manager",
+      image: "/images/testomonials/Kristina Thaulow Pedersen.jpeg"
     },
     {
       id: 23,
@@ -201,42 +207,48 @@ export default function Testimonials() {
       quote: "Så og læste mig fra dag 1 … trygt sted, der guidede mig tilbage til mit selvsikre jeg. Mine allerbedste anbefalinger.",
       fullQuote: "Jeg har været MEGET tilfreds med Marie Louise. Hun har fra dag 1 set og læst mig meget bedre, end jeg selv kunne. Hun har været et trygt sted for mig i min situation - og jeg er sikker på at hun har været mit største aktiv i denne proces. Hun har formået at guide mig, så jeg er kommet tilbage til mit selvsikre jeg. Skulle jeg komme til at stå i en udfordrende situation igen, så vil jeg helt sikkert række ud til Marie Louise. Marie Louise får mine allerbedste anbefalinger.",
       name: "Trine Terp",
-      role: "Salgskonsulent"
+      role: "Salgskonsulent",
+      image: "/images/testomonials/Trine Terp.jpeg"
     },
     {
       id: 26,
       quote: "Værdifuld sparring og støtte – især når tingene blev svære. Uvurderlig hjælp.",
       fullQuote: "Stor tak Marie Louise for et givende og professionelt forløb. Du har ydet masser af værdifuld sparring og støtte, især når tingene blev svære. Du har været en uvurderlig hjælp især med opbakning, når jeg tvivlede på mig selv.",
       name: "Christina Fangel Ovesen",
-      role: "PA"
+      role: "PA",
+      image: "/images/testomonials/Christina Fangel Ovesen.jpeg"
     },
     {
       id: 27,
       quote: "Man føler sig velkommen og taget alvorligt – givende og inspirerende samtaler.",
       fullQuote: "I et forløb hos Marie Louise føler man sig velkommen og bliver taget alvorligt. Mine samtaler med Marie Louise har været givende og inspirerende. Marie Louise er en dygtig coach. Herfra mine bedste anbefalinger.",
       name: "Anders Saron Dalsgaard",
-      role: "Senior Manager, Enterprise Partnerships"
+      role: "Senior Manager, Enterprise Partnerships",
+      image: "/images/testomonials/Anders Saron Dalsgaard.jpeg"
     },
     {
       id: 28,
       quote: "Gik fra møder sprængfyldt med idéer, energi og selvtillid – stærke værktøjer til mit videre forløb.",
       fullQuote: "Jeg oplever, at Marie Louise har formidlet en viden til mig og givet mig værktøjer til mit videre forløb, som har været helt fantastisk. Jeg har sat stor pris på de personlige samtaler med Marie Louise, hvor jeg gik fra møder sprængfyldt med idéer, energi og selvtillid.",
       name: "Connie Svendsen",
-      role: "HSE- partner"
+      role: "HSE- partner",
+      image: "/images/testomonials/Connie Svendsen.jpeg"
     },
     {
       id: 29,
       quote: "Felt seen, heard and understood – she individualized her communication to my program.",
       fullQuote: "Very happy with my coach/mentor/therapist Marie-Louise. She made me feel seen, heard and understood and was individulizing her communications to my program.",
       name: "Josefin Ittichai",
-      role: "Head of Digital & Data Management"
+      role: "Head of Digital & Data Management",
+      image: "/images/testomonials/Josefin Ittichai.jpeg"
     },
     {
       id: 30,
       quote: "Rigtig god dialog gennem hele forløbet – jeg kan kun anbefale Marie Louise.",
       fullQuote: "Rigtig god dialog gennem hele forløbet. Tak for det! Jeg kan kun anbefale Marie Louise",
       name: "Finn Kirkegaard Nathan",
-      role: "Investeringsrådgiver"
+      role: "Investeringsrådgiver",
+      image: "/images/testomonials/Finn Kirkegaard Nathan.jpeg"
     },
     // Gruppe 6
     {
@@ -244,42 +256,48 @@ export default function Testimonials() {
       quote: "Så og læste mig fra dag 1 … trygt sted, der guidede mig tilbage til mit selvsikre jeg. Mine allerbedste anbefalinger.",
       fullQuote: "Jeg har været MEGET tilfreds med Marie Louise. Hun har fra dag 1 set og læst mig meget bedre, end jeg selv kunne. Hun har været et trygt sted for mig i min situation - og jeg er sikker på at hun har været mit største aktiv i denne proces. Hun har formået at guide mig, så jeg er kommet tilbage til mit selvsikre jeg. Skulle jeg komme til at stå i en udfordrende situation igen, så vil jeg helt sikkert række ud til Marie Louise. Marie Louise får mine allerbedste anbefalinger.",
       name: "Trine Terp",
-      role: "Salgskonsulent"
+      role: "Salgskonsulent",
+      image: "/images/testomonials/Trine Terp.jpeg"
     },
     {
       id: 32,
       quote: "SÅ glad for vejledning og råd – det gør det meget lettere at være mig.",
       fullQuote: "Mange tak for rigtig gode samtaler. Jeg har været SÅ glad for din vejledning og råd. Det gør det ret meget lettere at være mig. De bedste anbefalinger, hvis du får behov for en coach og samtalepartner.",
       name: "Trine Boe",
-      role: "Communication Consultant"
+      role: "Communication Consultant",
+      image: "/images/testomonials/Trine Boe.jpeg"
     },
     {
       id: 33,
       quote: "Imødekommende, forstående og kompetent – forløbet blev tilpasset min situation. Allerbedste anbefalinger.",
       fullQuote: "Jeg har været heldig med Marie Louise - en meget imødekommende, forstående og kompetent rådgiver. Der var god kemi og dermed tillid fra første møde. Marie Louise har været rigtig god til at tilpasse forløbet til min aktuelle situation. Marie Louise får mine allerbedste anbefalinger",
       name: "Jane Christensen",
-      role: "Senior Coordintor"
+      role: "Senior Coordintor",
+      image: "/images/testomonials/Jane Christensen.jpeg"
     },
     {
       id: 34,
       quote: "Stor forståelse for situation, strategi og ønsker – gav givende feedback og tips.",
       fullQuote: "Marie Louise er en dygtig og erfaren coach og havde stor forståelse for situationen, strategi, ønskemål og gav gode og givende feedback og tips.",
       name: "Magnus Green",
-      role: "Senior Analytical Professional"
+      role: "Senior Analytical Professional",
+      image: "/images/testomonials/Magnus Green.jpeg"
     },
     {
       id: 35,
       quote: "Virkelig hjulpet mig godt videre – jeg følte mig grebet gennem hele forløbet.",
       fullQuote: "Marie Louise har været helt fantastisk og har virkelig hjulpet mig så godt videre. Jeg er så lykkelig for at det netop har været hende som jeg har været min coach og tør næsten ikke forestille mig hvis jeg havde fået en anden end hende. Det har været et virkelig godt forløb og jeg føler mig virkelig grebet.",
       name: "Marie Kjær",
-      role: "Specialkonsulent DTU"
+      role: "Specialkonsulent DTU",
+      image: "/images/testomonials/Marie Kjær.jpeg"
     },
     {
       id: 36,
       quote: "Altid interesseret i mig og min situation – udfordrede mig til nye tanker. Stor værdi i sparringen.",
       fullQuote: "Jeg har været meget tilfreds med Marie Louise. Han har altid virket interesseret i mig og min situation. Hun har også formået at udfordre mig, så jeg kunne tænke nye og andre tanker om mig selv. Jeg har sat stor pris på Marie Louise som rådgiver og sparringspartner og vores samtaler.",
       name: "Stine Lindhardt",
-      role: "Operation and Sales Coordinator"
+      role: "Operation and Sales Coordinator",
+      image: "/images/testomonials/Stine Lindhardt.jpeg"
     },
     // Gruppe 7
     {
@@ -287,35 +305,40 @@ export default function Testimonials() {
       quote: "Stiller de rigtige spørgsmål på rette tid … dyb indsigt i arbejdsmarkedet. Hjalp mig til klarhed og retning.",
       fullQuote: "Gennem mit forløb har Marie Louise været en utrolig empatisk og konstruktiv støtte. Hun formår at stille de rigtige spørgsmål på de rigtige tidspunkter, hvilket har hjulpet mig til at finde min egen vej og opnå en dybere afklaring omkring mine valg. Hendes store indsigt i arbejdsmarkedet og de mekanismer der driver ledere og ansættelsesudvalg, hendes menneskelige forståelse, kombineret med en dyb respekt for min proces, har gjort en stor forskel for mig. Marie Louise har været uundværlig og har hjulpet mig til at tænke kreativt omkring min situation og finde retning, og jeg er meget taknemmelig for hendes støtte og vejledning.",
       name: "Anders Tornøe",
-      role: "Digital Learning Consultant"
+      role: "Digital Learning Consultant",
+      image: "/images/testomonials/Anders Tornøe.jpeg"
     },
     {
       id: 38,
       quote: "Meget personlig og dygtig rådgivning – skræddersyet til mine behov.",
       fullQuote: "I forløbet hos Marie Louise har fået meget personlig og dygtig rådgivning. Et skræddersyet forløb, der passede til mine behov. Marie Louise får de bedste anbefalinger fra mig.",
       name: "Mayasa Mohidin",
-      role: "HR Specialist"
+      role: "HR Specialist",
+      image: "/images/testomonials/Mayasa Mohidin.jpeg"
     },
     {
       id: 39,
       quote: "Very attentive and easy to talk to – excellent advice, both professional and personal.",
       fullQuote: "Marie Louise was very attentive and so easy to have conversations with. She gave excellent advice, was both professional and personal and went out of her way to make things comfortable and positive.",
       name: "Dean Just",
-      role: "Principal Laboratory Technician"
+      role: "Principal Laboratory Technician",
+      image: "/images/testomonials/Dean Just.jpeg"
     },
     {
       id: 40,
       quote: "Styrkede min selvtillid og gav præcis den opbakning, jeg havde brug for … hun læste mit behov.",
       fullQuote: "Marie Louise har været en fantastisk hjælp lige fra start til slut, hun fik styrket min selvtillid og gav mig lige de råd og opbakning, som jeg havde brug for 👍😊 Hun er bare fantastisk. Det bedste ved forløbet var, at det foregik efter mine behov og Marie Louise helt kunne 'læse' hvad det var, som jeg havde behov for.",
       name: "Mette Keil Sørensen",
-      role: "Kundeservice, Receptionist og Frontoffice"
+      role: "Kundeservice, Receptionist og Frontoffice",
+      image: "/images/testomonials/Mette Keil Sørensen.jpeg"
     },
     {
       id: 41,
       quote: "Direkte og opmuntrende – ærlig, fleksibel og meget kompetent rådgivning.",
       fullQuote: "Marie Louises meget direkte og opmuntrende facon. Hun har igennem hele forløbet været meget ærlig, udvist fleksibilitet og hun er meget kompetent i hendes rådgivning.",
       name: "Anders Munch Marstrand",
-      role: "AML & Fraud Analyst"
+      role: "AML & Fraud Analyst",
+      image: "/images/testomonials/Anders Munch Marstrand.jpeg"
     },
     {
       id: 42,
@@ -330,35 +353,40 @@ export default function Testimonials() {
       quote: "Vi fandt hurtigt kemien – Marie Louise har været meget værdifuld i min proces.",
       fullQuote: "Jeg oplevede, at vi hurtigt fandt kemien, og det var supergodt. Marie Louise har været meget værdifuld i min proces.",
       name: "Annette Bastidas",
-      role: "Senior Analytiker"
+      role: "Senior Analytiker",
+      image: "/images/testomonials/Annette Bastidas.jpeg"
     },
     {
       id: 44,
       quote: "Følte mig rummet og forstået … blev primet til samtale og fik jobbet – ro, tro og stærke input.",
       fullQuote: "Allerede fra det første møde med Marie Louise følte jeg mig rummet, forstået og mødt i den situation jeg var i. Efter hver eneste samtale gik jeg derfra med en følelse af empowerment og nye anderledes ideer til min tilgang som jobsøgende. Marie Louise er ikke længere væk end en SMS og er der når jeg har haft brug for det. Det har været en fantastisk dejlig sikkerhed at have, især da jeg skulle til jobsamtale (med meget kort frist) nåede vi at finde tid til et møde, så jeg kunne blive primet og klar. Jeg fik jobbet (hurrrraaa) - takket være Marie Louise og hendes input, roen hun satte i mig og troen på mig! TAK, Marie Louise! :o)",
       name: "Jeanne Jensen",
-      role: "Front Desk Manager"
+      role: "Front Desk Manager",
+      image: "/images/testomonials/Jeanne Jensen.jpeg"
     },
     {
       id: 45,
       quote: "God sparringspartner om strategi og muligheder – også når jeg var træt af situationen.",
       fullQuote: "Det har været et rigtig godt forløb. Det har været rigtig godt at have en sparringspartner, man kunne snakke med om strategi, muligheder og ind imellem til at lytte når man var træt af situationen.",
       name: "Morten Trolle",
-      role: "International Business Baccalaureate Mathematics Teacher"
+      role: "International Business Baccalaureate Mathematics Teacher",
+      image: "/images/testomonials/Morten Trolle.jpeg"
     },
     {
       id: 46,
       quote: "En tid med udvikling – samtalerne har været en stor del af det. Tak.",
       fullQuote: "Forløbet har været en meget spændende tid, som jeg ikke lige havde set komme. En tid som har givet mig meget, og hvor jeg har udviklet mig. Vores samtaler har været en stor del af det - så tak for det.",
       name: "Susanne Mortensen",
-      role: "Uddannelseschef"
+      role: "Uddannelseschef",
+      image: "/images/testomonials/Susanne Mortensen.jpeg"
     },
     {
       id: 47,
       quote: "Samtaler, der hjalp med at eliminere gamle barrierer – tak for det.",
       fullQuote: "Marie Louise og jeg har haft nogle virkelig gode samtaler, hvor hun har evnet at belyse og eliminerer nogle af de 'lig' i lasten jeg har båret med mig gennem mange år. Marie Louise tak for det.",
       name: "Bo Rejnholt Jensen",
-      role: "Head of Consulting and Service"
+      role: "Head of Consulting and Service",
+      image: "/images/testomonials/Bo Rejnholt Jensen.jpeg"
     },
     {
       id: 48,
@@ -380,35 +408,40 @@ export default function Testimonials() {
       quote: "Stor hjælp i en hektisk overgang – så behov og skubbede venligt i den rigtige retning.",
       fullQuote: "Marie Louise har været til stor hjælp i en hektisk overgang. Hun hjalp med støtte og gode råd i hele perioden og har været god til, at se hvad der var behov for og venligt skubbe mig i den rigtige retning.",
       name: "Anja Werborg",
-      role: "Key Account Manager"
+      role: "Key Account Manager",
+      image: "/images/testomonials/Anja Werborg.jpeg"
     },
     {
       id: 51,
       quote: "Høj tilgængelighed og tilpasning – hjalp mig til ro og proaktiv, rationel tænkning.",
       fullQuote: "I mit forløb med Marie Louise oplevede jeg super god tilgængelighed, forberedelse og relevant tilpasning. Det var fedt, at du bare gik ind i min egen tilgang til det (som var fuld gas), men samtidigt hjalp med at trække tempoet lidt ud igen, så jeg kunne følge med. Det var ultra værdifuldt i forhold til at få ro på, og tænke rationelt (og pro-aktivt) i den givne situation. Marie Louise har været en uundværlig sparringspartner at lufte tingene med, så jeg er blevet helt bevidst om min situation.",
       name: "Frederik von Sperling",
-      role: "Organisationskonsulent"
+      role: "Organisationskonsulent",
+      image: "/images/testomonials/Frederik von Sperling.jpeg"
     },
     {
       id: 52,
       quote: "Tak for coachingen, som hjalp mig på de svære dage.",
       fullQuote: "Tak for coaching, som har hjulpet mig på de mere svære dage.",
       name: "Vicki Kaare Aamand",
-      role: "Senior Marketing Project Manager"
+      role: "Senior Marketing Project Manager",
+      image: "/images/testomonials/Vicki Kaare Aamand.jpeg"
     },
     {
       id: 53,
       quote: "Var der 100% for mig – mine bedste anbefalinger.",
       fullQuote: "Marie Louise har som coach og rådgiver været der 100% for mig. Jeg kan kun give hende mine bedste anbefalinger.",
       name: "Helle Østerby Teilmann",
-      role: "Customer Engagement Specialist"
+      role: "Customer Engagement Specialist",
+      image: "/images/testomonials/Helle Østerby Teilmann.jpeg"
     },
     {
       id: 54,
       quote: "Følte mig set og hørt – identificerede mine behov og var altid på sidelinjen.",
       fullQuote: "Jeg har følt mig set og hørt. Marie Louise var god til at identificere, hvor jeg var og mine behov og var altid på sidelinjen.",
       name: "Susan Skovgård",
-      role: "Business Analyst"
+      role: "Business Analyst",
+      image: "/images/testomonials/Susan Skovgård.jpeg"
     }
   ];
 
