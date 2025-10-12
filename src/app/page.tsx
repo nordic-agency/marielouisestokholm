@@ -459,11 +459,15 @@ export default function Home() {
           <div className="pt-6 space-y-3 text-left max-w-2xl mx-auto">
             <div className="flex items-start">
               <span className="text-[#e9dccb] mr-3 text-xl">🔹</span>
-              <p className="text-lg text-gray-700">Når livet kalder på forandring</p>
+              <a href="/blog/nar-livet-kalder-pa-forandring" className="text-lg text-gray-700 hover:text-gray-900 hover:underline transition">
+                Når livet kalder på forandring
+              </a>
             </div>
             <div className="flex items-start">
               <span className="text-[#e9dccb] mr-3 text-xl">🔹</span>
-              <p className="text-lg text-gray-700">Midt i en forandring – tydelighed er dit kompas</p>
+              <a href="/blog/midt-i-en-forandring-tydelighed-er-dit-kompas" className="text-lg text-gray-700 hover:text-gray-900 hover:underline transition">
+                Midt i en forandring – tydelighed er dit kompas
+              </a>
             </div>
           </div>
 
