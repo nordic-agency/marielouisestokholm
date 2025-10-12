@@ -8,11 +8,11 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-white pt-32 pb-16 px-6 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-xl mx-auto text-gray-900 tracking-tight mb-10">
-            Baggrund med begge ben i virkeligheden
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-xl mx-auto text-gray-900 tracking-tight mb-6">
+            Om mig – min tilgang
           </h1>
-          <p className="mt-4 text-lg leading-relaxed text-gray-700">
-            Jeg hjælper mennesker i arbejdslivets overgangsfaser med at finde klarhed, retning og ro – gennem ærlige samtaler med psykologisk og organisatorisk tyngde.
+          <p className="mt-4 text-xl leading-relaxed text-gray-700 font-medium">
+            Jeg drives af at se mennesker finde fodfæste og styrke midt i forandring.
           </p>
         </div>
       </section>
