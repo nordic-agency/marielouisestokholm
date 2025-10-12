@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import { ArrowRightIcon, LightBulbIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 
 export default function HvadJegTilbyder() {
   return (
@@ -150,12 +150,15 @@ export default function HvadJegTilbyder() {
             {/* Vil du tage næste skridt? */}
             <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-xl text-gray-700">→</span>
+                <ArrowRightIcon className="w-6 h-6 text-gray-700" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
-              <div className="text-gray-700 leading-relaxed">
+              <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
-                  Læs mere om rammerne på <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link> – eller tag kontakt her: <Link href="/kontakt" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Kontakt</Link>.
+                  Læs mere om <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">praktik og priser</Link>
+                </p>
+                <p>
+                  Eller <Link href="/kontakt" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">tag kontakt</Link>
                 </p>
               </div>
             </div>
@@ -163,18 +166,23 @@ export default function HvadJegTilbyder() {
             {/* Lyst til inspiration? */}
             <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="w-12 h-12 bg-[#8B4513] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-xl text-white">💡</span>
+                <LightBulbIcon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Læs mere på min blog – måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>.
-              </p>
+              <div className="text-gray-700 leading-relaxed space-y-3">
+                <p>
+                  Læs mere på min <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">blog</Link>
+                </p>
+                <p>
+                  Måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">"Rødder og fødder"</Link>
+                </p>
+              </div>
             </div>
 
             {/* Sådan starter vi */}
             <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
               <div className="w-12 h-12 bg-[#A0522D] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-xl text-white">💬</span>
+                <ChatBubbleLeftRightIcon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
