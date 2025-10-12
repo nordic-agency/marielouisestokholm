@@ -200,37 +200,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Logo Cloud */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="w-full px-0">
-          <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
-          <div className="overflow-hidden relative w-full mt-10">
-            <div className="flex animate-slide whitespace-nowrap gap-16">
-              {[
-                "/images/logocloud/atea.png",
-                "/images/logocloud/cowi.png",
-                "/images/logocloud/dell.png",
-                "/images/logocloud/lego-logo.png",
-                "/images/logocloud/nets.png",
-                "/images/logocloud/nordea.png",
-                "/images/logocloud/novo-nordisk.png",
-                "/images/logocloud/pandora.png",
-                "/images/logocloud/topdanmark.png",
-                "/images/logocloud/visma.png",
-              ].map((src, i) => (
-                <Image
-                  key={i}
-                  src={src}
-                  alt={`logo-${i}`}
-                  width={158}
-                  height={48}
-                  className="h-24 w-auto object-contain grayscale opacity-70"
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Jeg tilbyder */}
       <section className="bg-white py-24 sm:py-32">
@@ -245,6 +214,37 @@ export default function Home() {
               Måske genkender du dig selv i én af situationerne. Måske står du et helt andet sted. Uanset hvad, tager vi udgangspunkt i din virkelighed — og finder det forløb, der passer til dig.
             </p>
           </div>
+
+          {/* Logo Cloud */}
+          <div className="w-full px-0 mt-16">
+            <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
+            <div className="overflow-hidden relative w-full mt-10">
+              <div className="flex animate-slide whitespace-nowrap gap-16">
+                {[
+                  "/images/logocloud/atea.png",
+                  "/images/logocloud/cowi.png",
+                  "/images/logocloud/dell.png",
+                  "/images/logocloud/lego-logo.png",
+                  "/images/logocloud/nets.png",
+                  "/images/logocloud/nordea.png",
+                  "/images/logocloud/novo-nordisk.png",
+                  "/images/logocloud/pandora.png",
+                  "/images/logocloud/topdanmark.png",
+                  "/images/logocloud/visma.png",
+                ].map((src, i) => (
+                  <Image
+                    key={i}
+                    src={src}
+                    alt={`logo-${i}`}
+                    width={158}
+                    height={48}
+                    className="h-24 w-auto object-contain grayscale opacity-70"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-2">
             {/* 1. Stå ved dit lederskab */}
             <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
