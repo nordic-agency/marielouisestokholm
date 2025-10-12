@@ -84,20 +84,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Call to action sektion */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
-            Er du nysgerrig på, hvad et samtaleforløb kan gøre for dig – og dit arbejdsliv?
+      {/* Samtaler, der skaber bevægelse */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+            Samtaler, der skaber bevægelse
           </h2>
-          <div className="space-y-4 text-lg text-gray-700">
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Se mere om forløb på siden <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
+              Hos mig får du ikke et quickfix – men et trygt og professionelt rum, hvor vi kan undersøge, hvad der giver mening for dig.
             </p>
             <p>
-              Læs mere om min tilgang – på siden <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Blog</Link>.
+              Jeg hjælper dig med at skabe klarhed og træffe valg, der føles rigtige – ikke bare i forhold til opgaver og ansvar, men også når det gælder relationer, værdier, mod og mening.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Call to action sektion */}
+      <section className="bg-blue-50 py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed mb-8">
+            Er du nysgerrig på, hvad et samtaleforløb kan betyde for dig?
+          </h2>
+          <Link
+            href="/kontakt"
+            className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition text-lg"
+          >
+            👉 Kontakt mig
+          </Link>
         </div>
       </section>
 
