@@ -148,7 +148,10 @@ export default function HvadJegTilbyder() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Vil du tage næste skridt? */}
-            <div className="text-center">
+            <div className="text-center border-l-4 border-[#e9dccb] pl-6 py-4">
+              <div className="flex justify-center mb-4">
+                <span className="text-2xl text-gray-500">→</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
               <div className="text-gray-700 leading-relaxed">
                 <p>
@@ -158,7 +161,10 @@ export default function HvadJegTilbyder() {
             </div>
 
             {/* Lyst til inspiration? */}
-            <div className="text-center">
+            <div className="text-center border-l-4 border-[#8B4513] pl-6 py-4">
+              <div className="flex justify-center mb-4">
+                <span className="text-2xl text-gray-500">💡</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
               <p className="text-gray-700 leading-relaxed">
                 Læs mere på min blog – måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>.
@@ -166,7 +172,10 @@ export default function HvadJegTilbyder() {
             </div>
 
             {/* Sådan starter vi */}
-            <div className="text-center">
+            <div className="text-center border-l-4 border-[#A0522D] pl-6 py-4">
+              <div className="flex justify-center mb-4">
+                <span className="text-2xl text-gray-500">💬</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
