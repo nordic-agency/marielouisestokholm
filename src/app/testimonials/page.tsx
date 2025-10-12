@@ -14,42 +14,48 @@ export default function Testimonials() {
       quote: "Et regulært energiboost … skarp, intuitiv og psykologisk indsigtsfuld. Udfordrer og støtter på én gang – og omsætter idéer til handling.",
       fullQuote: "Jeg har den store glæde at være i forløb hos Marie Louise – og det er et regulært energiboost. Hun er skarp, intuitiv og psykologisk indsigtsfuld, samtidig med at hun er oprigtig, empatisk og usædvanligt direkte på den gode måde. Hun formår at udfordre og støtte på én gang – og hun sikrer, at der ikke kun skabes idéer, men også fremdrift og handling. Marie Louise er et nuanceret menneske, der møder mig med både humor, nysgerrighed og tilstedeværelse. Jeg værdsætter især, at vores samtaler aldrig bliver bundet op på generiske modeller eller skemaer, men tager form i nu'et – med en coach, der virkelig ser, lytter og taler ind i det, der betyder noget. Forløbet har gjort en markant forskel for mig, og jeg ved allerede nu, at jeg vil sende flere mennesker i hendes retning – fordi det hun kan, er sjældent og værdifuldt",
       name: "Frederikke Abildstrup",
-      role: "Senior Legal Counsel"
+      role: "Senior Legal Counsel",
+      image: "/images/testomonials/Frederikke Abildstrup, Senior Legal Counsel.jpeg"
     },
     {
       id: 2,
       quote: "Relevante og inspirerende samtaler – jeg gik derfra fyldt med energi og motivation.",
       fullQuote: "Marie Louise har professionelt evnet at tilrettelægge vores samtaler, så de blev både relevante og inspirerende. Jeg er gået fra vores samtaler fyldt med energi, og motiveret til det videre arbejde.",
       name: "Christian Haines",
-      role: "Human Resources Business Partner"
+      role: "Human Resources Business Partner",
+      image: "/images/testomonials/Christian Haines.jpeg"
     },
     {
       id: 3,
       quote: "Mødte mig med nærvær og respekt midt i krisen … byggede mig op i mit tempo. I dag er jeg stærkere og afklaret.",
       fullQuote: "Jeg var meget i tvivl, da jeg fik tilbuddet om et forløb. Skulle jeg takke ja? I dag er jeg inderligt glad for, at min nysgerrighed vandt, og at jeg sagde ja tak. Ikke nok med, at jeg havde mistet mit arbejde, en stor del af min identitet og passion, så stod jeg samtidig midt i en personlig krise. Min mor blev diagnosticeret med uhelbredelig kræft og kort tid efter erklæret terminal. Det var en periode præget af stor sorg. Midt i alt dette mødte jeg Marie Louise, som blev min rådgiver. Fra første møde formåede hun at møde mig præcis dér, hvor jeg var, med ægte nærvær, respekt og stor forståelse for min situation. Hun så hele mig, ikke bare en kandidat i et forløb. Hun lyttede, gav plads og udviste en mærkbar evne til at balancere støtte og professionel sparring. Gennem vores samtaler opstod der en relation, som kom til at danne fundamentet for mine langsigtede beslutninger. Langsomt, og i mit tempo, blev jeg bygget op igen. Mine faglige kompetencer og menneskelige værdier blev tydelige for mig, og jeg begyndte at mærke troen på mig selv vende tilbage. Den professionelle rådgivning, ærlige sparring og varme støtte, jeg har modtaget fra Marie Louise, har gjort en stor forskel for mig. I dag føler jeg mig stærkere, afklaret og vigtigst af alt har jeg genvundet ejerskabet over mine beslutninger og min retning i livet. Marie Louise har haft en helt særlig betydning for mig i en sårbar livssituation. Jeg kan på det varmeste anbefale hende som rådgiver, hun besidder både høj faglighed og en menneskelig styrke, der gør en reel forskel.",
       name: "Marianne Bergholt Schmidt",
-      role: "Director - Global safety regions"
+      role: "Director - Global safety regions",
+      image: "/images/testomonials/Marianne Bergholt Schmidt.jpeg"
     },
     {
       id: 4,
       quote: "Mødt med stor forståelse og ærlige refleksioner – en stærk sparringspartner, som jeg vil savne.",
       fullQuote: "Marie Louise har været helt fantastisk! Lige fra første møde blev jeg mødt med en stor forståelse og ønske om at ville hjælpe mig bedst muligt. Det har været utrolig dejligt at høre Marie Louises refleksioner og ærlige syn på sagen og bruge hende som sparringspartner. Jeg vil i den grad savne vores samtaler.",
       name: "Anne Falk Konnild",
-      role: "Senior Global Project Manager"
+      role: "Senior Global Project Manager",
+      image: "/images/testomonials/Anne Falk Konnild.jpeg"
     },
     {
       id: 5,
       quote: "Superprofessionel, ærlig og transparent – en ekstremt god sparringspartner. Store anbefalinger.",
       fullQuote: "Marie Louise har været superprofessionel, ærlig og transparent igennem hele forløbet. Har været en ekstrem god sparringspartner på alle slags spørgsmål og tanker omkring min situation. Kan kun give store anbefalinger til hende.",
       name: "Kasper Erbo Mortensen",
-      role: "Executive Advisor to CEO and Head of Executive Office"
+      role: "Executive Advisor to CEO and Head of Executive Office",
+      image: "/images/testomonials/Kasper Erbo Mortensen.jpeg"
     },
     {
       id: 6,
       quote: "Hun mødte mig dér, hvor jeg var i processen – og tilpassede rådgivning og sparring.",
       fullQuote: "Jeg har været rigtig glad for mine samtaler med Marie Louise, som jeg oplevede, mødte mig på det stadie af processen, jeg var - og tilpassede sin rådgivning og sparring derefter.",
       name: "Kaja Tengbjerg",
-      role: "Chief Consultant"
+      role: "Chief Consultant",
+      image: "/images/testomonials/Kaja Tengbjerg.jpeg"
     },
     // Gruppe 2
     {
@@ -57,42 +63,48 @@ export default function Testimonials() {
       quote: "Skræddersyet perfekt til mig … taget seriøst, forstået og godt klædt på. Over al forventning.",
       fullQuote: "Forløbet blev skræddersyet perfekt til mig. Mine overvejelser og bekymringer blev taget meget seriøst. Føler mig forstået og godt klædt på til det videre forløb. Helt klart over al forventning.",
       name: "Lasse Holst Christensen",
-      role: "Fund Manager"
+      role: "Fund Manager",
+      image: "/images/testomonials/Lasse Holst Christensen.jpeg"
     },
     {
       id: 8,
       quote: "Perfekt sparringspartner til opstart som selvstændig – skabte overblik, fremdrift og idéer.",
       fullQuote: "Jeg meldte fra dag 1, at mit behov handler om at starte som selvstændig og ikke søge job. Marie Louise var perfekt til at gå ind i netop det behov som sparringspartner med relevant viden i at starte som selvstændig. Jeg har været rigtig glad for den løbende sparring. Kunne se med andre øjne, hvor jeg var langt i processen, og hvad der manglede fremdrift. Marie Louise bidrog med ideer og brainstorm ift. udvikling af virksomhed.",
       name: "Lars Thostrup",
-      role: "Coach"
+      role: "Coach",
+      image: "/images/testomonials/Lars Thostrup.jpeg"
     },
     {
       id: 9,
       quote: "Kæmpe engagement … samtalerne var et boost. Hun så mit potentiale og investerede tid i mig.",
       fullQuote: "Har oplevet et stort engagement fra Marie Louise. De personlige samtaler føltes som et kæmpe boost, hvor jeg oplevede, at Marie Louise så mit potentiale og investererede tid i mig.",
       name: "Sarah Lakhani",
-      role: "Senior Compliance Officer – Control Testing"
+      role: "Senior Compliance Officer – Control Testing",
+      image: "/images/testomonials/Sarah Lakhani.jpeg"
     },
     {
       id: 10,
       quote: "Ærlig og direkte sparring – afgørende for at bekræfte retning og komme på rette vej.",
       fullQuote: "Marie Louise har bidraget med ærlig og direkte sparring som har været afgørende for at bekræfte mig i min situation, men også at få mig på rette vej, hvis jeg var på vej i en ikke hensigtsmæssig retning. Dygtig sparringspartner!",
       name: "Morten Schou",
-      role: "Software Consultant"
+      role: "Software Consultant",
+      image: "/images/testomonials/Morten Schou.jpeg"
     },
     {
       id: 11,
       quote: "Nærvær og faglig dygtighed gjorde en stor forskel – værdifulde redskaber. Varm anbefaling.",
       fullQuote: "I mit forløb har Marie Louises nærvær og faglige dygtighed gjort en stor forskel for mig. Hun har været en fantastisk sparringspartner, som både har lyttet og givet mig værdifulde redskaber. Jeg kan kun varmt anbefale hende.",
       name: "Anette Møller",
-      role: "Privatkundedirektør"
+      role: "Privatkundedirektør",
+      image: "/images/testomonials/Anette Møller.jpeg"
     },
     {
       id: 12,
       quote: "Følte mig set og forstået … skarpe spørgsmål gav afklaring og næste skridt i min karriere.",
       fullQuote: "Marie Louise har været en fantastisk coach og sparringspartner, hvor jeg har følt mig set og forstået. Marie Louise har stillet skarpe og relevante spørgsmål, der har fået mig til at reflektere og blive mere afklaret omkring mine kompetencer, mine ønsker for fremtiden og hvad det næste skridt i min karriere skulle være. Jeg har følt mig set og mødt præcis der, hvor jeg var i min proces, og jeg har oplevet en rød tråd i hele forløbet. Hendes empati og evne til at forstå mine behov har gjort en stor forskel for mig. Jeg føler mig nu langt bedre rustet til at tage næste skridt i min karriere. Jeg vil varmt anbefale dette forløb til andre, der ønsker professionel og nærværende sparring i deres karriereudvikling. Det har været et meget værdifuld forløb for mig.",
       name: "Sofie Mürer",
-      role: "Business Consultant"
+      role: "Business Consultant",
+      image: "/images/testomonials/Sofie Mürer.jpeg"
     },
     // Gruppe 3
     {
@@ -107,21 +119,24 @@ export default function Testimonials() {
       quote: "Rykkede mig på flere niveauer for at komme godt videre – meget taknemmelig for støtten.",
       fullQuote: "Marie Louise har som min rådgiver og coach formået at rykke mig på flere niveauer ift. at komme godt videre. Jeg er utrolig glad og taknemmelig for den støtte jeg har fået. Jeg kan kun give Marie Louise de bedste anbefalinger.",
       name: "Jari Due Jessen",
-      role: "IT og Digitaliseringschef"
+      role: "IT og Digitaliseringschef",
+      image: "/images/testomonials/Jari Due Jessen.jpeg"
     },
     {
       id: 15,
       quote: "Above and beyond – løftede både jobsøgning og selvværd. Kunne ikke ønske mig en bedre coach.",
       fullQuote: "Marie Louise gik above and beyond for at hjælpe mig videre ind i en god stilling. Marie Louise hjalp mig ikke kun med at finde jobs og forberede mig til samtaler, hun hjalp mig også med at løfte mit selvværd. Jeg har haft nogle helt utroligt givende samtaler, og hendes engagement i min fremtid har været tydelig. Jeg kunne ikke have ønsket mig en bedre coach til mit forløb. Jeg behøvede ikke andet.",
       name: "Asta Meehan",
-      role: "Technical Sales Representative"
+      role: "Technical Sales Representative",
+      image: "/images/testomonials/Asta Meehan.jpeg"
     },
     {
       id: 16,
       quote: "Udgangspunkt i mig og hvor jeg var – dygtig coach med situationsfornemmelse, der tydeliggjorde mine styrker.",
       fullQuote: "Forløbet med Marie Louise har været medudgangspunkt i mig, og hvor jeg var mit liv, uden at 'pådutte' mig hendes egne holdninger. Hun er en rigtig dygtig coach - både som jobcoach, men har også en situationsfornemmelse i forhold til, hvor man er privat og psykisk, der forstod mig og bakkede mig op, når det var svært og samtidig gjorde mig opmærksom på mine styrker.",
       name: "Merete Friis",
-      role: "Erhvervsdirektør"
+      role: "Erhvervsdirektør",
+      image: "/images/testomonials/Merete Friis.jpeg"
     },
     {
       id: 17,
@@ -420,13 +435,23 @@ export default function Testimonials() {
           {allTestimonials.slice(0, visibleCount).map((testimonial) => {
             return (
               <div key={testimonial.id} className="bg-white p-6 rounded shadow border">
-                {/* Profile image placeholder */}
+                {/* Profile image */}
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <span className="text-gray-600 font-semibold text-sm">
-                      {testimonial.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
+                  {testimonial.image ? (
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={48}
+                      height={48}
+                      className="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <span className="text-gray-600 font-semibold text-sm">
+                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  )}
                   <div>
                     <p className="font-semibold text-sm text-gray-900">{testimonial.name}</p>
                     <p className="text-xs text-gray-600">{testimonial.role}</p>
@@ -472,11 +497,21 @@ export default function Testimonials() {
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
-                  <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-gray-600 font-semibold text-lg">
-                      {selectedTestimonial.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
+                  {selectedTestimonial.image ? (
+                    <Image
+                      src={selectedTestimonial.image}
+                      alt={selectedTestimonial.name}
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 rounded-full object-cover mr-4"
+                    />
+                  ) : (
+                    <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                      <span className="text-gray-600 font-semibold text-lg">
+                        {selectedTestimonial.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  )}
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900">{selectedTestimonial.name}</h3>
                     <p className="text-gray-600">{selectedTestimonial.role}</p>
