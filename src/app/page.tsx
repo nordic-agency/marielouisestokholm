@@ -534,12 +534,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Afslutning – Kontakt / Call to Action */}
       <section className="py-24 px-6 bg-blue-50 text-center">
-        <div className="max-w-xl mx-auto space-y-6">
-          <h3 className="text-2xl font-semibold text-gray-900">Klar til at tage næste skridt?</h3>
-          <p className="text-lg leading-relaxed text-gray-700">Book en gratis og uforpligtende samtale.</p>
-          <CalendlyPopup buttonText="Book samtale" />        
+        <div className="max-w-2xl mx-auto space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det starter her</h2>
+          <div className="space-y-4">
+            <p className="text-lg leading-relaxed text-gray-700">Du behøver ikke have styr på alt for at komme i gang.</p>
+            <p className="text-lg leading-relaxed text-gray-700">Ét møde kan åbne døren til nye muligheder.</p>
+            <p className="text-lg leading-relaxed text-gray-700">Du skal bare møde op.</p>
+          </div>
+          <div className="pt-4">
+            <a
+              href="/kontakt"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-8 rounded transition text-lg"
+            >
+              Kontakt mig for en uforpligtende samtale
+            </a>
+          </div>
         </div>
       </section>
     </main>
