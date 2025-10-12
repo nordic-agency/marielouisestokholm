@@ -191,7 +191,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 px-6 max-w-3xl space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-snug tracking-tight">
-            Dit arbejdsliv forandrer sig — eller står stille
+            Dit arbejdsliv forandrer sig<br />— eller står det stille
           </h2>
           <p className="text-lg md:text-xl leading-relaxed text-white/90">
             Måske mærker du uro, tvivl eller en stille fornemmelse af, at noget ikke længere passer.
