@@ -84,8 +84,62 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Sådan arbejder jeg */}
+      {/* Tre byggesten i mit ståsted */}
       <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
+            Tre byggesten i mit ståsted
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Udvalgt uddannelse */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl mr-3">🎓</span>
+                <h3 className="text-xl font-semibold text-gray-900">Udvalgt uddannelse</h3>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li>• Master i Ledelses- og organisationspsykologi (AU)</li>
+                <li>• Bestyrelsesuddannelse (CBS/Børsen)</li>
+                <li>• Certificeret coach (ICF & EMCC)</li>
+                <li>• HD i Organisation og Ledelse (CBS)</li>
+                <li>• HA-studiet (SDU)</li>
+              </ul>
+            </div>
+
+            {/* Udvalgt erfaring */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl mr-3">💼</span>
+                <h3 className="text-xl font-semibold text-gray-900">Udvalgt erfaring</h3>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li>• Group HR Director, Plus Pack</li>
+                <li>• Group Head of HR, Babcock & Wilcox</li>
+                <li>• Group HR Manager, Uhrenholt</li>
+                <li>• HR-chef, Syddansk Erhvervsskole</li>
+                <li>• +25 års ledelseserfaring fra både private og offentlige organisationer</li>
+              </ul>
+            </div>
+
+            {/* Praksis */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl mr-3">🌱</span>
+                <h3 className="text-xl font-semibold text-gray-900">Praksis</h3>
+              </div>
+              <ul className="space-y-3 text-gray-700">
+                <li>• Speciale i at forbinde organisatorisk indsigt med psykologisk forståelse</li>
+                <li>• Arbejder dialogisk og fænomenologisk - med afsæt i, hvad der fylder nu, og hvad der skal fylde fremover</li>
+                <li>• Fokus på at skabe bevægelse - både i relationer, værdier og beslutninger</li>
+                <li>• +1000 timers dokumenteret coaching og rådgivning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sådan arbejder jeg */}
+      <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Sådan arbejder jeg:
