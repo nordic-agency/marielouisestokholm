@@ -48,16 +48,15 @@ export default function HvadJegTilbyder() {
         </div>
       </section>
 
-      {/* Banner sektion med placeholder */}
-      <section className="relative py-24 px-6 bg-gray-200">
-        {/* Placeholder for banner billede */}
-        <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-          <div className="text-center">
-            <div className="text-6xl mb-4">📸</div>
-            <p className="text-gray-600 font-medium text-lg">Banner billede placeholder</p>
-            <p className="text-gray-500 text-sm mt-2">(peger...siger se med...)</p>
-          </div>
-        </div>
+      {/* Banner sektion med billede */}
+      <section className="relative py-24 px-6">
+        <Image
+          src="/images/foran-whiteboard.jpg"
+          alt="Banner billede"
+          fill
+          className="object-cover"
+          priority
+        />
         
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 max-w-4xl mx-auto text-center">
