@@ -45,11 +45,13 @@ export default function Home() {
   const testimonials = [
     {
       quote: "Et regulært energiboost … skarp, intuitiv og psykologisk indsigtsfuld. Udfordrer og støtter på én gang – og omsætter idéer til handling.",
-      name: "Frederikke Abildstrup, Senior Legal Counsel"
+      name: "Frederikke Abildstrup, Senior Legal Counsel",
+      image: "/images/testomonials/Frederikke Abildstrup, Senior Legal Counsel.jpeg"
     },
     {
       quote: "Skræddersyet perfekt til mig … taget seriøst, forstået og godt klædt på. Over al forventning.",
-      name: "Lasse Holst Christensen, Fund Manager"
+      name: "Lasse Holst Christensen, Fund Manager",
+      image: "/images/testomonials/Lasse Holst Christensen.jpeg"
     },
     {
       quote: "Hun så mig og min situation – tog coachingen i mit tempo, improviserede og udfordrede. Jeg voksede af det.",
@@ -57,15 +59,18 @@ export default function Home() {
     },
     {
       quote: "Hun var i mit ringhjørne – til stede, empatisk, motiverende og knivskarp. Medvirkende til at jeg starter virksomhed.",
-      name: "Michael Sonnested, Global Product Manager"
+      name: "Michael Sonnested, Global Product Manager",
+      image: "/images/testomonials/Michael Sonnested.png"
     },
     {
       quote: "Så og læste mig fra dag 1 … trygt sted, der guidede mig tilbage til mit selvsikre jeg. Mine allerbedste anbefalinger.",
-      name: "Trine Terp, Salgskonsulent"
+      name: "Trine Terp, Salgskonsulent",
+      image: "/images/testomonials/Trine Terp.jpeg"
     },
     {
       quote: "Stiller de rigtige spørgsmål på rette tid … dyb indsigt i arbejdsmarkedet. Hjalp mig til klarhed og retning.",
-      name: "Anders Tornøe, Digital Learning Consultant"
+      name: "Anders Tornøe, Digital Learning Consultant",
+      image: "/images/testomonials/Anders Tornøe.jpeg"
     }
   ];
   const [visibleCount, setVisibleCount] = useState(6);
@@ -402,7 +407,18 @@ export default function Home() {
             {testimonials
               .slice(0, visibleCount).map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded shadow border">
-                <p className="italic text-gray-700 mb-4">“{testimonial.quote}”</p>
+                {testimonial.image && (
+                  <div className="flex items-center mb-4">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={48}
+                      height={48}
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
+                  </div>
+                )}
+                <p className="italic text-gray-700 mb-4">"{testimonial.quote}"</p>
                 <p className="font-semibold text-sm text-gray-900">– {testimonial.name}</p>
               </div>
             ))}
