@@ -433,6 +433,16 @@ export default function Home() {
               </button>
             </div>
           )}
+          
+          {/* CTA til testimonials side */}
+          <div className="mt-12 text-center">
+            <a
+              href="/testimonials"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Find flere referencer her
+            </a>
+          </div>
         </div>
       </section>
 
