@@ -48,21 +48,26 @@ export default function HvadJegTilbyder() {
         </div>
       </section>
 
-      {/* Banner sektion med billede i baggrunden */}
-      <section className="relative py-24 px-6">
-        <Image
-          src="/images/cover-forsiden-2.jpg"
-          alt="Banner billede"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/40 z-10" />
+      {/* Banner sektion med placeholder */}
+      <section className="relative py-24 px-6 bg-gray-200">
+        {/* Placeholder for banner billede */}
+        <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
+          <div className="text-center">
+            <div className="text-6xl mb-4">📸</div>
+            <p className="text-gray-600 font-medium text-lg">Banner billede placeholder</p>
+            <p className="text-gray-500 text-sm mt-2">(peger...siger se med...)</p>
+          </div>
+        </div>
+        
+        <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 max-w-4xl mx-auto text-center">
-          <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed mb-8">
-            Vil du vide mere om min baggrund og tilgang? Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
+          <p className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-4">
+            Vil du vide mere om min baggrund og tilgang?
           </p>
-          <div className="text-lg text-white/90 italic">
+          <p className="text-lg text-white/90 mb-6">
+            Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
+          </p>
+          <div className="text-sm text-white/80 italic">
             Foto: (peger...siger se med...)
           </div>
         </div>
