@@ -178,21 +178,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Call to action sektion */}
-      <section className="bg-blue-50 py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed mb-8">
-            Er du nysgerrig på, hvad et samtaleforløb kan betyde for dig?
-          </h2>
-          <Link
-            href="/kontakt"
-            className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition text-lg"
-          >
-            👉 Kontakt mig
-          </Link>
-        </div>
-      </section>
-
       {/* Kontakt */}
       <section className="bg-blue-50 py-16 px-6 flex justify-center items-center">
         <div className="max-w-xl w-full mx-auto space-y-6 text-center">
