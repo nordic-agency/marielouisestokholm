@@ -148,9 +148,9 @@ export default function HvadJegTilbyder() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Vil du tage næste skridt? */}
-            <div className="text-center border-l-4 border-[#e9dccb] pl-6 py-4">
-              <div className="flex justify-center mb-4">
-                <span className="text-2xl text-gray-500">→</span>
+            <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-xl text-gray-700">→</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
               <div className="text-gray-700 leading-relaxed">
@@ -161,9 +161,9 @@ export default function HvadJegTilbyder() {
             </div>
 
             {/* Lyst til inspiration? */}
-            <div className="text-center border-l-4 border-[#8B4513] pl-6 py-4">
-              <div className="flex justify-center mb-4">
-                <span className="text-2xl text-gray-500">💡</span>
+            <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-[#8B4513] rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-xl text-white">💡</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -172,9 +172,9 @@ export default function HvadJegTilbyder() {
             </div>
 
             {/* Sådan starter vi */}
-            <div className="text-center border-l-4 border-[#A0522D] pl-6 py-4">
-              <div className="flex justify-center mb-4">
-                <span className="text-2xl text-gray-500">💬</span>
+            <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-[#A0522D] rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-xl text-white">💬</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
