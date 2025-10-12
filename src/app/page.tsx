@@ -131,7 +131,7 @@ export default function Home() {
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
-              For at komme videre skal vi turde stoppe op – og vælge bevidst
+              For at komme videre skal vi turde stoppe op — og vælge bevidst
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
               Når dit arbejdsliv forandrer sig, har du brug for klarhed, ikke flere krav. Vi støtter dig i at finde fodfæste, styrke og retning – indefra og ud.
