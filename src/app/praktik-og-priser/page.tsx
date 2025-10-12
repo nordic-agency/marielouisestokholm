@@ -19,129 +19,168 @@ export default function PraktikOgPriser() {
             Praktik og priser
           </h1>
           <p className="text-xl md:text-2xl font-bold mb-8">
-            Transparente rammer for dit forløb
-          </p>
-          <p className="text-lg md:text-xl mb-8">
-            Ingen skjulte omkostninger. Klare aftaler. Fokus på dig.
+            Forandring sker i bevægelsen – her finder du rammerne for dit første skridt.
           </p>
         </div>
       </section>
 
-      {/* Content Section */}
+      {/* Sådan begynder vi */}
       <section className="w-full bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-6">
-              Sådan fungerer det
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8">
+              Sådan begynder vi
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Alle forløb er skræddersyet til dig og din situation. Her er de grundlæggende rammer og priser.
-            </p>
-          </div>
-
-          {/* Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* Enkeltstående session */}
-            <div className="bg-white border border-gray-200 rounded-lg p-8 text-center shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Enkeltstående session</h3>
-              <div className="text-3xl font-bold text-[#8B4513] mb-6">1.200 kr.</div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Perfekt til at få et nyt perspektiv eller arbejde med en konkret udfordring.
+            <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+              <p>
+                Vi starter med en gratis og uforpligtende samtale. Her afklarer vi, hvordan jeg bedst kan hjælpe dig, og om kemi og tillid er på plads – de vigtigste forudsætninger for et godt forløb.
               </p>
-              <ul className="text-left text-gray-600 space-y-2 mb-8">
-                <li>• 90 minutter</li>
-                <li>• Fokus på en konkret udfordring</li>
-                <li>• Uforpligtende</li>
-                <li>• Kan bookes efter behov</li>
-              </ul>
-            </div>
-
-            {/* 3-sessioner pakke */}
-            <div className="bg-white border-2 border-[#8B4513] rounded-lg p-8 text-center shadow-lg relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-[#8B4513] text-white px-4 py-2 rounded-full text-sm font-semibold">
-                  Mest populær
-                </span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">3-sessioner pakke</h3>
-              <div className="text-3xl font-bold text-[#8B4513] mb-2">3.200 kr.</div>
-              <div className="text-sm text-gray-500 mb-6">Spar 400 kr.</div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Ideelt til at skabe momentum og arbejde systematisk med din udvikling.
+              <p>
+                En enkelt samtale kan give indsigt, men de største forandringer sker typisk i et forløb over flere møder, hvor du får mulighed for at afprøve, reflektere og vende erfaringerne i næste samtale.
               </p>
-              <ul className="text-left text-gray-600 space-y-2 mb-8">
-                <li>• 3 × 90 minutter</li>
-                <li>• Systematisk tilgang</li>
-                <li>• Mellem-session opfølgning</li>
-                <li>• Gælder 6 måneder</li>
-              </ul>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* 6-sessioner pakke */}
-            <div className="bg-white border border-gray-200 rounded-lg p-8 text-center shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">6-sessioner pakke</h3>
-              <div className="text-3xl font-bold text-[#8B4513] mb-2">5.800 kr.</div>
-              <div className="text-sm text-gray-500 mb-6">Spar 1.400 kr.</div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Dybdegående forløb til omfattende udvikling og varig forandring.
+      {/* Samarbejdsaftale */}
+      <section className="w-full bg-gray-50 py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
+            Samarbejdsaftale
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Privat</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Du har fuld fleksibilitet og kan til enhver tid ændre eller afslutte forløbet.
               </p>
-              <ul className="text-left text-gray-600 space-y-2 mb-8">
-                <li>• 6 × 90 minutter</li>
-                <li>• Dybdegående forløb</li>
-                <li>• Personlig udviklingsplan</li>
-                <li>• Gælder 12 måneder</li>
-              </ul>
+              <p className="text-gray-700 leading-relaxed">
+                Vi aftaler altid rammerne sammen: antal møder, varighed, fokus og om samtalerne skal være personlige eller online.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Erhverv</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Vi tydeliggør en fælles målsætning for forløbet og sikrer fuld fortrolighed mellem medarbejder og mig – tryghed og tillid er afgørende for udvikling.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Additional Information */}
-          <div className="bg-gray-50 rounded-lg p-8 mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Vigtige detaljer</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-3">Inkluderet i alle pakker:</h4>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• Forberedelse før hver session</li>
-                  <li>• Noter og opfølgning efter session</li>
-                  <li>• Email support mellem sessioner</li>
-                  <li>• Tilpasning til din situation</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-3">Betalingsbetingelser:</h4>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• Betales forud for første session</li>
-                  <li>• Ingen binding eller abonnement</li>
-                  <li>• Alle priser inkl. moms</li>
-                  <li>• Faktura sendes elektronisk</li>
-                </ul>
-              </div>
+      {/* Samtaleforløb og priser */}
+      <section className="w-full bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
+            Samtaleforløb og priser
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-12">
+            Samtalerne varer 1 time og foregår enten i København eller online.
+          </p>
+          
+          {/* Pricing Table */}
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-12">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Forløb / samtale</th>
+                    <th className="px-6 py-4 text-right text-sm font-semibold text-gray-900">Pris</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-gray-900">Første samtale (1,5 time)</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">1.800 kr.</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-6 py-4 text-sm text-gray-900">Forløb á 3 samtaler</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">4.500 kr.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-gray-900">Forløb á 5 samtaler</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">7.300 kr.</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-6 py-4 text-sm text-gray-900">Forløb á 7 samtaler</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">10.000 kr.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-gray-900">Efterfølgende samtaler</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">1.300 kr.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+          
+          <p className="text-sm text-gray-600 text-center mb-12">
+            Priser er inkl. moms for private og ekskl. moms for erhverv.
+          </p>
+        </div>
+      </section>
 
-          {/* CTA Section */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Klar til at komme i gang?
-            </h3>
-            <p className="text-lg text-gray-600 mb-8">
-              Første skridt er en uforpligtende samtale, hvor vi finder ud af, hvad der passer bedst til dig.
-            </p>
-            <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Link 
-                href="/kontakt"
-                className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-[#8B4513] hover:bg-[#A0522D] transition-colors duration-300"
-              >
-                Book samtale
-              </Link>
-              <Link 
-                href="/hvad-jeg-tilbyder"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#8B4513] text-base font-medium rounded-full text-[#8B4513] hover:bg-[#8B4513] hover:text-white transition-all duration-300"
-              >
-                Læs mere om tilgangen
-              </Link>
+      {/* Praktisk */}
+      <section className="w-full bg-gray-50 py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
+            Praktisk
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Betaling</h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Privat:</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Betaling via MobilePay eller bankoverførsel pr. samtale. Faktura/kvittering sendes på mail.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Erhverv:</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Fakturering ved aftaleindgåelse med betalingsvilkår angivet på faktura.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Lokaler og fortrolighed</h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Mødelokaler:</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Adgang til mødelokaler i København via Regus A/S. Online-møder tilbydes også.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Fortrolighed:</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Jeg arbejder efter ICF's etiske retningslinjer.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="w-full bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8">
+            Har du fået lyst til at tage næste skridt?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Det første telefonmøde er altid gratis og uforpligtende, så du kan mærke efter, om forløbet er det rette.
+          </p>
+          <Link 
+            href="/kontakt"
+            className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-[#8B4513] hover:bg-[#A0522D] transition-colors duration-300"
+          >
+            Kontakt mig her for at aftale en indledende samtale eller stille spørgsmål – jeg glæder mig til at høre fra dig.
+          </Link>
         </div>
       </section>
     </main>
