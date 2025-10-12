@@ -132,6 +132,61 @@ export default function HvadJegTilbyder() {
           </ul>
         </div>
       </section>
+
+      {/* Dit udgangspunkt – din virkelighed */}
+      <section className="py-24 px-6 bg-white text-gray-900">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+            Dit udgangspunkt – din virkelighed
+          </h2>
+          
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700 mb-12 text-center">
+            <p>Måske genkender du dig selv i én af situationerne.</p>
+            <p>Måske står du et helt andet sted.</p>
+            <p>Uanset hvad, tager vi udgangspunkt i <em>din virkelighed</em> – og finder det forløb, der passer til dig.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Vil du tage næste skridt? */}
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <span className="text-3xl">👍</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Læs mere om rammerne på <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link> – eller tag kontakt her: <Link href="/kontakt" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Kontakt</Link>.
+              </p>
+            </div>
+
+            {/* Lyst til inspiration? */}
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <span className="text-3xl">👍</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Læs mere på min blog – måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>.
+              </p>
+            </div>
+
+            {/* Sådan starter vi */}
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <span className="text-3xl">💬</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
+              <div className="text-gray-700 leading-relaxed space-y-3">
+                <p>
+                  Første skridt er en uforpligtende samtale, hvor du fortæller om din situation – og vi ser, om der er et match.
+                </p>
+                <p>
+                  Det er vigtigt, at det føles rigtigt for dig.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
