@@ -153,9 +153,22 @@ export default function HvadJegTilbyder() {
                 <span className="text-3xl">👍</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Læs mere om rammerne på <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link> – eller tag kontakt her: <Link href="/kontakt" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Kontakt</Link>.
-              </p>
+              <div className="space-y-3 text-gray-700 leading-relaxed">
+                <p>
+                  Læs mere om rammerne på <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link>
+                </p>
+                <p>
+                  Eller tag kontakt for en uforpligtende samtale
+                </p>
+                <div className="pt-2">
+                  <Link 
+                    href="/kontakt" 
+                    className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-2 px-4 rounded transition text-sm"
+                  >
+                    Kontakt mig
+                  </Link>
+                </div>
+              </div>
             </div>
 
             {/* Lyst til inspiration? */}
@@ -175,13 +188,21 @@ export default function HvadJegTilbyder() {
                 <span className="text-3xl">💬</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3">
+              <div className="text-gray-700 leading-relaxed space-y-3 mb-4">
                 <p>
                   Første skridt er en uforpligtende samtale, hvor du fortæller om din situation – og vi ser, om der er et match.
                 </p>
                 <p>
                   Det er vigtigt, at det føles rigtigt for dig.
                 </p>
+              </div>
+              <div className="pt-2">
+                <Link 
+                  href="/kontakt" 
+                  className="inline-block bg-[#8B4513] hover:bg-[#A0522D] text-white font-semibold py-2 px-4 rounded transition text-sm"
+                >
+                  Book en samtale
+                </Link>
               </div>
             </div>
           </div>
