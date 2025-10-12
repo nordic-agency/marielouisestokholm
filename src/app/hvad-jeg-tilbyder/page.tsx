@@ -17,15 +17,18 @@ export default function HvadJegTilbyder() {
             Din virkelighed. Din retning. Dit næste skridt.
           </p>
           
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="max-w-2xl mx-auto mb-8">
-            <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-4xl mb-2">📸</div>
-                <p className="text-gray-500 font-medium">Foto: (peger...siger se med...)</p>
-                <p className="text-sm text-gray-400 mt-1">Tagline med retning</p>
-              </div>
-            </div>
+            <Image
+              src="/images/om-mig-cover.jpg"
+              alt="Marie Louise Stokholm"
+              width={800}
+              height={400}
+              className="rounded-lg object-cover w-full h-64"
+            />
+            <p className="text-center text-sm text-gray-500 mt-2 italic">
+              Foto: (peger...siger se med...)
+            </p>
           </div>
           
           {/* Secondary tagline */}
