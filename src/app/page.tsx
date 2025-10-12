@@ -353,34 +353,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Samtalen er centrum */}
-      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div className="order-2 md:order-1">
-          <Image
-            src="/images/index-portrait.jpg"
-            alt="Marie Louise i samtale"
-            width={800}
-            height={600}
-            className="rounded-xl shadow-md w-full object-cover"
-          />
-        </div>
-        <div className="order-1 md:order-2 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtalen er centrum</h2>
-          <p className="text-lg leading-relaxed text-gray-700">Hos Movement Matters er samtalen ikke bare et redskab – det er et arbejdsrum. Et sted, hvor vi undersøger situationen, du står i, og begynder at skabe klarhed i det, der fylder i dit arbejdsliv.</p>
-          <p className="text-lg leading-relaxed text-gray-700">Vi taler om det konkrete – og det, der ligger bag. Det, der presser sig på i hverdagen. Det, du måske ikke har sat ord på endnu.</p>
-          <p className="text-lg leading-relaxed text-gray-700">Du får en samtalepartner med dyb erfaring i arbejdslivets kompleksitet. Ikke en metode på skinner, men en erfaren coach med organisatorisk indsigt, psykologisk forståelse – og blik for både det, der bremser, og det, der kan bringe dig videre.</p>
-          <p className="text-lg leading-relaxed text-gray-700">Det gælder, uanset om du er leder, medarbejder – eller står et sted, hvor dit arbejdsliv kalder på forandring.</p>
-          <p className="font-semibold text-blue-700 text-lg">Du skal ikke præstere. Du skal bare møde op.</p>
-        </div>
-      </section>
-
-      <section className="py-20 text-center bg-gray-50">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-xl italic text-gray-700">
-            “Du skal ikke præstere. Du skal bare møde op.”
-          </p>
-        </div>
-      </section>
 
       {/* Min tilgang */}
       <section className="py-24 px-6 bg-white text-gray-900">
@@ -472,6 +444,35 @@ export default function Home() {
 
 
       
+
+      {/* Samtalen er centrum */}
+      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="order-2 md:order-1">
+          <Image
+            src="/images/index-portrait.jpg"
+            alt="Marie Louise i samtale"
+            width={800}
+            height={600}
+            className="rounded-xl shadow-md w-full object-cover"
+          />
+        </div>
+        <div className="order-1 md:order-2 space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtalen er centrum</h2>
+          <p className="text-lg leading-relaxed text-gray-700">Hos Movement Matters er samtalen ikke bare et redskab — det er et arbejdsrum. Et sted, hvor vi undersøger situationen, du står i, og begynder at skabe klarhed i det, der fylder i dit arbejdsliv.</p>
+          <p className="text-lg leading-relaxed text-gray-700">Vi taler om det konkrete — og det, der ligger bag. Det, der presser sig på i hverdagen. Det, du måske ikke har sat ord på endnu.</p>
+          <p className="text-lg leading-relaxed text-gray-700">Du får en samtalepartner med dyb erfaring i arbejdslivets kompleksitet. Ikke en metode på skinner, men en erfaren coach med organisatorisk indsigt, psykologisk forståelse — og blik for både det, der bremser, og det, der kan bringe dig videre.</p>
+          <p className="text-lg leading-relaxed text-gray-700">Det gælder, uanset om du er leder, medarbejder — eller står et sted, hvor dit arbejdsliv kalder på forandring.</p>
+          <p className="font-semibold text-blue-700 text-lg">Du skal ikke præstere. Du skal bare møde op.</p>
+        </div>
+      </section>
+
+      <section className="py-20 text-center bg-gray-50">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="text-xl italic text-gray-700">
+            "Du skal ikke præstere. Du skal bare møde op."
+          </p>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="py-24 px-6 bg-blue-50 text-center">
