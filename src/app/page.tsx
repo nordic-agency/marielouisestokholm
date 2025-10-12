@@ -514,6 +514,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Praktik & Priser */}
+      <section className="py-24 px-6 bg-white text-gray-900">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Praktik og priser</h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Det praktiske skal være enkelt. Her finder du information om priser, forløb og hvordan vi kommer i gang. Du betaler kun for den tid, du har brug for.
+          </p>
+          
+          {/* CTA knap */}
+          <div className="pt-6">
+            <a
+              href="/hvad-jeg-tilbyder"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Læs mere om praktik og priser
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-24 px-6 bg-blue-50 text-center">
         <div className="max-w-xl mx-auto space-y-6">
