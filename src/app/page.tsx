@@ -138,10 +138,10 @@ export default function Home() {
               I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner — med fokus på at skabe klarhed, mod og handlekraft — gennem samtaler, der forbinder indsigt med handling.
             </p>
             <a
-              href="/kontakt"
+              href="/om-mig"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
             >
-              Book en gratis samtale
+              Læs mere om mig
             </a>
           </div>
         </div>
