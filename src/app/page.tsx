@@ -412,9 +412,9 @@ export default function Home() {
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover"
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 rounded-full object-cover"
                     />
                   </div>
                 )}

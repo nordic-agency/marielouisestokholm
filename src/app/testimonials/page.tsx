@@ -474,13 +474,13 @@ export default function Testimonials() {
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0"
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 rounded-full object-cover mr-4 flex-shrink-0"
                     />
                   ) : (
-                    <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                      <span className="text-gray-600 font-semibold text-sm">
+                    <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <span className="text-gray-600 font-semibold text-base">
                         {testimonial.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
@@ -534,13 +534,13 @@ export default function Testimonials() {
                     <Image
                       src={selectedTestimonial.image}
                       alt={selectedTestimonial.name}
-                      width={64}
-                      height={64}
-                      className="w-16 h-16 rounded-full object-cover mr-4"
+                      width={80}
+                      height={80}
+                      className="w-20 h-20 rounded-full object-cover mr-4"
                     />
                   ) : (
-                    <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-gray-600 font-semibold text-lg">
+                    <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                      <span className="text-gray-600 font-semibold text-xl">
                         {selectedTestimonial.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
