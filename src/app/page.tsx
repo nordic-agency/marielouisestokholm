@@ -115,7 +115,26 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* Om mig teaser sektion */}
+      <section className="py-24 px-6 bg-white text-gray-900">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+            Erhvervscoach med indsigt i både mennesket og organisationen
+          </h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700">
+            I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner — med fokus på at skabe klarhed, mod og handlekraft — gennem samtaler, der forbinder indsigt med handling.
+          </p>
+          <a
+            href="/om-mig"
+            className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+          >
+            Læs mere om mig
+          </a>
+        </div>
+      </section>
 
       {/* Leadership Section Inspired by antoinettedalehenderson.com */}
       <section className="py-24 px-6 bg-gray-50 text-gray-900">
