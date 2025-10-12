@@ -109,7 +109,7 @@ export default function Home() {
         <div className="relative z-20 max-w-4xl space-y-6 text-white">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
             Når noget i dit arbejdsliv er i bevægelse
-            <br />— eller burde være det
+            <br />— eller måske burde være det
           </h1>
           <p className="text-lg md:text-xl leading-relaxed text-white/90">Samtaler, der skaber retning. Med dig – og for dig.</p>
         </div>
