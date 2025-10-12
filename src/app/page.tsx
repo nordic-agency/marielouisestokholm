@@ -191,14 +191,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 px-6 max-w-3xl space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-snug tracking-tight">
-            Et arbejdsliv i bevægelse
+            Dit arbejdsliv forandrer sig — eller står stille
           </h2>
           <p className="text-lg md:text-xl leading-relaxed text-white/90">
-            Måske mærker du, at noget ikke længere passer. Måske længes du efter klarhed og retning – eller bare ro i kroppen.
+            Måske mærker du uro, tvivl eller en stille fornemmelse af, at noget ikke længere passer.
           </p>
           
           <div className="text-center">
-            <CalendlyPopup buttonText="Book samtale" />
+            <CalendlyPopup buttonText="Lad os tage den første samtale" />
           </div>
         </div>
       </section>
@@ -208,18 +208,18 @@ export default function Home() {
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det kan være, at du:</h2>
           <ul className="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700">
-            <li>Er leder og står i krydspres mellem resultater, relationer og dig selv.</li>
-            <li>Er medarbejder og længes efter mening, energi eller bevægelse.</li>
-            <li>Er på vej videre – frivilligt eller ufrivilligt – og tvivler på næste skridt.</li>
+            <li>er leder og står i krydspres mellem resultater, relationer og dig selv</li>
+            <li>er medarbejder og længes efter mening, energi eller bevægelse</li>
+            <li>er på vej videre — frivilligt eller ufrivilligt — og tvivler på næste skridt</li>
           </ul>
           <p className="text-lg leading-relaxed text-gray-700">
             Det handler om mere end dit arbejde. Det handler om, hvordan du trives, træffer valg og finder fodfæste i det arbejdsliv, du står midt i.
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
-            Hos Movement Matters møder du en erfaren erhvervscoach, der skaber samtaler med bevægelse. Retning, der føles rigtig.
+            En lille bevægelse kan blive begyndelsen på noget større.
           </p>
           <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
-            Book en gratis og uforpligtende samtale
+            Lad os tage den første samtale
           </a>
         </div>
         <div>
