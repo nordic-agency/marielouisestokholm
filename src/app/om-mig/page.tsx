@@ -107,6 +107,23 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Call to action sektion */}
+      <section className="bg-white py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
+            Er du nysgerrig på, hvad et samtaleforløb kan gøre for dig – og dit arbejdsliv?
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700">
+            <p>
+              Se mere om forløb på siden <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
+            </p>
+            <p>
+              Læs mere om min tilgang – på siden <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Blog</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Kontakt */}
       <section className="bg-blue-50 py-16 px-6 flex justify-center items-center">
         <div className="max-w-xl w-full mx-auto space-y-6 text-center">
