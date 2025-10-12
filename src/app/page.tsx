@@ -209,15 +209,15 @@ export default function Home() {
                   {expandedService === 1 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når du vil kunne lede — med retning, mod og menneskelighed.</p>
+              <p className="mt-2 text-gray-700">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
               {expandedService === 1 && (
                 <div className="mt-4 text-gray-700">
                   <p className="font-medium mb-2">Det kan handle om:</p>
                   <ul className="list-disc list-inside space-y-1">
-                    <li>Ny i rollen — ønsker at sætte retning fra dag ét</li>
-                    <li>Balancerer mellem bestyrelse, medarbejdere og egne værdier</li>
-                    <li>Længes efter ny mening eller energi</li>
-                    <li>Udfordringer du ikke kan dele internt</li>
+                    <li>At være ny i rollen og ville sætte en tydelig kurs.</li>
+                    <li>At balancere mellem bestyrelse, medarbejdere og egne værdier.</li>
+                    <li>At længes efter ny energi eller mening i lederrollen.</li>
+                    <li>At have udfordringer, du ikke kan dele internt.</li>
                   </ul>
                 </div>
               )}
@@ -234,15 +234,15 @@ export default function Home() {
                   {expandedService === 2 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når du har brug for at vende tankerne med én, der lytter og udfordrer.</p>
+              <p className="mt-2 text-gray-700">Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.</p>
               {expandedService === 2 && (
                 <div className="mt-4 text-gray-700">
                   <p className="font-medium mb-2">Det kan handle om:</p>
                   <ul className="list-disc list-inside space-y-1">
-                    <li>Du står i et vigtigt valg</li>
-                    <li>Du føler dig alene i din rolle</li>
-                    <li>Du er kørt fast og søger nye muligheder</li>
-                    <li>Du ønsker ærlig feedback</li>
+                    <li>At stå i et valg og ville tænke det igennem strategisk.</li>
+                    <li>At mangle en sparringspartner i rollen.</li>
+                    <li>At være kørt fast og have brug for nye muligheder.</li>
+                    <li>At ønske ærlig feedback — uden filtre eller hensyn.</li>
                   </ul>
                 </div>
               )}
@@ -259,15 +259,15 @@ export default function Home() {
                   {expandedService === 3 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når arbejdet ikke længere passer til den, du er — eller den, du er ved at blive.</p>
+              <p className="mt-2 text-gray-700">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
               {expandedService === 3 && (
                 <div className="mt-4 text-gray-700">
                   <p className="font-medium mb-2">Det kan handle om:</p>
                   <ul className="list-disc list-inside space-y-1">
-                    <li>Drænet i nuværende job</li>
-                    <li>Vil finde et nyt ståsted efter sygemelding</li>
-                    <li>Nyt sted i livet — ønsker et arbejdsliv der matcher</li>
-                    <li>Vil videre på en måde der passer til dig</li>
+                    <li>At stå et nyt sted i livet og ville have arbejdslivet til at følge med.</li>
+                    <li>At ville videre — på egne præmisser.</li>
+                    <li>At føle dig drænet eller utilfreds i dit nuværende job.</li>
+                    <li>At vende tilbage efter en sygemelding og finde et nyt udgangspunkt.</li>
                   </ul>
                 </div>
               )}
@@ -284,15 +284,15 @@ export default function Home() {
                   {expandedService === 4 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når du skal videre — og vil tage dig selv med i processen.</p>
+              <p className="mt-2 text-gray-700">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
               {expandedService === 4 && (
                 <div className="mt-4 text-gray-700">
                   <p className="font-medium mb-2">Det kan handle om:</p>
                   <ul className="list-disc list-inside space-y-1">
-                    <li>Opsagt og søger ny retning</li>
-                    <li>Har selv sagt op — og mærker det kræver mere</li>
-                    <li>Mistet troen på egne evner</li>
-                    <li>Har brug for hjælp til CV, LinkedIn eller præsentation</li>
+                    <li>At bruge en opsigelse til at finde ny retning.</li>
+                    <li>At opdage, at det kræver mere end forventet at sige op selv.</li>
+                    <li>At genfinde troen på egne evner og et nyt ståsted.</li>
+                    <li>At få hjælp til at formulere din profil — fx CV og LinkedIn.</li>
                   </ul>
                 </div>
               )}
@@ -312,33 +312,33 @@ export default function Home() {
 
           {/* Logo Cloud */}
           <div className="w-full px-0 mt-16">
-            <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
-            <div className="overflow-hidden relative w-full mt-10">
-              <div className="flex animate-slide whitespace-nowrap gap-16">
-                {[
-                  "/images/logocloud/atea.png",
-                  "/images/logocloud/cowi.png",
-                  "/images/logocloud/dell.png",
-                  "/images/logocloud/lego-logo.png",
-                  "/images/logocloud/nets.png",
-                  "/images/logocloud/nordea.png",
-                  "/images/logocloud/novo-nordisk.png",
-                  "/images/logocloud/pandora.png",
-                  "/images/logocloud/topdanmark.png",
-                  "/images/logocloud/visma.png",
-                ].map((src, i) => (
-                  <Image
-                    key={i}
-                    src={src}
-                    alt={`logo-${i}`}
-                    width={158}
-                    height={48}
-                    className="h-24 w-auto object-contain grayscale opacity-70"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
+    <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
+    <div className="overflow-hidden relative w-full mt-10">
+      <div className="flex animate-slide whitespace-nowrap gap-16">
+        {[
+          "/images/logocloud/atea.png",
+          "/images/logocloud/cowi.png",
+          "/images/logocloud/dell.png",
+          "/images/logocloud/lego-logo.png",
+          "/images/logocloud/nets.png",
+          "/images/logocloud/nordea.png",
+          "/images/logocloud/novo-nordisk.png",
+          "/images/logocloud/pandora.png",
+          "/images/logocloud/topdanmark.png",
+          "/images/logocloud/visma.png",
+        ].map((src, i) => (
+          <Image
+            key={i}
+            src={src}
+            alt={`logo-${i}`}
+            width={158}
+            height={48}
+            className="h-24 w-auto object-contain grayscale opacity-70"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
         </div>
       </section>
 
@@ -505,7 +505,7 @@ export default function Home() {
                 </p>
               </div>
             </a>
-          </div>
+              </div>
 
           {/* CTA knap */}
           <div className="text-center mt-12">
@@ -515,8 +515,8 @@ export default function Home() {
             >
               Læs flere indlæg på bloggen
             </a>
-          </div>
-        </div>
+              </div>
+              </div>
       </section>
 
       {/* Praktik & Priser */}
