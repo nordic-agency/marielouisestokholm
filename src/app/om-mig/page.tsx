@@ -17,94 +17,93 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Om mig + billede */}
-      <section className="bg-gray-50 border-b py-20 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_600px] gap-12 items-center">
-          <div className="prose prose-lg text-gray-700 text-lg leading-relaxed space-y-4">
-            <p>Jeg har over 25 års erfaring med ledelse, HR og organisationsudvikling – og har været med hele vejen fra beslutningsbordet til den enkelte medarbejders virkelighed.</p>
-            <p>I dag bruger jeg min erfaring som psykolog, erhvervscoach og stifter af Movement Matters – med fokus på det, der bevæger os.</p>
-            <p>Samtalerne tager afsæt i din kontekst – og møder dig, der hvor du står.</p>
-          </div>
-          <div>
+      {/* Foto sektion */}
+      <section className="bg-white py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8">
             <Image
               src="/images/foran-whiteboard.jpg"
               alt="Marie Louise Stokholm"
-              className="rounded-lg shadow-md object-cover w-full h-auto"
-              width={600}
-              height={800}
+              className="rounded-lg shadow-md object-cover w-full max-w-2xl mx-auto h-auto"
+              width={800}
+              height={600}
             />
           </div>
+          <p className="text-lg text-gray-700 italic">
+            klarhed, mod og <span className="underline decoration-[#e9dccb] decoration-2 underline-offset-4">handlekraft</span>
+          </p>
         </div>
       </section>
 
-      {/* Faglighed */}
-      <section className="bg-white py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 tracking-tight mb-10">Faglighed med dybde og bredde</h2>
-          <div className="grid sm:grid-cols-2 gap-8 text-gray-800">
-            <div className="bg-gray-50 rounded-xl shadow-md px-6 pb-6 pt-6">
-              <p className="text-lg font-semibold text-gray-900 uppercase tracking-wide mb-4 text-center">Psykologisk fundament</p>
-              <div className="space-y-4 text-base text-gray-700 leading-relaxed text-center">
-                <p>ICF-certificeret coach (+500 timers praksis)</p>
-                <p>Eksistentiel psykologi og fænomenologisk metode</p>
-                <p>Eksistentielle samtaler i arbejdslivet</p>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-xl shadow-md px-6 pb-6 pt-6">
-              <p className="text-lg font-semibold text-gray-900 uppercase tracking-wide mb-4 text-center">Organisatorisk erfaring</p>
-              <div className="space-y-4 text-base text-gray-700 leading-relaxed text-center">
-                <p>25+ år i ledelse, HR og forandringsprocesser</p>
-                <p>Master i ledelsespsykologi (AAU)</p>
-                <p>HD i organisation (CBS)</p>
-              </div>
-            </div>
+      {/* Erhvervscoach med blik for både mennesket og organisationen */}
+      <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+            Erhvervscoach med blik for både mennesket og organisationen
+          </h2>
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+              Jeg har over 25 års erfaring med ledelse, HR og organisationsudvikling – og har været med hele vejen fra beslutningsbordet til den enkelte medarbejders virkelighed. Denne baggrund giver mig en unik forståelse for de komplekse dynamikker, der spiller ind, når mennesker skal finde deres plads og retning i arbejdslivet.
+            </p>
+            <p>
+              I dag bruger jeg min erfaring som psykolog, erhvervscoach og stifter af Movement Matters – med fokus på det, der bevæger os. Mine samtaler tager afsæt i din kontekst og møder dig, der hvor du står, med respekt for både det menneskelige og det organisatoriske perspektiv.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Citat */}
-      <section className="bg-gray-100 py-16 px-6 text-center">
-        <div>
-          <blockquote className="text-xl md:text-2xl italic text-gray-800 leading-relaxed font-serif text-center max-w-2xl mx-auto">
-            “Jeg tror ikke på hurtige svar. Jeg tror på det, vi undersøger sammen – ærligt, nysgerrigt og med respekt for din virkelighed.”
-          </blockquote>
-          <p className="mt-4 text-gray-500">– Marie Louise Stokholm</p>
+      {/* Min tilgang */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+            Min tilgang
+          </h2>
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+              Min tilgang bygger på den overbevisning, at ægte forandring og udvikling sker gennem ærlige, dybe samtaler. Jeg tror ikke på hurtige svar eller standardløsninger, men på det, vi undersøger sammen – med respekt for din virkelighed og dine unikke udfordringer.
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">Den</span> samtale er i centrum. Den er det sted, hvor vi skaber rum til refleksion, hvor vi udfordrer hinanden, og hvor nye perspektiver kan opstå. Det er her, vi finder klarhed og retning sammen.
+            </p>
+            <p>
+              Jeg møder dig med nysgerrighed, empati og den faglige ballast, der kommer fra mange års erfaring med både det menneskelige og det organisatoriske aspekt af forandring. Du skal ikke præstere – du skal bare møde op.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Priser */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 tracking-tight mb-6">Samtaler og forløb</h2>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Samtaler varer typisk 60–75 minutter og foregår fysisk i København eller online. Du starter med en gratis, uforpligtende afklaringssamtale.
+      {/* Fremhævet statement */}
+      <section className="bg-[#e9dccb] py-16 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center mb-4">
+            <span className="text-4xl mr-3">👋</span>
+          </div>
+          <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
+            Du skal ikke præstere – du skal bare møde op.
           </p>
-          <table className="w-full mt-4 border text-left">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="px-4 py-4 text-base text-left uppercase tracking-wide text-gray-600">Forløb</th>
-                <th className="px-4 py-4 text-base text-left uppercase tracking-wide text-gray-600">Pris</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="px-4 py-4 text-base text-gray-800">Afklaringssamtale (30 min)</td>
-                <td className="px-4 py-4 text-base text-gray-800">Gratis</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-4 text-base text-gray-800">1 samtale</td>
-                <td className="px-4 py-4 text-base text-gray-800">1.500 kr.</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-4 text-base text-gray-800">3 samtaler</td>
-                <td className="px-4 py-4 text-base text-gray-800">4.200 kr.</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-4 text-base text-gray-800">6 samtaler</td>
-                <td className="px-4 py-4 text-base text-gray-800">7.800 kr.</td>
-              </tr>
-            </tbody>
-          </table>
+        </div>
+      </section>
+
+      {/* Sådan arbejder jeg */}
+      <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+            Sådan arbejder jeg:
+          </h2>
+          <div className="space-y-8 text-lg leading-relaxed text-gray-700">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">1. Vi starter med at mødes, hvor du er</h3>
+              <p>Første samtale handler om at forstå din situation, dine udfordringer og dine ønsker. Der er ingen forventninger til, at du skal have styr på alt – vi undersøger sammen, hvad der bevæger sig.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">2. Vi skaber rum til refleksion og nye perspektiver</h3>
+              <p>Gennem ærlige samtaler og skarpe spørgsmål hjælper jeg dig med at se din situation fra nye vinkler. Det handler ikke om at fortælle dig, hvad du skal gøre, men om at hjælpe dig med at finde dine egne svar.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">3. Vi omsætter indsigt til handling</h3>
+              <p>Samtalerne skal føre til konkret bevægelse. Vi finder de næste skridt, der giver mening for dig, og jeg støtter dig i at tage dem – med den hastighed og den tilgang, der passer til din situation.</p>
+            </div>
+          </div>
         </div>
       </section>
 
