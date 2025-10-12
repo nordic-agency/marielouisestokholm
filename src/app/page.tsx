@@ -446,9 +446,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Blog & Inspiration */}
+      <section className="py-24 px-6 bg-gray-50 text-gray-900">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Besøg min blog</h2>
+          <p className="text-lg md:text-xl leading-relaxed text-gray-700 font-medium">Indlæg og inspiration. Nye perspektiver.</p>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Her deler jeg refleksioner om arbejdsliv, ledelse og forandring – om det, der bevæger os, og det, der bringer os videre.
+          </p>
+          
+          {/* Blog post highlights */}
+          <div className="pt-6 space-y-3 text-left max-w-2xl mx-auto">
+            <div className="flex items-start">
+              <span className="text-[#e9dccb] mr-3 text-xl">🔹</span>
+              <p className="text-lg text-gray-700">Når livet kalder på forandring</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-[#e9dccb] mr-3 text-xl">🔹</span>
+              <p className="text-lg text-gray-700">Midt i en forandring – tydelighed er dit kompas</p>
+            </div>
+          </div>
 
-      
-
+          {/* CTA knap */}
+          <div className="pt-6">
+            <a
+              href="/blog"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Læs flere indlæg på bloggen
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="py-24 px-6 bg-blue-50 text-center">
