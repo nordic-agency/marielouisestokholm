@@ -385,30 +385,36 @@ export default function Home() {
       {/* Min tilgang */}
       <section className="py-24 px-6 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">Min tilgang – kort fortalt</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Min tilgang — samtaler, der skaber bevægelse</h2>
+            <p className="text-lg text-gray-700 font-medium">Mine grundprincipper.</p>
+          </div>
+          <p className="text-lg leading-relaxed text-gray-700 mb-12 text-center max-w-4xl mx-auto">
+            Min tilgang bygger på seks grundprincipper, der tilsammen afspejler, hvordan jeg arbejder — og hvad du kan forvente af et samarbejde. De handler om respekt, klarhed, erfaring og mod til forandring.
+          </p>
           <div className="grid lg:grid-cols-3 gap-x-12 gap-y-10 text-lg leading-relaxed">
-            <ApproachItem Icon={UserGroupIcon} title="Samtaler med respekt og realitetssans.">
-              Udvikling sker ikke med standardløsninger – men i ligeværdig dialog.
+            <ApproachItem Icon={UserGroupIcon} title="Samtaler med respekt og realitetssans">
+              Udvikling sker i ligeværdig dialog — ikke gennem standardløsninger.
             </ApproachItem>
-            <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix.">
-              Vi stiller de spørgsmål, der skaber mening, retning og bevægelse.
+            <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix">
+              Samtaler og spørgsmål, der skaber mening, retning og bevægelse.
             </ApproachItem>
-            <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang.">
-              Vi undersøger, hvordan dine fortællinger former dine valg – og hvordan de kan gentænkes.
+            <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang">
+              Dine fortællinger former dine valg — og kan altid gentænkes.
             </ApproachItem>
-            <ApproachItem Icon={AcademicCapIcon} title="Erfaring fra virkeligheden.">
-              Du møder en coach med +25 års erfaring i ledelse, HR og organisatorisk udvikling.
+            <ApproachItem Icon={AcademicCapIcon} title="Erfaring fra virkeligheden">
+              Mere end 25 års erfaring i ledelse, HR og organisatorisk udvikling.
             </ApproachItem>
-            <ApproachItem Icon={HandRaisedIcon} title="Ikke en metode – men en relation.">
-              Jeg møder dig med nærvær, ærlighed og respekt – og uden præstationskrav.
+            <ApproachItem Icon={HandRaisedIcon} title="Ikke en metode — men en relation">
+              Nærvær, ærlighed og respekt — uden præstationskrav.
             </ApproachItem>
-            <ApproachItem Icon={LightBulbIcon} title="Mod til forandring.">
-              Forandring starter med bevidsthed – og med viljen til at handle anderledes.
+            <ApproachItem Icon={LightBulbIcon} title="Mod til forandring">
+              Forandring starter med bevidsthed — og med viljen til at handle anderledes.
             </ApproachItem>
           </div>
           <div className="text-center mt-12">
             <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
-              Start med en afklarende samtale – uforpligtende og gratis
+              Start med en afklarende samtale — uforpligtende og gratis
             </a>
           </div>
         </div>
