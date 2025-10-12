@@ -93,7 +93,7 @@ export default function Home() {
             <br />— eller måske burde være det
           </h1>
           {/* Updated tagline with bold styling */}
-          <p className="text-xl md:text-2xl leading-relaxed text-gray-300 font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
+          <p className="text-xl md:text-2xl leading-relaxed text-white font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
         </div>
       </section>
 
