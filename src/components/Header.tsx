@@ -10,7 +10,7 @@ export default function Header() {
     <header className="w-full px-6 py-4 flex justify-between items-center bg-white shadow-sm fixed top-0 left-0 z-50">
       <Link href="/" className="flex flex-col leading-snug text-gray-600 font-playfair">
         <span className="text-xl font-semibold tracking-tight">Marie Louise Stokholm</span>
-        <span className="text-sm font-normal text-gray-400 tracking-wide">Samtaler, der skaber retning. Med dig – og for dig</span>
+        <span className="text-sm font-normal text-gray-600 tracking-wide">Samtaler, der skaber retning. Med dig – og for dig</span>
       </Link>
 
       <div className="hidden md:flex items-center space-x-4">
