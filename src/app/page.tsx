@@ -94,6 +94,7 @@ export default function Home() {
     }
   ];
   const [visibleCount, setVisibleCount] = useState(6);
+  const [expandedService, setExpandedService] = useState(null);
   return (
     <main className="bg-white text-gray-900">
       {/* Hero */}
@@ -340,126 +341,105 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Hvad jeg tilbyder */}
-      {/* Hvad jeg tilbyder */}
+      {/* Jeg tilbyder */}
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Hvad jeg tilbyder</h2>
-            <p className="mt-2 text-lg leading-relaxed text-gray-700">Fire forløb til klarhed og retning – skabt til dig og dit arbejdsliv.</p>
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtaleforløb til klarhed og retning</h2>
+            <p className="mt-4 text-lg md:text-xl leading-relaxed text-gray-700 font-medium">Vær modig. Stop op. Mærk efter.</p>
+            <p className="mt-6 text-lg leading-relaxed text-gray-700">
+              Jeg tilbyder samtaleforløb, der giver dig klarhed, mod og handlekraft — når du står et sted i arbejdslivet, hvor noget må ændres.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-gray-700">
+              Måske genkender du dig selv i én af situationerne. Måske står du et helt andet sted. Uanset hvad, tager vi udgangspunkt i din virkelighed — og finder det forløb, der passer til dig.
+            </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <article className="flex flex-col items-start justify-between">
-              <div className="relative w-full">
-                <Image
-                  src="/images/index-portrait.jpg"
-                  alt=""
-                  width={800}
-                  height={450}
-                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
-              </div>
-              <div className="max-w-xl">
-                <h3 className="mt-6 text-2xl font-semibold text-gray-900">1. Stå ved dit lederskab</h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                  Når du vil kunne lede – med retning, mod og menneskelighed.
-                </p>
-                <ul className="list-disc list-inside mt-2 text-lg leading-relaxed text-gray-700">
-                  <li>Ny i rollen – ønsker at sætte retning fra dag ét</li>
-                  <li>Balancerer mellem bestyrelse, medarbejdere og egne værdier</li>
-                  <li>Længes efter ny mening eller energi</li>
-                  <li>Udfordringer du ikke kan dele internt</li>
-                </ul>
-                {/* Link fjernet efter ønske */}
-              </div>
-            </article>
+          <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-2">
+            {/* 1. Stå ved dit lederskab */}
+            <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
+              <button
+                onClick={() => setExpandedService(expandedService === 1 ? null : 1)}
+                className="w-full text-left flex justify-between items-center"
+              >
+                <h3 className="text-xl font-semibold text-gray-900">Stå ved dit lederskab</h3>
+                <span className="text-2xl text-gray-600">
+                  {expandedService === 1 ? '−' : '+'}
+                </span>
+              </button>
+              <p className="mt-2 text-gray-700">Når du vil lede med retning, mod og menneskelighed.</p>
+              {expandedService === 1 && (
+                <div className="mt-4 text-gray-700">
+                  <p>Hele teksten findes på siden ydelser...</p>
+                </div>
+              )}
+            </div>
 
-            <article className="flex flex-col items-start justify-between">
-              <div className="relative w-full">
-                <Image
-                  src="/images/om-mig-cover.jpg"
-                  alt=""
-                  width={800}
-                  height={450}
-                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
-              </div>
-              <div className="max-w-xl">
-                <h3 className="mt-6 text-2xl font-semibold text-gray-900">2. Tænk højt – og få sparring</h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                  Når du har brug for at vende tankerne med én, der lytter og udfordrer.
-                </p>
-                <ul className="list-disc list-inside mt-2 text-lg leading-relaxed text-gray-700">
-                  <li>Du står i et vigtigt valg</li>
-                  <li>Du føler dig alene i din rolle</li>
-                  <li>Du er kørt fast og søger nye muligheder</li>
-                  <li>Du ønsker ærlig feedback</li>
-                </ul>
-                {/* Link fjernet efter ønske */}
-              </div>
-            </article>
+            {/* 2. Tænk højt – og få sparring */}
+            <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#d4e6f1]">
+              <button
+                onClick={() => setExpandedService(expandedService === 2 ? null : 2)}
+                className="w-full text-left flex justify-between items-center"
+              >
+                <h3 className="text-xl font-semibold text-gray-900">Tænk højt — og få sparring</h3>
+                <span className="text-2xl text-gray-600">
+                  {expandedService === 2 ? '−' : '+'}
+                </span>
+              </button>
+              <p className="mt-2 text-gray-700">Når du mangler en fortrolig samtalepartner.</p>
+              {expandedService === 2 && (
+                <div className="mt-4 text-gray-700">
+                  <p>Hele teksten findes på siden ydelser...</p>
+                </div>
+              )}
+            </div>
 
-            <article className="flex flex-col items-start justify-between">
-              <div className="relative w-full">
-                <Image
-                  src="/images/foran-whiteboard.jpg"
-                  alt=""
-                  width={800}
-                  height={450}
-                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
-              </div>
-              <div className="max-w-xl">
-                <h3 className="mt-6 text-2xl font-semibold text-gray-900">3. Gentænk din retning</h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                  Når arbejdet ikke længere passer til den, du er – eller den, du er ved at blive.
-                </p>
-                <ul className="list-disc list-inside mt-2 text-lg leading-relaxed text-gray-700">
-                  <li>Drænet i nuværende job</li>
-                  <li>Vil finde et nyt ståsted efter sygemelding</li>
-                  <li>Nyt sted i livet – ønsker et arbejdsliv der matcher</li>
-                  <li>Vil videre på en måde der passer til dig</li>
-                </ul>
-                <p className="mt-4">
-                  <a href="/kontakt" className="text-blue-600 underline hover:text-blue-800">
-                    Start med en ærlig samtale →
-                  </a>
-                </p>
-              </div>
-            </article>
+            {/* 3. Gentænk dit arbejdsliv */}
+            <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e8f5e8]">
+              <button
+                onClick={() => setExpandedService(expandedService === 3 ? null : 3)}
+                className="w-full text-left flex justify-between items-center"
+              >
+                <h3 className="text-xl font-semibold text-gray-900">Gentænk dit arbejdsliv</h3>
+                <span className="text-2xl text-gray-600">
+                  {expandedService === 3 ? '−' : '+'}
+                </span>
+              </button>
+              <p className="mt-2 text-gray-700">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive.</p>
+              {expandedService === 3 && (
+                <div className="mt-4 text-gray-700">
+                  <p>Hele teksten findes på siden ydelser...</p>
+                </div>
+              )}
+            </div>
 
-            <article className="flex flex-col items-start justify-between">
-              <div className="relative w-full">
-                <Image
-                  src="/images/MarieLouise10027847.jpg"
-                  alt=""
-                  width={800}
-                  height={450}
-                  className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
-              </div>
-              <div className="max-w-xl">
-                <h3 className="mt-6 text-2xl font-semibold text-gray-900">4. Kom videre – efter en opsigelse</h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                  Når du skal videre – og vil tage dig selv med i processen.
-                </p>
-                <ul className="list-disc list-inside mt-2 text-lg leading-relaxed text-gray-700">
-                  <li>Opsagt og søger ny retning</li>
-                  <li>Har selv sagt op – og mærker det kræver mere</li>
-                  <li>Mistet troen på egne evner</li>
-                  <li>Har brug for hjælp til CV, LinkedIn eller præsentation</li>
-                </ul>
-                <p className="mt-4">
-                  <a href="/kontakt" className="text-blue-600 underline hover:text-blue-800">
-                    Book en gratis og uforpligtende samtale →
-                  </a>
-                </p>
-              </div>
-            </article>
+            {/* 4. Kom videre – efter en opsigelse */}
+            <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#ffeaa7]">
+              <button
+                onClick={() => setExpandedService(expandedService === 4 ? null : 4)}
+                className="w-full text-left flex justify-between items-center"
+              >
+                <h3 className="text-xl font-semibold text-gray-900">Kom videre — efter en opsigelse</h3>
+                <span className="text-2xl text-gray-600">
+                  {expandedService === 4 ? '−' : '+'}
+                </span>
+              </button>
+              <p className="mt-2 text-gray-700">Når du skal finde fodfæste og retning.</p>
+              {expandedService === 4 && (
+                <div className="mt-4 text-gray-700">
+                  <p>Hele teksten findes på siden ydelser...</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* CTA knap */}
+          <div className="text-center mt-12">
+            <a
+              href="/hvad-jeg-tilbyder"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Her kan du læse mere om, hvad jeg tilbyder
+            </a>
           </div>
         </div>
       </section>
