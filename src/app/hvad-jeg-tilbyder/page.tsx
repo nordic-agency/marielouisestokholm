@@ -12,6 +12,11 @@ export default function HvadJegTilbyder() {
             Jeg tilbyder
           </h1>
           
+          {/* Tagline under overskrift */}
+          <p className="text-xl font-bold text-gray-900">
+            Din virkelighed. Din retning. Dit næste skridt.
+          </p>
+          
           {/* Photo placeholder */}
           <div className="max-w-2xl mx-auto mb-8">
             <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
@@ -23,15 +28,10 @@ export default function HvadJegTilbyder() {
             </div>
           </div>
           
-          {/* Taglines */}
-          <div className="space-y-4">
-            <p className="text-xl font-bold text-gray-900">
-              Din virkelighed. Din retning. Dit næste skridt.
-            </p>
-            <p className="text-xl font-bold text-gray-900">
-              Samtaler, der skaber retning – med dig og for dig.
-            </p>
-          </div>
+          {/* Secondary tagline */}
+          <p className="text-xl font-bold text-gray-900">
+            Samtaler, der skaber retning – med dig og for dig.
+          </p>
 
           {/* Main content */}
           <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
