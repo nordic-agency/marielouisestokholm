@@ -44,9 +44,26 @@ export default function HvadJegTilbyder() {
             <p>
               Mit udgangspunkt er altid <strong>dig og din virkelighed</strong>. Ingen standardløsninger. Nogle forløb er korte og fokuserede. Andre længere og mere dybdegående. Det kan handle om dig eller om en konkret udfordring, du står midt i.
             </p>
-            <p>
-              Vil du vide mere om min baggrund og tilgang? Læs videre på siden <Link href="/om-mig" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
-            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Banner sektion med billede i baggrunden */}
+      <section className="relative py-24 px-6">
+        <Image
+          src="/images/cover-forsiden-2.jpg"
+          alt="Banner billede"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="relative z-20 max-w-4xl mx-auto text-center">
+          <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed mb-8">
+            Vil du vide mere om min baggrund og tilgang? Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
+          </p>
+          <div className="text-lg text-white/90 italic">
+            Foto: (peger...siger se med...)
           </div>
         </div>
       </section>
