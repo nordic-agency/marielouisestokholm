@@ -12,6 +12,17 @@ export default function HvadJegTilbyder() {
             Jeg tilbyder
           </h1>
           
+          {/* Photo placeholder */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+              <div className="text-center">
+                <div className="text-4xl mb-2">📸</div>
+                <p className="text-gray-500 font-medium">Foto: (peger...siger se med...)</p>
+                <p className="text-sm text-gray-400 mt-1">Tagline med retning</p>
+              </div>
+            </div>
+          </div>
+          
           {/* Taglines */}
           <div className="space-y-4">
             <p className="text-xl font-bold text-gray-900">
@@ -44,7 +55,12 @@ export default function HvadJegTilbyder() {
       <section className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 pb-20">
         {/* Card 1 */}
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/index-portrait.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
+          <div className="bg-gray-200 rounded-md w-full h-64 mb-4 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-3xl mb-2">📸</div>
+              <p className="text-gray-500 text-sm">Foto placeholder</p>
+            </div>
+          </div>
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">1. Stå ved dit lederskab</h2>
           <p className="text-base text-gray-700 leading-relaxed">Når du vil kunne lede – med retning, mod og menneskelighed.</p>
           <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
@@ -57,7 +73,12 @@ export default function HvadJegTilbyder() {
 
         {/* Card 2 */}
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/om-mig-cover.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
+          <div className="bg-gray-200 rounded-md w-full h-64 mb-4 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-3xl mb-2">📸</div>
+              <p className="text-gray-500 text-sm">Foto placeholder</p>
+            </div>
+          </div>
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">2. Tænk højt – og få sparring</h2>
           <p className="mt-4 text-base text-gray-600 leading-relaxed">
             Når du har brug for at vende tankerne med én, der lytter og udfordrer.
@@ -72,7 +93,12 @@ export default function HvadJegTilbyder() {
 
         {/* Card 3 */}
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/foran-whiteboard.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
+          <div className="bg-gray-200 rounded-md w-full h-64 mb-4 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-3xl mb-2">📸</div>
+              <p className="text-gray-500 text-sm">Foto placeholder</p>
+            </div>
+          </div>
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">3. Gentænk din retning</h2>
           <p className="text-base text-gray-700 leading-relaxed">Når arbejdet ikke længere passer til den, du er – eller den, du er ved at blive.</p>
           <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
@@ -85,7 +111,12 @@ export default function HvadJegTilbyder() {
 
         {/* Card 4 */}
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/MarieLouise10027847.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
+          <div className="bg-gray-200 rounded-md w-full h-64 mb-4 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-3xl mb-2">📸</div>
+              <p className="text-gray-500 text-sm">Foto placeholder</p>
+            </div>
+          </div>
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">4. Kom videre – efter en opsigelse</h2>
           <p className="text-base text-gray-700 leading-relaxed">Når du skal videre – og vil tage dig selv med i processen.</p>
           <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
