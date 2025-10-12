@@ -44,57 +44,32 @@ function ApproachItem({
 export default function Home() {
   const testimonials = [
     {
-      quote: "Jeg har været utrolig glad for mit forløb... Jeg føler mig nu langt bedre rustet til at tage næste skridt i min karriere.",
-      name: "Sofie Mürer, Business Consultant"
+      quote: "Et regulært energiboost … skarp, intuitiv og psykologisk indsigtsfuld. Udfordrer og støtter på én gang – og omsætter idéer til handling.",
+      name: "Frederikke Abildstrup, Senior Legal Counsel"
     },
     {
-      quote: "Marie Louise har været en virkelig god rådgiver... Hun er en af grundene til, at jeg er dér hvor jeg er nu.",
+      quote: "Skræddersyet perfekt til mig … taget seriøst, forstået og godt klædt på. Over al forventning.",
+      name: "Lasse Holst Christensen, Fund Manager"
+    },
+    {
+      quote: "Hun så mig og min situation – tog coachingen i mit tempo, improviserede og udfordrede. Jeg voksede af det.",
+      name: "Anne Brusberg, Contracts and Proposals Director"
+    },
+    {
+      quote: "Hun var i mit ringhjørne – til stede, empatisk, motiverende og knivskarp. Medvirkende til at jeg starter virksomhed.",
       name: "Michael Sonnested, Global Product Manager"
     },
     {
-      quote: "Allerede fra det første møde følte jeg mig rummet... Jeg gik derfra med empowerment og nye idéer – og jeg fik jobbet!",
-      name: "Jeanne Jensen, Front Desk Manager"
+      quote: "Så og læste mig fra dag 1 … trygt sted, der guidede mig tilbage til mit selvsikre jeg. Mine allerbedste anbefalinger.",
+      name: "Trine Terp, Salgskonsulent"
     },
     {
-      quote: "Marie Louise er empatisk, udfordrende og knivskarp. Hun hjalp mig med at se mit eget potentiale klart.",
-      name: "Steffen Nielsen, Senioranalytiker"
-    },
-    {
-      quote: "Gennem samtalerne med Marie Louise blev jeg klar på mine værdier og fandt modet til at skifte retning.",
-      name: "Kristina Lindemose, Specialist"
-    },
-    {
-      quote: "Marie Louise har givet mig konkrete værktøjer og hjulpet mig med at styrke min tro på egne evner.",
-      name: "Niclas Blach Møller, Production Manager"
-    },
-    {
-      quote: "Hun forstod præcis, hvor jeg var i processen – og guidede mig nænsomt men målrettet fremad.",
-      name: "Eva Englund, Senior Advisor"
-    },
-    {
-      quote: "Jeg oplevede en nærværende og professionel rådgiver, som virkelig ville mig det bedste.",
-      name: "Kristina Thaulow Pedersen, Teknisk koordinator"
-    },
-    {
-      quote: "Det føltes aldrig som en standardpakke – men som samtaler skabt til mig og min situation.",
-      name: "Anne Brusberg, Contracts and Proposals Director"
-    },
-    // Nye citater:
-    {
-      quote: "Forløbet med Marie Louise har givet mig større indsigt i mine styrker og mod til at gå nye veje.",
-      name: "Lars Birk, Teamleder"
-    },
-    {
-      quote: "Hun formår at stille de spørgsmål, der gør en reel forskel – og som skaber varig udvikling.",
-      name: "Mette Holm, HR Partner"
-    },
-    {
-      quote: "Jeg blev mødt med forståelse og ægte engagement – det har været uvurderligt for min udvikling.",
-      name: "Jonas Bech, Projektleder"
+      quote: "Stiller de rigtige spørgsmål på rette tid … dyb indsigt i arbejdsmarkedet. Hjalp mig til klarhed og retning.",
+      name: "Anders Tornøe, Digital Learning Consultant"
     }
   ];
   const [visibleCount, setVisibleCount] = useState(6);
-  const [expandedService, setExpandedService] = useState(null);
+  const [expandedService, setExpandedService] = useState<number | null>(null);
   return (
     <main className="bg-white text-gray-900">
       {/* Hero */}
