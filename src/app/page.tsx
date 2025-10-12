@@ -314,6 +314,17 @@ export default function Home() {
             </div>
           </div>
 
+
+          {/* CTA knap */}
+          <div className="text-center mt-12">
+            <a
+              href="/hvad-jeg-tilbyder"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Her kan du læse mere om, hvad jeg tilbyder
+            </a>
+          </div>
+
           {/* Logo Cloud */}
           <div className="w-full px-0 mt-16">
             <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
@@ -342,16 +353,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-          </div>
-
-          {/* CTA knap */}
-          <div className="text-center mt-12">
-            <a
-              href="/hvad-jeg-tilbyder"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
-            >
-              Her kan du læse mere om, hvad jeg tilbyder
-            </a>
           </div>
         </div>
       </section>
