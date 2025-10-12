@@ -448,31 +448,62 @@ export default function Home() {
 
       {/* Blog & Inspiration */}
       <section className="py-24 px-6 bg-gray-50 text-gray-900">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Besøg min blog</h2>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-700 font-medium">Indlæg og inspiration. Nye perspektiver.</p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Her deler jeg refleksioner om arbejdsliv, ledelse og forandring – om det, der bevæger os, og det, der bringer os videre.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center space-y-6 mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Besøg min blog</h2>
+            <p className="text-lg md:text-xl leading-relaxed text-gray-700 font-medium">Indlæg og inspiration. Nye perspektiver.</p>
+            <p className="text-lg leading-relaxed text-gray-700 max-w-4xl mx-auto">
+              Her deler jeg refleksioner om arbejdsliv, ledelse og forandring – om det, der bevæger os, og det, der bringer os videre.
+            </p>
+          </div>
           
-          {/* Blog post highlights */}
-          <div className="pt-6 space-y-3 text-left max-w-2xl mx-auto">
-            <div className="flex items-start">
-              <span className="text-[#e9dccb] mr-3 text-xl">🔹</span>
-              <a href="/blog/nar-livet-kalder-pa-forandring" className="text-lg text-gray-700 hover:text-gray-900 hover:underline transition">
-                Når livet kalder på forandring
-              </a>
-            </div>
-            <div className="flex items-start">
-              <span className="text-[#e9dccb] mr-3 text-xl">🔹</span>
-              <a href="/blog/midt-i-en-forandring-tydelighed-er-dit-kompas" className="text-lg text-gray-700 hover:text-gray-900 hover:underline transition">
-                Midt i en forandring – tydelighed er dit kompas
-              </a>
-            </div>
+          {/* Blog post cards */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Card 1 */}
+            <a href="/blog/nar-livet-kalder-pa-forandring" className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src="/images/når-livet-kalder.jpg"
+                  alt="Når livet kalder på forandring"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#8B4513] transition-colors">
+                  Når livet kalder på forandring
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Refleksioner om at lytte til de signaler, der fortæller dig, at noget skal ændres – og hvordan du finder modet til at handle på dem.
+                </p>
+              </div>
+            </a>
+
+            {/* Card 2 */}
+            <a href="/blog/midt-i-en-forandring-tydelighed-er-dit-kompas" className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src="/images/tavle.jpg"
+                  alt="Midt i en forandring – tydelighed er dit kompas"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#8B4513] transition-colors">
+                  Midt i en forandring – tydelighed er dit kompas
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Når du står midt i en omstilling, er tydelighed afgørende. Om at navigere gennem usikkerhed med klarhed og retning.
+                </p>
+              </div>
+            </a>
           </div>
 
           {/* CTA knap */}
-          <div className="pt-6">
+          <div className="text-center mt-12">
             <a
               href="/blog"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
