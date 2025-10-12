@@ -196,10 +196,6 @@ export default function Home() {
           <p className="text-lg md:text-xl leading-relaxed text-white/90">
             Måske mærker du uro, tvivl eller en stille fornemmelse af, at noget ikke længere passer.
           </p>
-          
-          <div className="text-center">
-            <CalendlyPopup buttonText="Lad os tage den første samtale" />
-          </div>
         </div>
       </section>
 
