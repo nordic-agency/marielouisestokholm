@@ -1,8 +1,31 @@
 'use client';
 
+import Link from "next/link";
+import Image from "next/image";
+
 export default function KontaktPage() {
   return (
     <main className="bg-white min-h-screen">
+      {/* Header Section with Tagline */}
+      <section className="relative w-full h-screen flex items-center justify-center">
+        <Image
+          src="/images/cover-forsiden-2.jpg"
+          alt="Marie Louise Stokholm"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30 z-10" />
+        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
+          <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight mb-6">
+            Tag kontakt til mig
+          </h1>
+          <p className="text-xl md:text-2xl font-bold mb-8">
+            Små skridt kan skabe store bevægelser – lad os begynde med en gratis telefonsamtale.
+          </p>
+        </div>
+      </section>
+
       <div className="relative isolate bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
@@ -21,39 +44,31 @@ export default function KontaktPage() {
                   <rect width="100%" height="100%" strokeWidth="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
                 </svg>
               </div>
-              <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Kontakt mig</h2>
-              <p className="mt-6 text-lg/8 text-gray-600">
-                Du er altid velkommen til at tage kontakt, hvis du har spørgsmål eller ønsker at booke en afklarende samtale. Jeg glæder mig til at høre fra dig.
-              </p>
-              <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Address</span>
-                    <svg className="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-                    </svg>
-                  </dt>
-                  <dd>Jagtvej 202, 1. tv.<br />2100 København Ø</dd>
+              
+              {/* New Content Section */}
+              <div className="space-y-8">
+                <div className="space-y-4 text-lg leading-relaxed text-gray-700">
+                  <p>
+                    Hvis du er nysgerrig på, hvordan et forløb kan se ud for dig – eller blot har spørgsmål – er du meget velkommen til at tage kontakt.
+                  </p>
+                  <p>
+                    Vi starter altid med en gratis og uforpligtende samtale. Her får du mulighed for at afklare dine behov og undersøge, om vi er et godt match. Du kan læse mere om rammer, forløb og priser <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">her</Link>.
+                  </p>
                 </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Telephone</span>
-                    <svg className="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                    </svg>
-                  </dt>
-                  <dd><a className="hover:text-gray-900" href="tel:+4551513755">+45 51 51 37 55</a></dd>
+
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-6">Sådan kan du kontakte mig:</h3>
+                  <ul className="space-y-3 text-gray-700">
+                    <li>• Udfyld formularen her på siden</li>
+                    <li>• Skriv en mail til: <a className="text-[#8B4513] hover:text-[#A0522D] font-semibold" href="mailto:kontakt@marie-louise-stokholm.dk">kontakt@marie-louise-stokholm.dk</a></li>
+                    <li>• Eller ring på: <a className="text-[#8B4513] hover:text-[#A0522D] font-semibold" href="tel:+4551513755">+45 51 51 37 55</a></li>
+                  </ul>
                 </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Email</span>
-                    <svg className="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                    </svg>
-                  </dt>
-                  <dd><a className="hover:text-gray-900" href="mailto:mlstokholm@hotmail.com">mlstokholm@hotmail.com</a></dd>
-                </div>
-              </dl>
+
+                <p className="text-lg text-gray-700">
+                  Jeg glæder mig til at høre fra dig og vender tilbage hurtigst muligt.
+                </p>
+              </div>
             </div>
           </div>
           <form action="#" method="POST" className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48">
