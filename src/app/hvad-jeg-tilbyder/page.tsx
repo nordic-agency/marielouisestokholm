@@ -148,10 +148,10 @@ export default function HvadJegTilbyder() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Vil du tage næste skridt? */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <ArrowRightIcon className="w-10 h-10 text-gray-700 mb-4" />
+            <div className="bg-white border border-gray-200 p-6 text-center">
+              <ArrowRightIcon className="w-10 h-10 text-gray-700 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3 flex-grow">
+              <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
                   Læs mere om rammerne på <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link>
                 </p>
@@ -162,10 +162,10 @@ export default function HvadJegTilbyder() {
             </div>
 
             {/* Lyst til inspiration? */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <LightBulbIcon className="w-10 h-10 text-[#8B4513] mb-4" />
+            <div className="bg-white border border-gray-200 p-6 text-center">
+              <LightBulbIcon className="w-10 h-10 text-[#8B4513] mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3 flex-grow">
+              <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
                   Læs mere på min blog – måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>
                 </p>
@@ -173,10 +173,10 @@ export default function HvadJegTilbyder() {
             </div>
 
             {/* Sådan starter vi */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <ChatBubbleLeftRightIcon className="w-10 h-10 text-[#A0522D] mb-4" />
+            <div className="bg-white border border-gray-200 p-6 text-center">
+              <ChatBubbleLeftRightIcon className="w-10 h-10 text-[#A0522D] mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3 flex-grow">
+              <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
                   Første skridt er en uforpligtende samtale, hvor du fortæller om din situation – og vi ser, om der er et match.
                 </p>
