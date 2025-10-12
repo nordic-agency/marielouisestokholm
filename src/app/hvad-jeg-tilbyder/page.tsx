@@ -5,38 +5,35 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 export default function HvadJegTilbyder() {
   return (
     <main className="bg-gray-50 space-y-16">
-      {/* Hero Section */}
-      <section className="w-full bg-white pt-32 pb-24 px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h1 className="text-3xl sm:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+      {/* Full-width Header Section */}
+      <section className="relative w-full h-screen flex items-center justify-center">
+        <Image
+          src="/images/om-mig-cover.jpg"
+          alt="Marie Louise Stokholm"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30 z-10" />
+        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
+          <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight mb-6">
             Jeg tilbyder
           </h1>
-          
-          {/* Tagline under overskrift */}
-          <p className="text-xl font-bold text-gray-900">
+          <p className="text-xl md:text-2xl font-bold mb-8">
             Din virkelighed. Din retning. Dit næste skridt.
           </p>
-          
-          {/* Photo */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <Image
-              src="/images/om-mig-cover.jpg"
-              alt="Marie Louise Stokholm"
-              width={800}
-              height={400}
-              className="rounded-lg object-cover w-full h-64"
-            />
-            <p className="text-center text-sm text-gray-500 mt-2 italic">
-              Foto: (peger...siger se med...)
-            </p>
-          </div>
-          
-          {/* Secondary tagline */}
-          <p className="text-xl font-bold text-gray-900">
+          <p className="text-lg md:text-xl mb-8">
             Samtaler, der skaber retning – med dig og for dig.
           </p>
+          <p className="text-sm text-white/80 italic">
+            Foto: (peger...siger se med...)
+          </p>
+        </div>
+      </section>
 
-          {/* Main content */}
+      {/* Content Section */}
+      <section className="w-full bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
             <p>
               Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring.
