@@ -17,22 +17,18 @@ export default function HvadJegTilbyder() {
             Din virkelighed. Din retning. Dit næste skridt.
           </p>
           
-          {/* Photo placeholder */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-4xl mb-2">📸</div>
-                <p className="text-gray-500 font-medium">Foto: (peger...siger se med...)</p>
-                <p className="text-sm text-gray-400 mt-1">Tagline med retning</p>
-              </div>
+          {/* Header sektion med tekst */}
+          <div className="max-w-4xl mx-auto mb-8">
+            <div className="bg-[#e9dccb] rounded-lg p-8 text-center">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-4">
+                Samtaler, der skaber retning
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Med dig – og for dig. Et trygt rum til refleksion, nye perspektiver og konkret handling.
+              </p>
             </div>
           </div>
           
-          {/* Secondary tagline */}
-          <p className="text-xl font-bold text-gray-900">
-            Samtaler, der skaber retning – med dig og for dig.
-          </p>
-
           {/* Main content */}
           <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
             <p>
