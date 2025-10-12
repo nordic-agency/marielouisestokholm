@@ -369,7 +369,12 @@ export default function Home() {
               <p className="mt-2 text-gray-700">Når du vil lede med retning, mod og menneskelighed.</p>
               {expandedService === 1 && (
                 <div className="mt-4 text-gray-700">
-                  <p>Hele teksten findes på siden ydelser...</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Ny i rollen — ønsker at sætte retning fra dag ét</li>
+                    <li>Balancerer mellem bestyrelse, medarbejdere og egne værdier</li>
+                    <li>Længes efter ny mening eller energi</li>
+                    <li>Udfordringer du ikke kan dele internt</li>
+                  </ul>
                 </div>
               )}
             </div>
@@ -388,7 +393,12 @@ export default function Home() {
               <p className="mt-2 text-gray-700">Når du mangler en fortrolig samtalepartner.</p>
               {expandedService === 2 && (
                 <div className="mt-4 text-gray-700">
-                  <p>Hele teksten findes på siden ydelser...</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Du står i et vigtigt valg</li>
+                    <li>Du føler dig alene i din rolle</li>
+                    <li>Du er kørt fast og søger nye muligheder</li>
+                    <li>Du ønsker ærlig feedback</li>
+                  </ul>
                 </div>
               )}
             </div>
@@ -407,7 +417,12 @@ export default function Home() {
               <p className="mt-2 text-gray-700">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive.</p>
               {expandedService === 3 && (
                 <div className="mt-4 text-gray-700">
-                  <p>Hele teksten findes på siden ydelser...</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Drænet i nuværende job</li>
+                    <li>Vil finde et nyt ståsted efter sygemelding</li>
+                    <li>Nyt sted i livet — ønsker et arbejdsliv der matcher</li>
+                    <li>Vil videre på en måde der passer til dig</li>
+                  </ul>
                 </div>
               )}
             </div>
@@ -426,7 +441,12 @@ export default function Home() {
               <p className="mt-2 text-gray-700">Når du skal finde fodfæste og retning.</p>
               {expandedService === 4 && (
                 <div className="mt-4 text-gray-700">
-                  <p>Hele teksten findes på siden ydelser...</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Opsagt og søger ny retning</li>
+                    <li>Har selv sagt op — og mærker det kræver mere</li>
+                    <li>Mistet troen på egne evner</li>
+                    <li>Har brug for hjælp til CV, LinkedIn eller præsentation</li>
+                  </ul>
                 </div>
               )}
             </div>
