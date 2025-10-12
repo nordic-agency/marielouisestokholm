@@ -8,7 +8,7 @@ export default function HvadJegTilbyder() {
       {/* Full-width Header Section */}
       <section className="relative w-full h-screen flex items-center justify-center">
         <Image
-          src="/images/om-mig-cover.jpg"
+          src="/images/cover-forsiden-2.jpg"
           alt="Marie Louise Stokholm"
           fill
           className="object-cover"
