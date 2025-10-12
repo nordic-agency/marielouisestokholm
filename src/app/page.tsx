@@ -92,7 +92,7 @@ export default function Home() {
             Når noget i dit arbejdsliv er i bevægelse
             <br />— eller måske burde være det
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed text-white/90">Samtaler, der skaber retning. Med dig – og for dig.</p>
+          <p className="text-xl md:text-2xl leading-relaxed text-white font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
         </div>
       </section>
 
