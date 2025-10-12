@@ -175,11 +175,14 @@ export default function PraktikOgPriser() {
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Det første telefonmøde er altid gratis og uforpligtende, så du kan mærke efter, om forløbet er det rette.
           </p>
+          <p className="text-gray-700 mb-6">
+            Kontakt mig her for at aftale en indledende samtale eller stille spørgsmål
+          </p>
           <Link 
             href="/kontakt"
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-[#8B4513] hover:bg-[#A0522D] transition-colors duration-300"
           >
-            Kontakt mig her for at aftale en indledende samtale eller stille spørgsmål – jeg glæder mig til at høre fra dig.
+            – jeg glæder mig til at høre fra dig.
           </Link>
         </div>
       </section>
