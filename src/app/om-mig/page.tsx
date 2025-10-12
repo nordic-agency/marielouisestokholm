@@ -193,22 +193,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Kontakt */}
-      <section className="bg-blue-50 py-16 px-6 flex justify-center items-center">
-        <div className="max-w-xl w-full mx-auto space-y-6 text-center">
-          <h2 className="text-3xl font-semibold text-gray-900">Book en samtale</h2>
-          <p className="text-base text-gray-700 leading-relaxed">Det første skridt er ikke et commitment – det er en begyndelse.</p>
-          <div className="text-gray-700">
-            kontakt@movementmatters.dk <br /> 51 37 37 51
-          </div>
-          <Link
-            href="/kontakt"
-            className="inline-block mt-4 bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold px-6 py-3 rounded transition"
-          >
-            Book en afklarende samtale
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
