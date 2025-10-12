@@ -178,10 +178,10 @@ export default function HvadJegTilbyder() {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
-                  Første skridt er en uforpligtende samtale, hvor du fortæller om din situation – og vi ser, om der er et match.
+                  Første skridt er en uforpligtende samtale.
                 </p>
                 <p>
-                  Det er vigtigt, at det føles rigtigt for dig.
+                  Vi ser, om der er et match – det er vigtigt, at det føles rigtigt for dig.
                 </p>
               </div>
             </div>
