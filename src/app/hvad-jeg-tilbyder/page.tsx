@@ -49,25 +49,44 @@ export default function HvadJegTilbyder() {
       </section>
 
       {/* Banner sektion med billede */}
-      <section className="relative py-24 px-6">
+      <section className="relative py-32 px-6 overflow-hidden">
         <Image
           src="/images/foran-whiteboard.jpg"
           alt="Banner billede"
           fill
-          className="object-cover"
+          className="object-cover scale-105 transition-transform duration-[20s] ease-out"
           priority
         />
         
-        <div className="absolute inset-0 bg-black/30 z-10" />
-        <div className="relative z-20 max-w-4xl mx-auto text-center">
-          <p className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-4">
-            Vil du vide mere om min baggrund og tilgang?
-          </p>
-          <p className="text-lg text-white/90 mb-6">
-            Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
-          </p>
-          <div className="text-sm text-white/80 italic">
-            Foto: (peger...siger se med...)
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/50 z-10" />
+        <div className="relative z-20 max-w-5xl mx-auto text-center">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight tracking-tight">
+                Vil du vide mere om min baggrund og tilgang?
+              </h2>
+              <p className="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto">
+                Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2 transition-colors duration-200">Om mig</Link>.
+              </p>
+            </div>
+            
+            <div className="pt-8">
+              <Link 
+                href="/om-mig"
+                className="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white font-semibold hover:bg-white/20 hover:border-white/30 transition-all duration-300 group"
+              >
+                Læs mere om mig
+                <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+              </Link>
+            </div>
+            
+            <div className="pt-8">
+              <div className="inline-block px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                <p className="text-sm text-white/80 italic">
+                  Foto: (peger...siger se med...)
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
