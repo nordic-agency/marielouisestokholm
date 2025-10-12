@@ -153,7 +153,7 @@ export default function HvadJegTilbyder() {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
-                  Læs mere om rammerne på <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link>
+                  Læs mere om rammerne på <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Praktik og priser</Link>
                 </p>
                 <p>
                   Eller tag kontakt her: <Link href="/kontakt" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Kontakt</Link>.

@@ -18,6 +18,7 @@ export default function Header() {
           <Link href="/">Forside</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/hvad-jeg-tilbyder">Hvad jeg tilbyder</Link>
+          <Link href="/praktik-og-priser">Praktik og priser</Link>
           <Link href="/testimonials">Testimonials</Link>
           <Link href="/om-mig">Om mig</Link>
         </nav>
@@ -42,6 +43,7 @@ export default function Header() {
           <Link href="/" onClick={() => setMenuOpen(false)}>Forside</Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
           <Link href="/hvad-jeg-tilbyder" onClick={() => setMenuOpen(false)}>Hvad jeg tilbyder</Link>
+          <Link href="/praktik-og-priser" onClick={() => setMenuOpen(false)}>Praktik og priser</Link>
           <Link href="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
           <Link href="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link>
           <Link
