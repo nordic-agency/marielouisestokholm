@@ -230,117 +230,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Samtalen er centrum */}
-      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div className="order-2 md:order-1">
-          <Image
-            src="/images/index-portrait.jpg"
-            alt="Marie Louise i samtale"
-            width={800}
-            height={600}
-            className="rounded-xl shadow-md w-full object-cover"
-          />
-        </div>
-        <div className="order-1 md:order-2 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtalen er centrum</h2>
-          <p className="text-lg leading-relaxed text-gray-700">Hos Movement Matters er samtalen ikke bare et redskab – det er et arbejdsrum. Et sted, hvor vi undersøger situationen, du står i, og begynder at skabe klarhed i det, der fylder i dit arbejdsliv.</p>
-          <p className="text-lg leading-relaxed text-gray-700">Vi taler om det konkrete – og det, der ligger bag. Det, der presser sig på i hverdagen. Det, du måske ikke har sat ord på endnu.</p>
-          <p className="text-lg leading-relaxed text-gray-700">Du får en samtalepartner med dyb erfaring i arbejdslivets kompleksitet. Ikke en metode på skinner, men en erfaren coach med organisatorisk indsigt, psykologisk forståelse – og blik for både det, der bremser, og det, der kan bringe dig videre.</p>
-          <p className="text-lg leading-relaxed text-gray-700">Det gælder, uanset om du er leder, medarbejder – eller står et sted, hvor dit arbejdsliv kalder på forandring.</p>
-          <p className="font-semibold text-blue-700 text-lg">Du skal ikke præstere. Du skal bare møde op.</p>
-        </div>
-      </section>
-
-      <section className="py-20 text-center bg-gray-50">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-xl italic text-gray-700">
-            “Du skal ikke præstere. Du skal bare møde op.”
-          </p>
-        </div>
-      </section>
-
-      {/* Min tilgang */}
-      <section className="py-24 px-6 bg-white text-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">Min tilgang – kort fortalt</h2>
-          <div className="grid lg:grid-cols-3 gap-x-12 gap-y-10 text-lg leading-relaxed">
-            <ApproachItem Icon={UserGroupIcon} title="Samtaler med respekt og realitetssans.">
-              Udvikling sker ikke med standardløsninger – men i ligeværdig dialog.
-            </ApproachItem>
-            <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix.">
-              Vi stiller de spørgsmål, der skaber mening, retning og bevægelse.
-            </ApproachItem>
-            <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang.">
-              Vi undersøger, hvordan dine fortællinger former dine valg – og hvordan de kan gentænkes.
-            </ApproachItem>
-            <ApproachItem Icon={AcademicCapIcon} title="Erfaring fra virkeligheden.">
-              Du møder en coach med +25 års erfaring i ledelse, HR og organisatorisk udvikling.
-            </ApproachItem>
-            <ApproachItem Icon={HandRaisedIcon} title="Ikke en metode – men en relation.">
-              Jeg møder dig med nærvær, ærlighed og respekt – og uden præstationskrav.
-            </ApproachItem>
-            <ApproachItem Icon={LightBulbIcon} title="Mod til forandring.">
-              Forandring starter med bevidsthed – og med viljen til at handle anderledes.
-            </ApproachItem>
-          </div>
-          <div className="text-center mt-12">
-            <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
-              Start med en afklarende samtale – uforpligtende og gratis
-            </a>
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* Hvad du får */}
-      <section className="py-24 px-6 bg-gray-50 text-gray-900">
-        <div className="max-w-4xl mx-auto space-y-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Hvad du får</h2>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Hos mig får du ikke en model, du skal passe ind i – men en samtale, der tager afsæt i det, du står i. Du møder ikke en metode på skinner – men en erfaren erhvervscoach med dyb indsigt i både mennesker og arbejdsliv.
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Jeg bygger min tilgang på mere end 25 års erfaring med ledelse, HR og organisationsudvikling – og på en certificeret coachuddannelse funderet i psykologi og praksis.
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700">
-            <li>En samtale, hvor du ikke skal præstere – men hvor du bliver mødt ærligt og professionelt.</li>
-            <li>Et skarpt blik på det, der holder dig tilbage – og hjælp til at se, hvor du faktisk kan rykke dig.</li>
-            <li>Sparring, hvor du får gavn af både min erfaring med ledelse og min evne til at lytte og stille de rigtige spørgsmål – altid med udgangspunkt i din situation.</li>
-            <li>En konkret samtalestruktur, hvor vi sammen skaber overblik og definerer næste skridt i dit arbejdsliv.</li>
-          </ul>
-          <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
-            Start samtale
-          </a>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 px-6 bg-white text-gray-900">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12">Det siger andre</h2>
-          <div className="grid md:grid-cols-3 gap-12 text-left text-gray-800">
-            {testimonials
-              .slice(0, visibleCount).map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded shadow border">
-                <p className="italic text-gray-700 mb-4">“{testimonial.quote}”</p>
-                <p className="font-semibold text-sm text-gray-900">– {testimonial.name}</p>
-              </div>
-            ))}
-          </div>
-          {visibleCount < testimonials.length && (
-            <div className="mt-12 text-center">
-              <button
-                onClick={() => setVisibleCount(visibleCount + 3)}
-                className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-2 px-4 rounded transition"
-              >
-                Vis flere udtalelser
-              </button>
-            </div>
-          )}
-        </div>
-      </section>
-
       {/* Jeg tilbyder */}
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -463,6 +352,118 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Samtalen er centrum */}
+      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="order-2 md:order-1">
+          <Image
+            src="/images/index-portrait.jpg"
+            alt="Marie Louise i samtale"
+            width={800}
+            height={600}
+            className="rounded-xl shadow-md w-full object-cover"
+          />
+        </div>
+        <div className="order-1 md:order-2 space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtalen er centrum</h2>
+          <p className="text-lg leading-relaxed text-gray-700">Hos Movement Matters er samtalen ikke bare et redskab – det er et arbejdsrum. Et sted, hvor vi undersøger situationen, du står i, og begynder at skabe klarhed i det, der fylder i dit arbejdsliv.</p>
+          <p className="text-lg leading-relaxed text-gray-700">Vi taler om det konkrete – og det, der ligger bag. Det, der presser sig på i hverdagen. Det, du måske ikke har sat ord på endnu.</p>
+          <p className="text-lg leading-relaxed text-gray-700">Du får en samtalepartner med dyb erfaring i arbejdslivets kompleksitet. Ikke en metode på skinner, men en erfaren coach med organisatorisk indsigt, psykologisk forståelse – og blik for både det, der bremser, og det, der kan bringe dig videre.</p>
+          <p className="text-lg leading-relaxed text-gray-700">Det gælder, uanset om du er leder, medarbejder – eller står et sted, hvor dit arbejdsliv kalder på forandring.</p>
+          <p className="font-semibold text-blue-700 text-lg">Du skal ikke præstere. Du skal bare møde op.</p>
+        </div>
+      </section>
+
+      <section className="py-20 text-center bg-gray-50">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="text-xl italic text-gray-700">
+            “Du skal ikke præstere. Du skal bare møde op.”
+          </p>
+        </div>
+      </section>
+
+      {/* Min tilgang */}
+      <section className="py-24 px-6 bg-white text-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">Min tilgang – kort fortalt</h2>
+          <div className="grid lg:grid-cols-3 gap-x-12 gap-y-10 text-lg leading-relaxed">
+            <ApproachItem Icon={UserGroupIcon} title="Samtaler med respekt og realitetssans.">
+              Udvikling sker ikke med standardløsninger – men i ligeværdig dialog.
+            </ApproachItem>
+            <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix.">
+              Vi stiller de spørgsmål, der skaber mening, retning og bevægelse.
+            </ApproachItem>
+            <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang.">
+              Vi undersøger, hvordan dine fortællinger former dine valg – og hvordan de kan gentænkes.
+            </ApproachItem>
+            <ApproachItem Icon={AcademicCapIcon} title="Erfaring fra virkeligheden.">
+              Du møder en coach med +25 års erfaring i ledelse, HR og organisatorisk udvikling.
+            </ApproachItem>
+            <ApproachItem Icon={HandRaisedIcon} title="Ikke en metode – men en relation.">
+              Jeg møder dig med nærvær, ærlighed og respekt – og uden præstationskrav.
+            </ApproachItem>
+            <ApproachItem Icon={LightBulbIcon} title="Mod til forandring.">
+              Forandring starter med bevidsthed – og med viljen til at handle anderledes.
+            </ApproachItem>
+          </div>
+          <div className="text-center mt-12">
+            <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
+              Start med en afklarende samtale – uforpligtende og gratis
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Hvad du får */}
+      <section className="py-24 px-6 bg-gray-50 text-gray-900">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Hvad du får</h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Hos mig får du ikke en model, du skal passe ind i – men en samtale, der tager afsæt i det, du står i. Du møder ikke en metode på skinner – men en erfaren erhvervscoach med dyb indsigt i både mennesker og arbejdsliv.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Jeg bygger min tilgang på mere end 25 års erfaring med ledelse, HR og organisationsudvikling – og på en certificeret coachuddannelse funderet i psykologi og praksis.
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700">
+            <li>En samtale, hvor du ikke skal præstere – men hvor du bliver mødt ærligt og professionelt.</li>
+            <li>Et skarpt blik på det, der holder dig tilbage – og hjælp til at se, hvor du faktisk kan rykke dig.</li>
+            <li>Sparring, hvor du får gavn af både min erfaring med ledelse og min evne til at lytte og stille de rigtige spørgsmål – altid med udgangspunkt i din situation.</li>
+            <li>En konkret samtalestruktur, hvor vi sammen skaber overblik og definerer næste skridt i dit arbejdsliv.</li>
+          </ul>
+          <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
+            Start samtale
+          </a>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 px-6 bg-white text-gray-900">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12">Det siger andre</h2>
+          <div className="grid md:grid-cols-3 gap-12 text-left text-gray-800">
+            {testimonials
+              .slice(0, visibleCount).map((testimonial, index) => (
+              <div key={index} className="bg-white p-6 rounded shadow border">
+                <p className="italic text-gray-700 mb-4">“{testimonial.quote}”</p>
+                <p className="font-semibold text-sm text-gray-900">– {testimonial.name}</p>
+              </div>
+            ))}
+          </div>
+          {visibleCount < testimonials.length && (
+            <div className="mt-12 text-center">
+              <button
+                onClick={() => setVisibleCount(visibleCount + 3)}
+                className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-2 px-4 rounded transition"
+              >
+                Vis flere udtalelser
+              </button>
+            </div>
+          )}
+        </div>
+      </section>
+
 
       
 
