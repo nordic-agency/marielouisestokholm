@@ -150,13 +150,13 @@ export default function Home() {
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
-              For at komme videre skal vi turde stoppe op — og vælge bevidst
+              Erhvervscoach med indsigt i både mennesket og organisationen
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
-              Når dit arbejdsliv forandrer sig, har du brug for klarhed, ikke flere krav. Vi støtter dig i at finde fodfæste, styrke og retning — indefra og ud.
+              Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer.
             </p>
             <p className="text-lg leading-relaxed text-gray-700">
-              Med dyb faglighed og respekt for kompleksiteten i moderne arbejdsliv, skaber vi samtaler, der gør en forskel. Du får støtte til at sætte ord på det svære — og mod til at handle.
+              I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner — med fokus på at skabe klarhed, mod og handlekraft — gennem samtaler, der forbinder indsigt med handling.
             </p>
             <a
               href="/kontakt"
