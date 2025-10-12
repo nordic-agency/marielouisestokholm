@@ -49,44 +49,25 @@ export default function HvadJegTilbyder() {
       </section>
 
       {/* Banner sektion med billede */}
-      <section className="relative py-32 px-6 overflow-hidden">
+      <section className="relative py-24 px-6">
         <Image
           src="/images/foran-whiteboard.jpg"
           alt="Banner billede"
           fill
-          className="object-cover scale-105 transition-transform duration-[20s] ease-out"
+          className="object-cover"
           priority
         />
         
-        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/50 z-10" />
-        <div className="relative z-20 max-w-5xl mx-auto text-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight tracking-tight">
-                Vil du vide mere om min baggrund og tilgang?
-              </h2>
-              <p className="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto">
-                Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2 transition-colors duration-200">Om mig</Link>.
-              </p>
-            </div>
-            
-            <div className="pt-8">
-              <Link 
-                href="/om-mig"
-                className="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white font-semibold hover:bg-white/20 hover:border-white/30 transition-all duration-300 group"
-              >
-                Læs mere om mig
-                <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-            </div>
-            
-            <div className="pt-8">
-              <div className="inline-block px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-                <p className="text-sm text-white/80 italic">
-                  Foto: (peger...siger se med...)
-                </p>
-              </div>
-            </div>
+        <div className="absolute inset-0 bg-black/30 z-10" />
+        <div className="relative z-20 max-w-4xl mx-auto text-center">
+          <p className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-4">
+            Vil du vide mere om min baggrund og tilgang?
+          </p>
+          <p className="text-lg text-white/90 mb-6">
+            Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
+          </p>
+          <div className="text-sm text-white/80 italic">
+            Foto: (peger...siger se med...)
           </div>
         </div>
       </section>
@@ -153,64 +134,83 @@ export default function HvadJegTilbyder() {
       </section>
 
       {/* Dit udgangspunkt – din virkelighed */}
-      <section className="py-24 px-6 bg-white text-gray-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
-            Dit udgangspunkt – din virkelighed
-          </h2>
-          
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700 mb-12 text-center">
-            <p>Måske genkender du dig selv i én af situationerne.</p>
-            <p>Måske står du et helt andet sted.</p>
-            <p>Uanset hvad, tager vi udgangspunkt i din virkelighed – og finder det forløb, der passer til dig.</p>
+      <section className="py-24 px-6 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-6">
+              Dit udgangspunkt – din virkelighed
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#e9dccb] to-[#8B4513] mx-auto mb-8"></div>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Måske genkender du dig selv i én af situationerne. Måske står du et helt andet sted. 
+              Uanset hvad, tager vi udgangspunkt i din virkelighed – og finder det forløb, der passer til dig.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Vil du tage næste skridt? */}
-            <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-              <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
-                <ArrowRightIcon className="w-6 h-6 text-gray-700" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3">
-                <p>
-                  Læs mere om <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">praktik og priser</Link>
-                </p>
-                <p>
-                  Eller <Link href="/kontakt" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">tag kontakt</Link>
-                </p>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#e9dccb]">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#e9dccb] to-[#d7c3ad] rounded-t-2xl"></div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#e9dccb] to-[#d7c3ad] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <ArrowRightIcon className="w-8 h-8 text-gray-700" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-6">Vil du tage næste skridt?</h3>
+                <div className="space-y-4">
+                  <Link 
+                    href="/hvad-jeg-tilbyder" 
+                    className="block w-full bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-800 font-semibold py-3 px-6 rounded-xl transition-colors duration-200"
+                  >
+                    Praktik og priser
+                  </Link>
+                  <Link 
+                    href="/kontakt" 
+                    className="block w-full border-2 border-[#8B4513] hover:bg-[#8B4513] text-[#8B4513] hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200"
+                  >
+                    Tag kontakt
+                  </Link>
+                </div>
               </div>
             </div>
 
             {/* Lyst til inspiration? */}
-            <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-              <div className="w-12 h-12 bg-[#8B4513] rounded-full flex items-center justify-center mx-auto mb-6">
-                <LightBulbIcon className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3">
-                <p>
-                  Læs mere på min <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">blog</Link>
-                </p>
-                <p>
-                  Måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">"Rødder og fødder"</Link>
-                </p>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#8B4513]">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#8B4513] to-[#A0522D] rounded-t-2xl"></div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#8B4513] to-[#A0522D] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <LightBulbIcon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-6">Lyst til inspiration?</h3>
+                <div className="space-y-4">
+                  <Link 
+                    href="/blog" 
+                    className="block w-full bg-[#8B4513] hover:bg-[#A0522D] text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200"
+                  >
+                    Læs min blog
+                  </Link>
+                  <p className="text-sm text-gray-500 italic">
+                    Måske indlægget "Rødder og fødder"
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Sådan starter vi */}
-            <div className="text-center bg-gradient-to-br from-[#f8f8f8] to-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-              <div className="w-12 h-12 bg-[#A0522D] rounded-full flex items-center justify-center mx-auto mb-6">
-                <ChatBubbleLeftRightIcon className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
-              <div className="text-gray-700 leading-relaxed space-y-3">
-                <p>
-                  Første skridt er en uforpligtende samtale, hvor du fortæller om din situation – og vi ser, om der er et match.
-                </p>
-                <p>
-                  Det er vigtigt, at det føles rigtigt for dig.
-                </p>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#A0522D]">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#A0522D] to-[#8B4513] rounded-t-2xl"></div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#A0522D] to-[#8B4513] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <ChatBubbleLeftRightIcon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-6">Sådan starter vi</h3>
+                <div className="space-y-4 text-gray-600 leading-relaxed">
+                  <p>
+                    Første skridt er en uforpligtende samtale, hvor du fortæller om din situation – og vi ser, om der er et match.
+                  </p>
+                  <p className="font-medium text-gray-800">
+                    Det er vigtigt, at det føles rigtigt for dig.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
