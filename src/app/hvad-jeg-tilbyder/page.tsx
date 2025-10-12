@@ -149,7 +149,7 @@ export default function HvadJegTilbyder() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Vil du tage næste skridt? */}
             <div className="bg-white border border-gray-200 p-6 text-center">
-              <ArrowRightIcon className="w-10 h-10 text-gray-700 mx-auto mb-4" />
+              <ArrowRightIcon className="w-10 h-10 text-[#8B4513] mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-4">Vil du tage næste skridt?</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
@@ -174,7 +174,7 @@ export default function HvadJegTilbyder() {
 
             {/* Sådan starter vi */}
             <div className="bg-white border border-gray-200 p-6 text-center">
-              <ChatBubbleLeftRightIcon className="w-10 h-10 text-[#A0522D] mx-auto mb-4" />
+              <ChatBubbleLeftRightIcon className="w-10 h-10 text-[#8B4513] mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-4">Sådan starter vi</h3>
               <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
