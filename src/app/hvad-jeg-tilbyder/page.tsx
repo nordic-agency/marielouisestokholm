@@ -78,12 +78,13 @@ export default function HvadJegTilbyder() {
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
           <Image src="/images/index-portrait.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">1. Stå ved dit lederskab</h2>
-          <p className="text-base text-gray-700 leading-relaxed">Når du vil kunne lede – med retning, mod og menneskelighed.</p>
+          <p className="text-base text-gray-700 leading-relaxed">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
+          <p className="font-medium mb-3 text-base">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
-            <li>Ny i rollen – ønsker at sætte retning fra dag ét</li>
-            <li>Balancerer mellem bestyrelse, medarbejdere og egne værdier</li>
-            <li>Længes efter ny mening eller energi</li>
-            <li>Udfordringer du ikke kan dele internt</li>
+            <li>At være ny i rollen og ville sætte en tydelig kurs.</li>
+            <li>At balancere mellem bestyrelse, medarbejdere og egne værdier.</li>
+            <li>At længes efter ny energi eller mening i lederrollen.</li>
+            <li>At have udfordringer, du ikke kan dele internt.</li>
           </ul>
         </div>
 
@@ -91,14 +92,15 @@ export default function HvadJegTilbyder() {
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
           <Image src="/images/om-mig-cover.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">2. Tænk højt – og få sparring</h2>
-          <p className="mt-4 text-base text-gray-600 leading-relaxed">
-            Når du har brug for at vende tankerne med én, der lytter og udfordrer.
+          <p className="text-base text-gray-700 leading-relaxed">
+            Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.
           </p>
-          <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1 mt-2">
-            <li>Du står i et vigtigt valg</li>
-            <li>Du føler dig alene i din rolle</li>
-            <li>Du er kørt fast og søger nye muligheder</li>
-            <li>Du ønsker ærlig feedback</li>
+          <p className="font-medium mb-3 text-base">Det kan handle om:</p>
+          <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
+            <li>At stå i et valg og ville tænke det igennem strategisk.</li>
+            <li>At mangle en sparringspartner i rollen.</li>
+            <li>At være kørt fast og have brug for nye muligheder.</li>
+            <li>At ønske ærlig feedback — uden filtre eller hensyn.</li>
           </ul>
         </div>
 
@@ -106,12 +108,13 @@ export default function HvadJegTilbyder() {
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
           <Image src="/images/foran-whiteboard.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">3. Gentænk din retning</h2>
-          <p className="text-base text-gray-700 leading-relaxed">Når arbejdet ikke længere passer til den, du er – eller den, du er ved at blive.</p>
+          <p className="text-base text-gray-700 leading-relaxed">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
+          <p className="font-medium mb-3 text-base">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
-            <li>Drænet i nuværende job</li>
-            <li>Vil finde et nyt ståsted efter sygemelding</li>
-            <li>Nyt sted i livet – ønsker et arbejdsliv der matcher</li>
-            <li>Vil videre på en måde der passer til dig</li>
+            <li>At stå et nyt sted i livet og ville have arbejdslivet til at følge med.</li>
+            <li>At ville videre — på egne præmisser.</li>
+            <li>At føle dig drænet eller utilfreds i dit nuværende job.</li>
+            <li>At vende tilbage efter en sygemelding og finde et nyt udgangspunkt.</li>
           </ul>
         </div>
 
@@ -119,12 +122,13 @@ export default function HvadJegTilbyder() {
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
           <Image src="/images/MarieLouise10027847.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
           <h2 className="text-2xl font-semibold text-gray-900 tracking-tight">4. Kom videre – efter en opsigelse</h2>
-          <p className="text-base text-gray-700 leading-relaxed">Når du skal videre – og vil tage dig selv med i processen.</p>
+          <p className="text-base text-gray-700 leading-relaxed">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
+          <p className="font-medium mb-3 text-base">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-1">
-            <li>Opsagt og søger ny retning</li>
-            <li>Har selv sagt op – og mærker det kræver mere</li>
-            <li>Mistet troen på egne evner</li>
-            <li>Har brug for hjælp til CV, LinkedIn eller præsentation</li>
+            <li>At bruge en opsigelse til at finde ny retning.</li>
+            <li>At opdage, at det kræver mere end forventet at sige op selv.</li>
+            <li>At genfinde troen på egne evner og et nyt ståsted.</li>
+            <li>At få hjælp til at formulere din profil — fx CV og LinkedIn.</li>
           </ul>
         </div>
       </section>
