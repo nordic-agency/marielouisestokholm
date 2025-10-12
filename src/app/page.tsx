@@ -153,10 +153,10 @@ export default function Home() {
               For at komme videre skal vi turde stoppe op — og vælge bevidst
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
-              Når dit arbejdsliv forandrer sig, har du brug for klarhed, ikke flere krav. Vi støtter dig i at finde fodfæste, styrke og retning – indefra og ud.
+              Når dit arbejdsliv forandrer sig, har du brug for klarhed, ikke flere krav. Vi støtter dig i at finde fodfæste, styrke og retning — indefra og ud.
             </p>
             <p className="text-lg leading-relaxed text-gray-700">
-              Med dyb faglighed og respekt for kompleksiteten i moderne arbejdsliv, skaber vi samtaler, der gør en forskel. Du får støtte til at sætte ord på det svære – og mod til at handle.
+              Med dyb faglighed og respekt for kompleksiteten i moderne arbejdsliv, skaber vi samtaler, der gør en forskel. Du får støtte til at sætte ord på det svære — og mod til at handle.
             </p>
             <a
               href="/kontakt"
