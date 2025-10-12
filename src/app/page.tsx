@@ -198,7 +198,7 @@ export default function Home() {
 
 
           <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-2">
-            {/* 1. Stå ved dit lederskab */}
+            {/* 1. Stå ved dit lederskab - Updated */}
             <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
               <button
                 onClick={() => setExpandedService(expandedService === 1 ? null : 1)}
@@ -209,11 +209,11 @@ export default function Home() {
                   {expandedService === 1 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
+              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
               {expandedService === 1 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1">
+                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
                     <li>At være ny i rollen og ville sætte en tydelig kurs.</li>
                     <li>At balancere mellem bestyrelse, medarbejdere og egne værdier.</li>
                     <li>At længes efter ny energi eller mening i lederrollen.</li>
@@ -234,11 +234,11 @@ export default function Home() {
                   {expandedService === 2 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.</p>
+              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.</p>
               {expandedService === 2 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1">
+                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
                     <li>At stå i et valg og ville tænke det igennem strategisk.</li>
                     <li>At mangle en sparringspartner i rollen.</li>
                     <li>At være kørt fast og have brug for nye muligheder.</li>
@@ -259,11 +259,11 @@ export default function Home() {
                   {expandedService === 3 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
+              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
               {expandedService === 3 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1">
+                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
                     <li>At stå et nyt sted i livet og ville have arbejdslivet til at følge med.</li>
                     <li>At ville videre — på egne præmisser.</li>
                     <li>At føle dig drænet eller utilfreds i dit nuværende job.</li>
@@ -284,11 +284,11 @@ export default function Home() {
                   {expandedService === 4 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
+              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
               {expandedService === 4 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1">
+                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
                     <li>At bruge en opsigelse til at finde ny retning.</li>
                     <li>At opdage, at det kræver mere end forventet at sige op selv.</li>
                     <li>At genfinde troen på egne evner og et nyt ståsted.</li>
