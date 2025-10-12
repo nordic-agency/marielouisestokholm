@@ -6,23 +6,37 @@ export default function HvadJegTilbyder() {
   return (
     <main className="bg-gray-50 space-y-16">
       {/* Hero Section */}
-      <section className="w-full bg-blue-50 pt-32 pb-24 px-6">
-        <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-snug tracking-tight">
-            Hvad jeg tilbyder
+      <section className="w-full bg-white pt-32 pb-24 px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h1 className="text-3xl sm:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+            Jeg tilbyder
           </h1>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Fire forløb til klarhed og retning – skabt til dig og dit arbejdsliv.
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Når dit arbejde skifter form – eller ikke længere føles rigtigt – har du behov for mere end gode råd. Du kan have behov for et sted at lægge kortene på bordet – og se dem i et nyt lys. Derfor har jeg udviklet fire forskellige forløb, som alle tager afsæt i din virkelighed og din arbejdssituation – med samme menneskelige og faglige tilgang.
-          </p>
-          <p>
-            <Link href="/kontakt" className="text-blue-600 underline font-medium">
-              Tag det første skridt med en afklarende samtale
-              <ArrowRightIcon className="inline w-4 h-4 ml-1 text-blue-500" />
-            </Link>
-          </p>
+          
+          {/* Taglines */}
+          <div className="space-y-4">
+            <p className="text-xl font-bold text-gray-900">
+              Din virkelighed. Din retning. Dit næste skridt.
+            </p>
+            <p className="text-xl font-bold text-gray-900">
+              Samtaler, der skaber retning – med dig og for dig.
+            </p>
+          </div>
+
+          {/* Main content */}
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+            <p>
+              Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring.
+            </p>
+            <p>
+              Som coach og sparringspartner skaber jeg et fortroligt rum, hvor du kan tænke højt, se nyt – og handle på det, der betyder noget for dig.
+            </p>
+            <p>
+              Mit udgangspunkt er altid <strong>dig og din virkelighed</strong>. Ingen standardløsninger. Nogle forløb er korte og fokuserede. Andre længere og mere dybdegående. Det kan handle om dig eller om en konkret udfordring, du står midt i.
+            </p>
+            <p>
+              Vil du vide mere om min baggrund og tilgang? Læs videre på siden <Link href="/om-mig" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
+            </p>
+          </div>
         </div>
       </section>
 
