@@ -3,12 +3,12 @@ import { useState } from "react";
 import Image from "next/image";
 import CalendlyPopup from '@/components/CalendlyPopup';
 import {
-  UserGroupIcon,
+  HandRaisedIcon,
   MapIcon,
   ChatBubbleBottomCenterTextIcon,
-  AcademicCapIcon,
-  HandRaisedIcon,
-  LightBulbIcon,
+  PuzzlePieceIcon,
+  HeartIcon,
+  FireIcon,
 } from "@heroicons/react/24/outline";
 
 import type { ComponentType } from "react";
@@ -354,7 +354,7 @@ export default function Home() {
             Min tilgang bygger på seks grundprincipper, der tilsammen afspejler, hvordan jeg arbejder — og hvad du kan forvente af et samarbejde. De handler om respekt, klarhed, erfaring og mod til forandring.
           </p>
           <div className="grid lg:grid-cols-3 gap-x-12 gap-y-10 text-lg leading-relaxed">
-            <ApproachItem Icon={UserGroupIcon} title="Samtaler med respekt og realitetssans">
+            <ApproachItem Icon={HandRaisedIcon} title="Samtaler med respekt og realitetssans">
               Udvikling sker i ligeværdig dialog — ikke gennem standardløsninger.
             </ApproachItem>
             <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix">
@@ -363,13 +363,13 @@ export default function Home() {
             <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang">
               Dine fortællinger former dine valg — og kan altid gentænkes.
             </ApproachItem>
-            <ApproachItem Icon={AcademicCapIcon} title="Erfaring fra virkeligheden">
+            <ApproachItem Icon={PuzzlePieceIcon} title="Erfaring fra virkeligheden">
               Mere end 25 års erfaring i ledelse, HR og organisatorisk udvikling.
             </ApproachItem>
-            <ApproachItem Icon={HandRaisedIcon} title="Ikke en metode — men en relation">
+            <ApproachItem Icon={HeartIcon} title="Ikke en metode — men en relation">
               Nærvær, ærlighed og respekt — uden præstationskrav.
             </ApproachItem>
-            <ApproachItem Icon={LightBulbIcon} title="Mod til forandring">
+            <ApproachItem Icon={FireIcon} title="Mod til forandring">
               Forandring starter med bevidsthed — og med viljen til at handle anderledes.
             </ApproachItem>
           </div>
