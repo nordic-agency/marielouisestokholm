@@ -23,7 +23,7 @@ export default function Header() {
         </nav>
         <Link
           href="/kontakt"
-          className="inline-block rounded-md bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 transition"
+          className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-medium transition"
         >
           Kontakt
         </Link>
@@ -47,7 +47,7 @@ export default function Header() {
           <Link
             href="/kontakt"
             onClick={() => setMenuOpen(false)}
-            className="inline-block rounded-md bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 transition"
+            className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-medium transition"
           >
             Kontakt
           </Link>

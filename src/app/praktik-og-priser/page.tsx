@@ -208,7 +208,7 @@ export default function PraktikOgPriser() {
           </p>
           <Link 
             href="/kontakt"
-            className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-[#8B4513] hover:bg-[#A0522D] transition-colors duration-300"
+            className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-sm text-gray-900 bg-[#e9dccb] hover:bg-[#d7c3ad] transition-colors duration-300"
           >
             – jeg glæder mig til at høre fra dig.
           </Link>
