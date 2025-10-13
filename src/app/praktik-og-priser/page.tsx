@@ -79,39 +79,67 @@ export default function PraktikOgPriser() {
             Samtalerne varer 1 time og foregår enten i København eller online.
           </p>
           
-          {/* Pricing Table */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-12">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-8 py-6 text-left text-base font-semibold text-gray-900">Forløb / samtale</th>
-                    <th className="px-8 py-6 text-right text-base font-semibold text-gray-900">Pris</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-8 py-5 text-base text-gray-900">Første samtale (1,5 time)</td>
-                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">1.800 kr.</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-8 py-5 text-base text-gray-900">Forløb á 3 samtaler</td>
-                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">4.500 kr.</td>
-                  </tr>
-                  <tr>
-                    <td className="px-8 py-5 text-base text-gray-900">Forløb á 5 samtaler</td>
-                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">7.300 kr.</td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-8 py-5 text-base text-gray-900">Forløb á 7 samtaler</td>
-                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">10.000 kr.</td>
-                  </tr>
-                  <tr>
-                    <td className="px-8 py-5 text-base text-gray-900">Efterfølgende samtaler</td>
-                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">1.300 kr.</td>
-                  </tr>
-                </tbody>
-              </table>
+          {/* Pricing Cards */}
+          <div className="grid gap-6 mb-16">
+            {/* Første samtale */}
+            <div className="bg-gradient-to-r from-white to-gray-50 rounded-2xl p-8 border border-gray-200 hover:shadow-lg transition-all duration-300">
+              <div className="flex justify-between items-center">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Første samtale</h3>
+                  <p className="text-gray-600">1,5 time • Uforpligtende</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-3xl font-bold text-[#8B4513]">1.800 kr.</div>
+                  <p className="text-sm text-gray-500">inkl. moms</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Forløb */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-[#8B4513] to-[#A0522D] rounded-2xl p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div className="text-center">
+                  <div className="text-sm font-medium opacity-90 mb-2">FORLØB</div>
+                  <h3 className="text-2xl font-bold mb-2">3 samtaler</h3>
+                  <div className="text-4xl font-bold mb-2">4.500 kr.</div>
+                  <p className="text-sm opacity-90">1.500 kr. per samtale</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#8B4513] to-[#A0522D] rounded-2xl p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-white text-[#8B4513] px-4 py-1 rounded-full text-sm font-semibold">POPULÆR</span>
+                </div>
+                <div className="text-center pt-4">
+                  <div className="text-sm font-medium opacity-90 mb-2">FORLØB</div>
+                  <h3 className="text-2xl font-bold mb-2">5 samtaler</h3>
+                  <div className="text-4xl font-bold mb-2">7.300 kr.</div>
+                  <p className="text-sm opacity-90">1.460 kr. per samtale</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#8B4513] to-[#A0522D] rounded-2xl p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div className="text-center">
+                  <div className="text-sm font-medium opacity-90 mb-2">FORLØB</div>
+                  <h3 className="text-2xl font-bold mb-2">7 samtaler</h3>
+                  <div className="text-4xl font-bold mb-2">10.000 kr.</div>
+                  <p className="text-sm opacity-90">1.429 kr. per samtale</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Efterfølgende samtaler */}
+            <div className="bg-gradient-to-r from-white to-gray-50 rounded-2xl p-8 border border-gray-200 hover:shadow-lg transition-all duration-300">
+              <div className="flex justify-between items-center">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Efterfølgende samtaler</h3>
+                  <p className="text-gray-600">1 time • Fleksibel opfølgning</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-3xl font-bold text-[#8B4513]">1.300 kr.</div>
+                  <p className="text-sm text-gray-500">inkl. moms</p>
+                </div>
+              </div>
             </div>
           </div>
           
