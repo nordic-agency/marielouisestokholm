@@ -19,7 +19,7 @@ export default function Header() {
       </Link>
 
       <div className="hidden md:flex items-center space-x-4">
-        <nav className="space-x-6 text-gray-600 font-sans font-medium text-sm tracking-wide">
+        <nav className="space-x-6 text-gray-600 font-sans font-medium text-base tracking-wide">
           <Link href="/om-mig">Om mig</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/hvad-jeg-tilbyder">Hvad jeg tilbyder</Link>
@@ -28,7 +28,7 @@ export default function Header() {
         </nav>
         <Link
           href="/kontakt"
-          className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-sans font-medium transition"
+          className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-base font-sans font-medium transition"
         >
           Kontakt
         </Link>
@@ -52,7 +52,7 @@ export default function Header() {
           <Link
             href="/kontakt"
             onClick={() => setMenuOpen(false)}
-            className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-sans font-medium transition"
+            className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-base font-sans font-medium transition"
           >
             Kontakt
           </Link>
