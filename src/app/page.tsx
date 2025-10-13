@@ -313,7 +313,7 @@ export default function Home() {
 
           {/* Logo Cloud */}
           <div className="w-full px-0 mt-16">
-    <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere hos blandt andre:</p>
+    <p className="text-center text-sm text-gray-500">Jeg har hjulpet medarbejdere ansat hos blandt andre</p>
     <div className="overflow-hidden relative w-full mt-10">
       <div className="flex animate-slide whitespace-nowrap gap-16">
         {[
