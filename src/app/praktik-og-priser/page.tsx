@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PraktikOgPriser() {
   return (
-    <main className="bg-gray-50 space-y-8">
+    <main className="bg-gray-50">
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center">
         <Image
