@@ -20,9 +20,10 @@ export default function KontaktPage() {
           <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight mb-6">
             Tag kontakt til mig
           </h1>
-          <p className="text-lg md:text-xl font-bold mb-8">
-            Små skridt kan skabe store bevægelser – lad os begynde med en gratis telefonsamtale.
-          </p>
+          <div className="text-lg md:text-xl font-bold mb-8">
+            <p>Små skridt kan skabe store bevægelser</p>
+            <p>– lad os begynde med en gratis telefonsamtale.</p>
+          </div>
         </div>
       </section>
 
