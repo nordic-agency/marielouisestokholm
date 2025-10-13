@@ -52,6 +52,26 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Min tilgang */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+            Min tilgang
+          </h2>
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>
+              Efter mange år som leder og HR-direktør ved jeg, hvor meget der sker, når vi får mulighed for at standse op og tænke os om. Det er grundlaget for min tilgang i dag.
+            </p>
+            <p>
+              Hos mig er samtalen centrum. Den er et arbejdsrum, hvor du kan tænke højt, få nye perspektiver og finde veje videre i dit arbejdsliv.
+            </p>
+            <p>
+              Jeg møder dig med nærvær, ærlighed og solid erfaring – altid med afsæt i din virkelighed.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Fremhævet statement */}
       <section className="bg-[#e9dccb] py-16 px-6 text-center">
         <div className="max-w-4xl mx-auto">
