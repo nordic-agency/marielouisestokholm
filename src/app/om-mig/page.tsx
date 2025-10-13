@@ -43,10 +43,10 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Jeg har over 25 års erfaring med ledelse, HR og organisationsudvikling – og har været med hele vejen fra beslutningsbordet til den enkelte medarbejders virkelighed. Denne baggrund giver mig en unik forståelse for de komplekse dynamikker, der spiller ind, når mennesker skal finde deres plads og retning i arbejdslivet.
+              Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer – fra beslutningsbordet til den enkelte medarbejders virkelighed.
             </p>
             <p>
-              I dag bruger jeg min erfaring som psykolog, erhvervscoach og stifter af Movement Matters – med fokus på det, der bevæger os. Mine samtaler tager afsæt i din kontekst og møder dig, der hvor du står, med respekt for både det menneskelige og det organisatoriske perspektiv.
+              Jeg ved, hvor afgørende det er, at mennesker trives og finder retning – både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe klarhed, mod og handlekraft, når arbejdslivet kalder på noget nyt.
             </p>
           </div>
         </div>
