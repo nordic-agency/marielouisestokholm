@@ -7,7 +7,7 @@ import {
   BookOpenIcon,
   ChatBubbleBottomCenterTextIcon,
   PuzzlePieceIcon,
-  LeafIcon,
+  HeartIcon,
   Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 
@@ -366,7 +366,7 @@ export default function Home() {
             <ApproachItem Icon={PuzzlePieceIcon} title="Erfaring fra virkeligheden">
               Mere end 25 års erfaring i ledelse, HR og organisatorisk udvikling.
             </ApproachItem>
-            <ApproachItem Icon={LeafIcon} title="Ikke en metode — men en relation">
+            <ApproachItem Icon={HeartIcon} title="Ikke en metode — men en relation">
               Nærvær, ærlighed og respekt — uden præstationskrav.
             </ApproachItem>
             <ApproachItem Icon={Cog6ToothIcon} title="Mod til forandring">
