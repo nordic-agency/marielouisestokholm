@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PraktikOgPriser() {
   return (
-    <main className="bg-gray-50 space-y-16">
+    <main className="bg-gray-50">
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center">
         <Image
@@ -25,7 +25,7 @@ export default function PraktikOgPriser() {
       </section>
 
       {/* Sådan begynder vi */}
-      <section className="w-full bg-white py-24 px-6">
+      <section className="w-full bg-white pt-0 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8">
