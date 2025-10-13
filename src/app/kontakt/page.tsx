@@ -21,7 +21,7 @@ export default function KontaktPage() {
             Tag kontakt til mig
           </h1>
           <p className="text-xl md:text-2xl font-bold mb-8">
-            Små skridt kan skabe store bevægelser – lad os begynde med en gratis telefonsamtale.
+            Lad os begynde med en gratis telefonsamtale.
           </p>
         </div>
       </section>
