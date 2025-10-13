@@ -1,10 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <header className="w-full px-6 py-4 flex justify-between items-center bg-white shadow-sm fixed top-0 left-0 z-50">
@@ -37,7 +42,7 @@ export default function Header() {
         ☰
       </button>
 
-      {menuOpen && (
+      {isClient && menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white border-t border-gray-200 px-6 py-6 flex flex-col space-y-4 items-start text-gray-600 font-medium md:hidden z-40 shadow-md">
           <Link href="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
