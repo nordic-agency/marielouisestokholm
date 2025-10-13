@@ -72,10 +72,10 @@ export default function PraktikOgPriser() {
       {/* Samtaleforløb og priser */}
       <section className="w-full bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-10 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
             Samtaleforløb og priser
           </h2>
-          <p className="text-xl text-gray-600 text-center mb-16">
+          <p className="text-lg text-gray-600 text-center mb-12">
             Samtalerne varer 1 time og foregår enten i København eller online.
           </p>
           
@@ -85,37 +85,37 @@ export default function PraktikOgPriser() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-100">
-                    <th className="px-16 py-12 text-left text-xl font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
-                    <th className="px-16 py-12 text-right text-xl font-semibold text-gray-800 tracking-wide">Pris</th>
+                    <th className="px-16 py-12 text-left text-lg font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
+                    <th className="px-16 py-12 text-right text-lg font-semibold text-gray-800 tracking-wide">Pris</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Første samtale (1,5 time)</td>
-                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">1.800 kr.</td>
+                    <td className="px-16 py-10 text-lg text-gray-700 font-medium">Første samtale (1,5 time)</td>
+                    <td className="px-16 py-10 text-xl font-bold text-[#8B4513] text-right">1.800 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Forløb á 3 samtaler</td>
-                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">4.500 kr.</td>
+                    <td className="px-16 py-10 text-lg text-gray-700 font-medium">Forløb á 3 samtaler</td>
+                    <td className="px-16 py-10 text-xl font-bold text-[#8B4513] text-right">4.500 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Forløb á 5 samtaler</td>
-                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">7.300 kr.</td>
+                    <td className="px-16 py-10 text-lg text-gray-700 font-medium">Forløb á 5 samtaler</td>
+                    <td className="px-16 py-10 text-xl font-bold text-[#8B4513] text-right">7.300 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Forløb á 7 samtaler</td>
-                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">10.000 kr.</td>
+                    <td className="px-16 py-10 text-lg text-gray-700 font-medium">Forløb á 7 samtaler</td>
+                    <td className="px-16 py-10 text-xl font-bold text-[#8B4513] text-right">10.000 kr.</td>
                   </tr>
                   <tr className="hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Efterfølgende samtaler</td>
-                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">1.300 kr.</td>
+                    <td className="px-16 py-10 text-lg text-gray-700 font-medium">Efterfølgende samtaler</td>
+                    <td className="px-16 py-10 text-xl font-bold text-[#8B4513] text-right">1.300 kr.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
           
-          <p className="text-base text-gray-600 text-center mb-16">
+          <p className="text-sm text-gray-600 text-center mb-16">
             Priser er inkl. moms for private og ekskl. moms for erhverv.
           </p>
         </div>
