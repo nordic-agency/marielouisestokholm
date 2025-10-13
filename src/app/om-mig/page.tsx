@@ -87,13 +87,34 @@ export default function AboutPage() {
       {/* Sådan arbejder jeg */}
       <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
             Sådan arbejder jeg:
           </h2>
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-            <p>Vi undersøger, hvad der holder dig tilbage – og hvor du faktisk kan rykke dig.</p>
-            <p>Jeg lytter, stiller spørgsmål og deler mine erfaringer.</p>
-            <p>Sammen skaber vi overblik og definerer de næste skridt, der giver mening for dig.</p>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🔍</span>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-700">
+                Vi undersøger, hvad der holder dig tilbage – og hvor du faktisk kan rykke dig.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">💬</span>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-700">
+                Jeg lytter, stiller spørgsmål og deler mine erfaringer.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-8 shadow-sm">
+              <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-700">
+                Sammen skaber vi overblik og definerer de næste skridt, der giver mening for dig.
+              </p>
+            </div>
           </div>
         </div>
       </section>
