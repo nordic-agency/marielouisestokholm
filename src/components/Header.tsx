@@ -15,12 +15,11 @@ export default function Header() {
 
       <div className="hidden md:flex items-center space-x-4">
         <nav className="space-x-6 text-gray-600 font-medium text-sm tracking-wide">
-          <Link href="/">Forside</Link>
+          <Link href="/om-mig">Om mig</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/hvad-jeg-tilbyder">Hvad jeg tilbyder</Link>
           <Link href="/praktik-og-priser">Praktik og priser</Link>
           <Link href="/testimonials">Testimonials</Link>
-          <Link href="/om-mig">Om mig</Link>
         </nav>
         <Link
           href="/kontakt"
@@ -40,12 +39,11 @@ export default function Header() {
 
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white border-t border-gray-200 px-6 py-6 flex flex-col space-y-4 items-start text-gray-600 font-medium md:hidden z-40 shadow-md">
-          <Link href="/" onClick={() => setMenuOpen(false)}>Forside</Link>
+          <Link href="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
           <Link href="/hvad-jeg-tilbyder" onClick={() => setMenuOpen(false)}>Hvad jeg tilbyder</Link>
           <Link href="/praktik-og-priser" onClick={() => setMenuOpen(false)}>Praktik og priser</Link>
           <Link href="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
-          <Link href="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link>
           <Link
             href="/kontakt"
             onClick={() => setMenuOpen(false)}
