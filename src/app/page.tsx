@@ -89,12 +89,12 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 max-w-4xl space-y-6 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight tracking-tight">
             Når noget i dit arbejdsliv er i bevægelse
             <br />— eller måske burde være det
           </h1>
           {/* Updated tagline with bold styling */}
-          <p className="text-xl md:text-2xl leading-relaxed text-white font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
+          <p className="text-xl md:text-2xl font-sans leading-relaxed text-white font-bold">Samtaler, der skaber retning. Med dig – og for dig.</p>
         </div>
       </section>
 
@@ -114,15 +114,15 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
               Erhvervscoach med indsigt i både mennesket og organisationen
             </h2>
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg font-sans leading-relaxed text-gray-700">
               Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg font-sans leading-relaxed text-gray-700">
               I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner — med fokus på at skabe klarhed, mod og handlekraft — gennem samtaler, der forbinder indsigt med handling.
             </p>
             <a
               href="/om-mig"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-sans font-semibold py-3 px-6 rounded transition"
             >
               Læs mere om mig
             </a>
@@ -146,7 +146,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-snug tracking-tight">
             Dit arbejdsliv forandrer sig<br />— eller står det stille
           </h2>
-          <p className="text-lg md:text-xl leading-relaxed text-white/90">
+          <p className="text-lg md:text-xl font-sans leading-relaxed text-white/90">
             Måske mærker du uro, tvivl eller en stille fornemmelse af, at noget ikke længere passer.
           </p>
         </div>
@@ -156,18 +156,18 @@ export default function Home() {
       <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det kan være, at du:</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700">
+          <ul className="list-disc list-inside space-y-2 text-lg font-sans leading-relaxed text-gray-700">
             <li>er leder og står i krydspres mellem resultater, relationer og dig selv</li>
             <li>er medarbejder og længes efter mening, energi eller bevægelse</li>
             <li>er på vej videre — frivilligt eller ufrivilligt — og tvivler på næste skridt</li>
           </ul>
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg font-sans leading-relaxed text-gray-700">
             Det handler om mere end dit arbejde. Det handler om, hvordan du trives, træffer valg og finder fodfæste i det arbejdsliv, du står midt i.
           </p>
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg font-sans leading-relaxed text-gray-700">
             En lille bevægelse kan blive begyndelsen på noget større.
           </p>
-          <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
+          <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-sans font-semibold py-3 px-6 rounded transition">
             Lad os tage den første samtale
           </a>
         </div>
@@ -188,11 +188,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Samtaleforløb til klarhed og retning</h2>
-            <p className="mt-4 text-lg md:text-xl leading-relaxed text-gray-700 font-medium">Vær modig. Stop op. Mærk efter.</p>
-            <p className="mt-6 text-lg leading-relaxed text-gray-700">
+            <p className="mt-4 text-lg md:text-xl font-sans leading-relaxed text-gray-700 font-medium">Vær modig. Stop op. Mærk efter.</p>
+            <p className="mt-6 text-lg font-sans leading-relaxed text-gray-700">
               Jeg tilbyder samtaleforløb, der giver dig klarhed, mod og handlekraft — når du står et sted i arbejdslivet, hvor noget må ændres.
             </p>
-            <p className="mt-6 text-lg leading-relaxed text-gray-700">
+            <p className="mt-6 text-lg font-sans leading-relaxed text-gray-700">
               Måske genkender du dig selv i én af situationerne. Måske står du et helt andet sted. Uanset hvad, tager vi udgangspunkt i din virkelighed — og finder det forløb, der passer til dig.
             </p>
           </div>
@@ -205,16 +205,16 @@ export default function Home() {
                 onClick={() => setExpandedService(expandedService === 1 ? null : 1)}
                 className="w-full text-left flex justify-between items-center"
               >
-                <h3 className="text-xl font-semibold text-gray-900">Stå ved dit lederskab</h3>
+                <h3 className="text-xl font-sans font-semibold text-gray-900">Stå ved dit lederskab</h3>
                 <span className="text-2xl text-gray-600">
                   {expandedService === 1 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
+              <p className="mt-2 text-gray-700 text-sm font-sans leading-relaxed">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
               {expandedService === 1 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
+                  <p className="font-sans font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm font-sans leading-relaxed">
                     <li>At være ny i rollen og ville sætte en tydelig kurs.</li>
                     <li>At balancere mellem bestyrelse, medarbejdere og egne værdier.</li>
                     <li>At længes efter ny energi eller mening i lederrollen.</li>
@@ -230,16 +230,16 @@ export default function Home() {
                 onClick={() => setExpandedService(expandedService === 2 ? null : 2)}
                 className="w-full text-left flex justify-between items-center"
               >
-                <h3 className="text-xl font-semibold text-gray-900">Tænk højt — og få sparring</h3>
+                <h3 className="text-xl font-sans font-semibold text-gray-900">Tænk højt — og få sparring</h3>
                 <span className="text-2xl text-gray-600">
                   {expandedService === 2 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.</p>
+              <p className="mt-2 text-gray-700 text-sm font-sans leading-relaxed">Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.</p>
               {expandedService === 2 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
+                  <p className="font-sans font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm font-sans leading-relaxed">
                     <li>At stå i et valg og ville tænke det igennem strategisk.</li>
                     <li>At mangle en sparringspartner i rollen.</li>
                     <li>At være kørt fast og have brug for nye muligheder.</li>
@@ -255,16 +255,16 @@ export default function Home() {
                 onClick={() => setExpandedService(expandedService === 3 ? null : 3)}
                 className="w-full text-left flex justify-between items-center"
               >
-                <h3 className="text-xl font-semibold text-gray-900">Gentænk dit arbejdsliv</h3>
+                <h3 className="text-xl font-sans font-semibold text-gray-900">Gentænk dit arbejdsliv</h3>
                 <span className="text-2xl text-gray-600">
                   {expandedService === 3 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
+              <p className="mt-2 text-gray-700 text-sm font-sans leading-relaxed">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
               {expandedService === 3 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
+                  <p className="font-sans font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm font-sans leading-relaxed">
                     <li>At stå et nyt sted i livet og ville have arbejdslivet til at følge med.</li>
                     <li>At ville videre — på egne præmisser.</li>
                     <li>At føle dig drænet eller utilfreds i dit nuværende job.</li>
@@ -280,16 +280,16 @@ export default function Home() {
                 onClick={() => setExpandedService(expandedService === 4 ? null : 4)}
                 className="w-full text-left flex justify-between items-center"
               >
-                <h3 className="text-xl font-semibold text-gray-900">Kom videre — efter en opsigelse</h3>
+                <h3 className="text-xl font-sans font-semibold text-gray-900">Kom videre — efter en opsigelse</h3>
                 <span className="text-2xl text-gray-600">
                   {expandedService === 4 ? '−' : '+'}
                 </span>
               </button>
-              <p className="mt-2 text-gray-700 text-sm leading-relaxed">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
+              <p className="mt-2 text-gray-700 text-sm font-sans leading-relaxed">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
               {expandedService === 4 && (
                 <div className="mt-4 text-gray-700">
-                  <p className="font-medium mb-2 text-sm">Det kan handle om:</p>
-                  <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
+                  <p className="font-sans font-medium mb-2 text-sm">Det kan handle om:</p>
+                  <ul className="list-disc list-inside space-y-1 text-sm font-sans leading-relaxed">
                     <li>At bruge en opsigelse til at finde ny retning.</li>
                     <li>At opdage, at det kræver mere end forventet at sige op selv.</li>
                     <li>At genfinde troen på egne evner og et nyt ståsted.</li>
@@ -476,7 +476,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#8B4513] transition-colors">
+                <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3 group-hover:text-[#8B4513] transition-colors">
                   Når livet kalder på forandring
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -497,7 +497,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#8B4513] transition-colors">
+                <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3 group-hover:text-[#8B4513] transition-colors">
                   Midt i en forandring – tydelighed er dit kompas
                 </h3>
                 <p className="text-gray-700 leading-relaxed">

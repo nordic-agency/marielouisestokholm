@@ -14,12 +14,12 @@ export default function Header() {
   return (
     <header className="w-full px-6 py-4 flex justify-between items-center bg-white shadow-sm fixed top-0 left-0 z-50">
       <Link href="/" className="flex flex-col leading-snug text-gray-600 font-playfair">
-        <span className="text-xl font-semibold tracking-tight">Marie Louise Stokholm</span>
-        <span className="text-sm font-normal text-gray-600 tracking-wide">Samtaler, der skaber retning. Med dig – og for dig</span>
+        <span className="text-xl font-serif font-semibold tracking-tight">Marie Louise Stokholm</span>
+        <span className="text-sm font-sans font-normal text-gray-600 tracking-wide">Samtaler, der skaber retning. Med dig – og for dig</span>
       </Link>
 
       <div className="hidden md:flex items-center space-x-4">
-        <nav className="space-x-6 text-gray-600 font-medium text-sm tracking-wide">
+        <nav className="space-x-6 text-gray-600 font-sans font-medium text-sm tracking-wide">
           <Link href="/om-mig">Om mig</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/hvad-jeg-tilbyder">Hvad jeg tilbyder</Link>
@@ -28,7 +28,7 @@ export default function Header() {
         </nav>
         <Link
           href="/kontakt"
-          className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-medium transition"
+          className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-sans font-medium transition"
         >
           Kontakt
         </Link>
@@ -43,7 +43,7 @@ export default function Header() {
       </button>
 
       {isClient && menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white border-t border-gray-200 px-6 py-6 flex flex-col space-y-4 items-start text-gray-600 font-medium md:hidden z-40 shadow-md">
+        <div className="absolute top-full left-0 w-full bg-white border-t border-gray-200 px-6 py-6 flex flex-col space-y-4 items-start text-gray-600 font-sans font-medium md:hidden z-40 shadow-md">
           <Link href="/om-mig" onClick={() => setMenuOpen(false)}>Om mig</Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
           <Link href="/hvad-jeg-tilbyder" onClick={() => setMenuOpen(false)}>Hvad jeg tilbyder</Link>
@@ -52,7 +52,7 @@ export default function Header() {
           <Link
             href="/kontakt"
             onClick={() => setMenuOpen(false)}
-            className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-medium transition"
+            className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-sm font-sans font-medium transition"
           >
             Kontakt
           </Link>
