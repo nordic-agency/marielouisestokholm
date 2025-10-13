@@ -29,7 +29,7 @@ export default function Login() {
       } else {
         setError('Forkert kode. Prøv igen.');
       }
-    } catch (err) {
+    } catch {
       setError('Der opstod en fejl. Prøv igen.');
     } finally {
       setIsLoading(false);

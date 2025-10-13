@@ -1,7 +1,7 @@
  "use client";
 import { useState } from "react";
 import Image from "next/image";
-import CalendlyPopup from '@/components/CalendlyPopup';
+import Link from "next/link";
 import {
   HandRaisedIcon,
   BookOpenIcon,
@@ -423,7 +423,7 @@ export default function Home() {
                     />
                   </div>
                 )}
-                <p className="italic text-gray-700 mb-4">"{testimonial.quote}"</p>
+                <p className="italic text-gray-700 mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
                 <p className="font-semibold text-sm text-gray-900">– {testimonial.name}</p>
               </div>
             ))}
@@ -465,7 +465,7 @@ export default function Home() {
           {/* Blog post cards */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Card 1 */}
-            <a href="/blog/nar-livet-kalder-pa-forandring" className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+            <Link href="/blog/nar-livet-kalder-pa-forandring" className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/images/når-livet-kalder.jpg"
@@ -483,10 +483,10 @@ export default function Home() {
                   Refleksioner om at lytte til de signaler, der fortæller dig, at noget skal ændres – og hvordan du finder modet til at handle på dem.
                 </p>
               </div>
-            </a>
+            </Link>
 
             {/* Card 2 */}
-            <a href="/blog/midt-i-en-forandring-tydelighed-er-dit-kompas" className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+            <Link href="/blog/midt-i-en-forandring-tydelighed-er-dit-kompas" className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/images/tavle.jpg"
@@ -504,17 +504,17 @@ export default function Home() {
                   Når du står midt i en omstilling, er tydelighed afgørende. Om at navigere gennem usikkerhed med klarhed og retning.
                 </p>
               </div>
-            </a>
-              </div>
+            </Link>
+          </div>
 
           {/* CTA knap */}
           <div className="text-center mt-12">
-            <a
+            <Link
               href="/blog"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
             >
               Læs flere indlæg på bloggen
-            </a>
+            </Link>
               </div>
               </div>
       </section>

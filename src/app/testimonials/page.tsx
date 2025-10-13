@@ -491,7 +491,7 @@ export default function Testimonials() {
                   </div>
                 </div>
                 
-                <p className="italic text-gray-700 mb-4">"{testimonial.quote}"</p>
+                <p className="italic text-gray-700 mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
                 <button
                   onClick={() => setSelectedTestimonial(testimonial)}
                   className="text-[#8B4513] hover:text-[#A0522D] font-semibold text-sm underline decoration-2 underline-offset-2 transition-colors duration-200"
@@ -561,7 +561,7 @@ export default function Testimonials() {
               {/* Quote */}
               <div className="mb-6">
                 <blockquote className="text-lg italic text-gray-700 leading-relaxed">
-                  "{selectedTestimonial.quote}"
+                  &ldquo;{selectedTestimonial.quote}&rdquo;
                 </blockquote>
               </div>
               

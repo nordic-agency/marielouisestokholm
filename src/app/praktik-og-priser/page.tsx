@@ -157,7 +157,7 @@ export default function PraktikOgPriser() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Fortrolighed:</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Jeg arbejder efter ICF's etiske retningslinjer.
+                    Jeg arbejder efter ICF&apos;s etiske retningslinjer.
                   </p>
                 </div>
               </div>
