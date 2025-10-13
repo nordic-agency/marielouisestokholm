@@ -2,8 +2,17 @@
 import { useState } from "react";
 import Image from "next/image";
 
+type Testimonial = {
+  id: number;
+  quote: string;
+  fullQuote: string;
+  name: string;
+  role: string;
+  image?: string;
+};
+
 export default function Testimonials() {
-  const [selectedTestimonial, setSelectedTestimonial] = useState(null);
+  const [selectedTestimonial, setSelectedTestimonial] = useState<Testimonial | null>(null);
   const [visibleCount, setVisibleCount] = useState(6);
 
   // Flatten all testimonials into a single array
