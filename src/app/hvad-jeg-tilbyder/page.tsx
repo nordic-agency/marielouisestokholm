@@ -167,7 +167,10 @@ export default function HvadJegTilbyder() {
               <h3 className="text-xl font-sans font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
               <div className="text-gray-700 font-sans leading-relaxed space-y-3">
                 <p>
-                  Læs mere på min blog – måske indlægget <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>
+                  Læs mere på min blog – måske indlægget
+                </p>
+                <p>
+                  <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>
                 </p>
               </div>
             </div>
