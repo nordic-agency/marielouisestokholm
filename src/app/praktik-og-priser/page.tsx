@@ -72,10 +72,10 @@ export default function PraktikOgPriser() {
       {/* Samtaleforløb og priser */}
       <section className="w-full bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-10 text-center">
             Samtaleforløb og priser
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-12">
+          <p className="text-xl text-gray-600 text-center mb-16">
             Samtalerne varer 1 time og foregår enten i København eller online.
           </p>
           
@@ -85,37 +85,37 @@ export default function PraktikOgPriser() {
               <table className="w-full">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Forløb / samtale</th>
-                    <th className="px-6 py-4 text-right text-sm font-semibold text-gray-900">Pris</th>
+                    <th className="px-8 py-6 text-left text-base font-semibold text-gray-900">Forløb / samtale</th>
+                    <th className="px-8 py-6 text-right text-base font-semibold text-gray-900">Pris</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-900">Første samtale (1,5 time)</td>
-                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">1.800 kr.</td>
+                    <td className="px-8 py-5 text-base text-gray-900">Første samtale (1,5 time)</td>
+                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">1.800 kr.</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Forløb á 3 samtaler</td>
-                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">4.500 kr.</td>
+                    <td className="px-8 py-5 text-base text-gray-900">Forløb á 3 samtaler</td>
+                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">4.500 kr.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-900">Forløb á 5 samtaler</td>
-                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">7.300 kr.</td>
+                    <td className="px-8 py-5 text-base text-gray-900">Forløb á 5 samtaler</td>
+                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">7.300 kr.</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Forløb á 7 samtaler</td>
-                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">10.000 kr.</td>
+                    <td className="px-8 py-5 text-base text-gray-900">Forløb á 7 samtaler</td>
+                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">10.000 kr.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-900">Efterfølgende samtaler</td>
-                    <td className="px-6 py-4 text-sm font-semibold text-[#8B4513] text-right">1.300 kr.</td>
+                    <td className="px-8 py-5 text-base text-gray-900">Efterfølgende samtaler</td>
+                    <td className="px-8 py-5 text-base font-semibold text-[#8B4513] text-right">1.300 kr.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
           
-          <p className="text-sm text-gray-600 text-center mb-12">
+          <p className="text-base text-gray-600 text-center mb-16">
             Priser er inkl. moms for private og ekskl. moms for erhverv.
           </p>
         </div>
