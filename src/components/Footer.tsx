@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // src/components/Footer.tsx
 export default function Footer() {
   return (
@@ -10,8 +12,8 @@ export default function Footer() {
         </p>
         <p className="text-gray-700 font-sans">📍 Jagtvej 202 · 2100 København Ø</p>
         <p className="text-gray-600 font-sans space-x-4">
-          <a href="#" className="text-blue-600 hover:underline">🔗 Privatlivspolitik</a>
-          <a href="#" className="text-blue-600 hover:underline">🔗 LinkedIn</a>
+          <Link href="/privatlivspolitik" className="text-[#8B4513] hover:text-[#A0522D] underline">🔗 Privatlivspolitik</Link>
+          <a href="#" className="text-[#8B4513] hover:text-[#A0522D] underline">🔗 LinkedIn</a>
         </p>
       </div>
     </footer>
