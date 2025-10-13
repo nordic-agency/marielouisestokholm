@@ -6,7 +6,7 @@ export default function Footer() {
         <p className="text-lg font-semibold text-gray-900">Movement Matters</p>
         <p className="text-gray-700 italic">Samtaler, der skaber bevægelse. Retning, der føles rigtig.</p>
         <p className="text-gray-700">
-          📧 Marie Louise Stokholm &lt;mlstokholm@hotmail.com&gt; | 📞 51 51 37 55 | CVR: 40063870
+          📧 Marie Louise Stokholm &lt;kontakt@marie-louise-stokholm.dk&gt; | 📞 51 51 37 55 | CVR: 40063870
         </p>
         <p className="text-gray-700">📍 Jagtvej 202 · 2100 København Ø</p>
         <p className="text-gray-600 space-x-4">
