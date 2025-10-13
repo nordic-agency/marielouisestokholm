@@ -82,7 +82,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-6">
         <Image
           src="/images/cover-forsiden-2.jpg"
-          alt="Movement Matters forsidebillede"
+          alt="Marie Louise Stokholm forsidebillede"
           fill
           className="object-cover"
           priority
@@ -407,7 +407,8 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-24 px-6 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12">Det siger andre</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Det siger andre</h2>
+          <p className="text-lg font-sans text-gray-700 mb-12">Mennesker, jeg har arbejdet sammen med – deres oplevelser og resultater.</p>
           <div className="grid md:grid-cols-3 gap-12 text-left text-gray-800">
             {testimonials
               .slice(0, visibleCount).map((testimonial, index) => (
@@ -533,35 +534,35 @@ export default function Home() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-100">
-                    <th className="px-8 py-8 text-left text-base font-sans font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
-                    <th className="px-8 py-8 text-right text-base font-sans font-semibold text-gray-800 tracking-wide">Pris</th>
+                    <th className="px-16 py-12 text-left text-lg font-sans font-semibold text-gray-800">Forløb / samtale</th>
+                    <th className="px-16 py-12 text-right text-lg font-sans font-semibold text-gray-800 tracking-wide">Pris</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-8 py-6 text-base font-sans text-gray-700 font-medium">Første samtale (1,5 time)</td>
-                    <td className="px-8 py-6 text-lg font-serif font-bold text-[#8B4513] text-right">1.800 kr.</td>
+                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Første samtale (1,5 time)</td>
+                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">1.800 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-8 py-6 text-base font-sans text-gray-700 font-medium">Forløb á 3 samtaler</td>
-                    <td className="px-8 py-6 text-lg font-serif font-bold text-[#8B4513] text-right">4.500 kr.</td>
+                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Forløb á 3 samtaler</td>
+                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">4.500 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-8 py-6 text-base font-sans text-gray-700 font-medium">Forløb á 5 samtaler</td>
-                    <td className="px-8 py-6 text-lg font-serif font-bold text-[#8B4513] text-right">7.300 kr.</td>
+                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Forløb á 5 samtaler</td>
+                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">7.300 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-8 py-6 text-base font-sans text-gray-700 font-medium">Forløb á 7 samtaler</td>
-                    <td className="px-8 py-6 text-lg font-serif font-bold text-[#8B4513] text-right">10.000 kr.</td>
+                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Forløb á 7 samtaler</td>
+                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">10.000 kr.</td>
                   </tr>
                   <tr className="hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-8 py-6 text-base font-sans text-gray-700 font-medium">Efterfølgende samtaler</td>
-                    <td className="px-8 py-6 text-lg font-serif font-bold text-[#8B4513] text-right">1.300 kr.</td>
+                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Efterfølgende samtaler</td>
+                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">1.300 kr.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>
+              </div>
           
           <p className="text-sm font-sans text-gray-600 text-center mb-8">
             Priser er inkl. moms for private og ekskl. moms for erhverv.

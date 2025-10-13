@@ -107,7 +107,7 @@ export default function HvadJegTilbyder() {
         {/* Card 3 */}
         <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
           <Image src="/images/foran-whiteboard.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
-          <h2 className="text-2xl font-sans font-semibold text-gray-900 tracking-tight">3. Gentænk din retning</h2>
+          <h2 className="text-2xl font-sans font-semibold text-gray-900 tracking-tight">3. Gentænk dit arbejdsliv</h2>
           <p className="text-base font-sans text-gray-700 font-sans leading-relaxed">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
           <p className="font-sans font-medium mb-3 text-base">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base font-sans text-gray-700 font-sans leading-relaxed space-y-1">
