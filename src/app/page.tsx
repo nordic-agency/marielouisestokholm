@@ -4,11 +4,11 @@ import Image from "next/image";
 import CalendlyPopup from '@/components/CalendlyPopup';
 import {
   HandRaisedIcon,
-  MapIcon,
+  BookOpenIcon,
   ChatBubbleBottomCenterTextIcon,
   PuzzlePieceIcon,
   HeartIcon,
-  FireIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 
 import type { ComponentType } from "react";
@@ -357,7 +357,7 @@ export default function Home() {
             <ApproachItem Icon={HandRaisedIcon} title="Samtaler med respekt og realitetssans">
               Udvikling sker i ligeværdig dialog — ikke gennem standardløsninger.
             </ApproachItem>
-            <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix">
+            <ApproachItem Icon={BookOpenIcon} title="Klarhed frem for quickfix">
               Samtaler og spørgsmål, der skaber mening, retning og bevægelse.
             </ApproachItem>
             <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang">
@@ -369,7 +369,7 @@ export default function Home() {
             <ApproachItem Icon={HeartIcon} title="Ikke en metode — men en relation">
               Nærvær, ærlighed og respekt — uden præstationskrav.
             </ApproachItem>
-            <ApproachItem Icon={FireIcon} title="Mod til forandring">
+            <ApproachItem Icon={Cog6ToothIcon} title="Mod til forandring">
               Forandring starter med bevidsthed — og med viljen til at handle anderledes.
             </ApproachItem>
           </div>
