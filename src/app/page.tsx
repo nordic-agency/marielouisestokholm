@@ -4,7 +4,7 @@ import Image from "next/image";
 import CalendlyPopup from '@/components/CalendlyPopup';
 import {
   HandRaisedIcon,
-  MapIcon,
+  BookOpenIcon,
   ChatBubbleBottomCenterTextIcon,
   PuzzlePieceIcon,
   SparklesIcon,
@@ -357,7 +357,7 @@ export default function Home() {
             <ApproachItem Icon={HandRaisedIcon} title="Samtaler med respekt og realitetssans">
               Udvikling sker i ligeværdig dialog — ikke gennem standardløsninger.
             </ApproachItem>
-            <ApproachItem Icon={MapIcon} title="Klarhed frem for quickfix">
+            <ApproachItem Icon={BookOpenIcon} title="Klarhed frem for quickfix">
               Samtaler og spørgsmål, der skaber mening, retning og bevægelse.
             </ApproachItem>
             <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang">
