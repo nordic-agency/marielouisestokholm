@@ -55,7 +55,8 @@ export default function Home() {
     },
     {
       quote: "Hun så mig og min situation – tog coachingen i mit tempo, improviserede og udfordrede. Jeg voksede af det.",
-      name: "Anne Brusberg, Contracts and Proposals Director"
+      name: "Anne Brusberg, Contracts and Proposals Director",
+      image: "/images/testomonials/placeholder.jpg"
     },
     {
       quote: "Hun var i mit ringhjørne – til stede, empatisk, motiverende og knivskarp. Medvirkende til at jeg starter virksomhed.",
