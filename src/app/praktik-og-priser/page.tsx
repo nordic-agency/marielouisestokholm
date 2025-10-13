@@ -80,35 +80,35 @@ export default function PraktikOgPriser() {
           </p>
           
           {/* Pricing Table */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-20">
+          <div className="bg-white rounded-3xl shadow-xl border border-gray-50 overflow-hidden mb-24">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-100">
-                    <th className="px-12 py-8 text-left text-lg font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
-                    <th className="px-12 py-8 text-right text-lg font-semibold text-gray-800 tracking-wide">Pris</th>
+                    <th className="px-16 py-12 text-left text-xl font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
+                    <th className="px-16 py-12 text-right text-xl font-semibold text-gray-800 tracking-wide">Pris</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-12 py-7 text-lg text-gray-700 font-medium">Første samtale (1,5 time)</td>
-                    <td className="px-12 py-7 text-xl font-bold text-[#8B4513] text-right">1.800 kr.</td>
+                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Første samtale (1,5 time)</td>
+                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">1.800 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-12 py-7 text-lg text-gray-700 font-medium">Forløb á 3 samtaler</td>
-                    <td className="px-12 py-7 text-xl font-bold text-[#8B4513] text-right">4.500 kr.</td>
+                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Forløb á 3 samtaler</td>
+                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">4.500 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-12 py-7 text-lg text-gray-700 font-medium">Forløb á 5 samtaler</td>
-                    <td className="px-12 py-7 text-xl font-bold text-[#8B4513] text-right">7.300 kr.</td>
+                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Forløb á 5 samtaler</td>
+                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">7.300 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-12 py-7 text-lg text-gray-700 font-medium">Forløb á 7 samtaler</td>
-                    <td className="px-12 py-7 text-xl font-bold text-[#8B4513] text-right">10.000 kr.</td>
+                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Forløb á 7 samtaler</td>
+                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">10.000 kr.</td>
                   </tr>
                   <tr className="hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-12 py-7 text-lg text-gray-700 font-medium">Efterfølgende samtaler</td>
-                    <td className="px-12 py-7 text-xl font-bold text-[#8B4513] text-right">1.300 kr.</td>
+                    <td className="px-16 py-10 text-xl text-gray-700 font-medium">Efterfølgende samtaler</td>
+                    <td className="px-16 py-10 text-2xl font-bold text-[#8B4513] text-right">1.300 kr.</td>
                   </tr>
                 </tbody>
               </table>
