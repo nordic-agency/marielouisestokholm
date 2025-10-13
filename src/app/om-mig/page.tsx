@@ -52,26 +52,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Min tilgang */}
-      <section className="bg-white py-24 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
-            Min tilgang
-          </h2>
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-            <p>
-              Min tilgang bygger på den overbevisning, at ægte forandring og udvikling sker gennem ærlige, dybe samtaler. Jeg tror ikke på hurtige svar eller standardløsninger, men på det, vi undersøger sammen – med respekt for din virkelighed og dine unikke udfordringer.
-            </p>
-            <p>
-              <span className="font-semibold text-gray-900">Den</span> samtale er i centrum. Den er det sted, hvor vi skaber rum til refleksion, hvor vi udfordrer hinanden, og hvor nye perspektiver kan opstå. Det er her, vi finder klarhed og retning sammen.
-            </p>
-            <p>
-              Jeg møder dig med nysgerrighed, empati og den faglige ballast, der kommer fra mange års erfaring med både det menneskelige og det organisatoriske aspekt af forandring. Du skal ikke præstere – du skal bare møde op.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Fremhævet statement */}
       <section className="bg-[#e9dccb] py-16 px-6 text-center">
         <div className="max-w-4xl mx-auto">
