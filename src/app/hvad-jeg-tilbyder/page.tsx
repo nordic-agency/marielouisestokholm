@@ -22,7 +22,7 @@ export default function HvadJegTilbyder() {
           <p className="text-xl md:text-2xl font-sans font-bold mb-8">
             Din virkelighed. Din retning. Dit næste skridt.
           </p>
-          <p className="text-lg md:text-xl font-sans mb-8">
+          <p className="text-xl md:text-2xl font-sans mb-8">
             Samtaler, der skaber retning – med dig og for dig.
           </p>
           <p className="text-sm text-white/80 italic">
