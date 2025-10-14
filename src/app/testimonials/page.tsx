@@ -576,7 +576,6 @@ export default function Testimonials() {
               
               {/* Full quote */}
               <div className="border-t pt-6">
-                <h4 className="text-sm font-semibold text-gray-900 mb-3">Fuld udtalelse:</h4>
                 <div className="text-gray-700 leading-relaxed whitespace-pre-line">
                   {selectedTestimonial.fullQuote}
                 </div>
