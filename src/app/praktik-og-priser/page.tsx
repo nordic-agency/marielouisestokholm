@@ -29,8 +29,8 @@ export default function PraktikOgPriser() {
       {/* Sådan begynder vi */}
       <section className="w-full bg-white pt-24 pb-6 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
               Sådan begynder vi
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
@@ -43,15 +43,15 @@ export default function PraktikOgPriser() {
       </section>
 
       {/* Rammer for samarbejdet */}
-      <section className="w-full bg-white pt-6 pb-24 px-6">
+      <section className="w-full bg-white pt-4 pb-12 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
               Rammer for samarbejdet
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
               <p>
-                Når vi vælger at fortsætte efter den indledende samtale, tilpasses forløbet den aktuelle situation og det, der ønskes forandret. Rammen fastlægges i fællesskab – antal møder, hyppighed, fokus og om samtalerne skal foregå personligt eller online. Der er altid mulighed for justeringer undervejs, så forløbet forbliver relevant og meningsfuldt i takt med udviklingen.
+                Når vi vælger at fortsætte efter den indledende samtale, tilpasses forløbet den aktuelle situation og det, der ønskes forandret. Rammen fastlægges i fællesskab - antal møder, hyppighed, fokus og om samtalerne skal foregå personligt eller online. Der er altid mulighed for justeringer undervejs, så forløbet forbliver relevant og meningsfuldt i takt med udviklingen.
               </p>
             </div>
           </div>
@@ -59,9 +59,9 @@ export default function PraktikOgPriser() {
       </section>
 
       {/* Samarbejdsaftale */}
-      <section className="w-full bg-gray-50 py-24 px-6">
+      <section className="w-full bg-gray-50 pt-8 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center mt-8">
             Samarbejdsaftale
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -80,7 +80,7 @@ export default function PraktikOgPriser() {
                 Formålet afklares fra begyndelsen, og der skabes et trygt og fortroligt rum for udvikling.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Forløbet understøtter trivsel, retning og resultater – til gavn for både medarbejder og organisation.
+                Forløbet understøtter trivsel, retning og resultater - til gavn for både medarbejder og organisation.
               </p>
             </div>
           </div>
@@ -90,15 +90,15 @@ export default function PraktikOgPriser() {
       {/* Samtaleforløb og priser */}
       <section className="w-full bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Samtaleforløb og priser
           </h2>
           <p className="text-lg font-sans text-gray-700 text-center mb-12">
-            Det skal være enkelt og nemt at komme i gang. Her finder du alt det praktiske – priser, forløb og hvordan vi starter samarbejdet. Du betaler kun for den tid, du har brug for.
+            Det skal være enkelt og nemt at komme i gang. Her finder du alt det praktiske - priser, forløb og hvordan vi starter samarbejdet. Du betaler kun for den tid, du har brug for.
           </p>
           
           {/* Pricing Table */}
-          <div className="bg-white rounded-3xl shadow-xl border border-gray-50 overflow-hidden mb-24">
+          <div className="bg-white rounded-3xl shadow-xl border border-gray-50 overflow-hidden mb-4">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -140,7 +140,7 @@ export default function PraktikOgPriser() {
       </section>
 
       {/* Praktik */}
-      <section className="w-full bg-gray-50 py-24 px-6">
+      <section className="w-full bg-gray-50 pt-16 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
             Praktik

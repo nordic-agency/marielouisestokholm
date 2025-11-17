@@ -24,7 +24,7 @@ export const postType = defineType({
       name: 'excerpt',
       type: 'text',
       title: 'Uddrag',
-      description: 'Et kort uddrag til blogoversigten – ca. 2-3 linjer.',
+      description: 'Et kort uddrag til blogoversigten - ca. 2-3 linjer.',
       rows: 3,
     }),
     defineField({

@@ -5,6 +5,8 @@ import { client } from '@/sanity/lib/client'
 import { PortableText, PortableTextBlockComponent } from '@portabletext/react'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
+export const revalidate = 60 // Revalidate every 60 seconds
+
 export async function generateStaticParams() {
   const posts = await client.fetch(groq`*[_type == "post"]{ "slug": slug.current }`)
   return posts.map((post: { slug: string }) => ({

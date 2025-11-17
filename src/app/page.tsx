@@ -14,7 +14,7 @@ import FeaturedPosts from "@/components/FeaturedPosts";
 export default function Home() {
   const testimonials = [
     {
-      quote: "Et regulært energiboost … skarp, intuitiv og psykologisk indsigtsfuld. Udfordrer og støtter på én gang – og omsætter idéer til handling.",
+      quote: "Et regulært energiboost … skarp, intuitiv og psykologisk indsigtsfuld. Udfordrer og støtter på én gang - og omsætter idéer til handling.",
       name: "Frederikke Abildstrup, Senior Legal Counsel",
       image: "/images/testomonials/Frederikke Abildstrup, Senior Legal Counsel.jpeg"
     },
@@ -24,12 +24,12 @@ export default function Home() {
       image: "/images/testomonials/Lasse Holst Christensen.jpeg"
     },
     {
-      quote: "Hun så mig og min situation – tog coachingen i mit tempo, improviserede og udfordrede. Jeg voksede af det.",
+      quote: "Hun så mig og min situation - tog coachingen i mit tempo, improviserede og udfordrede. Jeg voksede af det.",
       name: "Anne Brusberg, Contracts and Proposals Director",
       image: "/images/testomonials/Anne Westergaard.jpeg"
     },
     {
-      quote: "Hun var i mit ringhjørne – til stede, empatisk, motiverende og knivskarp. Medvirkende til at jeg starter virksomhed.",
+      quote: "Hun var i mit ringhjørne - til stede, empatisk, motiverende og knivskarp. Medvirkende til at jeg starter virksomhed.",
       name: "Michael Sonnested, Global Product Manager",
       image: "/images/testomonials/Michael Sonnested.png"
     },
@@ -58,7 +58,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 max-w-4xl space-y-6 text-white">
-          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight">
+          <h1 className="text-3xl md:text-5xl leading-normal text-white font-medium px-8 py-6 inline-block">
             Erhvervscoach med indsigt i både
             <br />mennesket og organisationen
           </h1>
@@ -88,7 +88,7 @@ export default function Home() {
               I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner.
             </p>
             <p className="text-lg font-sans leading-relaxed text-gray-700">
-              Mit fokus er at skabe klarhed, mod og handlekraft – gennem samtaler, der forbinder indsigt med handling.
+              Mit fokus er at skabe klarhed, mod og handlekraft - gennem samtaler, der forbinder indsigt med handling.
             </p>
             <a
               href="/om-mig"
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Logo Cloud */}
-      <section className="w-full px-6 py-16 bg-gray-50">
+      <section className="w-full px-6 pt-2 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <p className="text-center text-sm text-gray-500 mb-10">Jeg har hjulpet medarbejdere ansat hos blandt andre</p>
           <div className="overflow-hidden relative w-full">
@@ -145,7 +145,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 px-6 max-w-3xl space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-snug tracking-tight">
-            Dit arbejdsliv forandrer sig<br />– eller står stille
+            Dit arbejdsliv forandrer sig<br />- eller står stille
           </h2>
           <p className="text-lg md:text-xl font-sans leading-relaxed text-white/90">
             Måske mærker du uro, tvivl eller en stille fornemmelse af, at noget ikke længere passer.
@@ -155,12 +155,12 @@ export default function Home() {
 
       {/* Det kan være, at du */}
       <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div className="bg-white rounded-lg shadow-md p-8 space-y-6">
+        <div className="p-8 space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det kan være, at du:</h2>
           <ul className="list-disc list-outside space-y-2 text-lg font-sans leading-relaxed text-gray-700 ml-6">
             <li>Er leder og står i krydspres mellem resultater, relationer og dig selv</li>
             <li>Er medarbejder og længes efter mening, energi eller bevægelse</li>
-            <li>Er på vej videre — frivilligt eller ufrivilligt — og tvivler på næste skridt</li>
+            <li>Er på vej videre - frivilligt eller ufrivilligt - og tvivler på næste skridt</li>
           </ul>
           <p className="text-lg font-sans leading-relaxed text-gray-700">
             Det handler om mere end dit arbejde. Det handler om, hvordan du trives, træffer valg og finder fodfæste i det arbejdsliv, du står midt i.
@@ -185,12 +185,12 @@ export default function Home() {
 
 
       {/* Jeg tilbyder */}
-      <section className="bg-white py-24 sm:py-32">
+      <section className="bg-white pt-6 pb-24 sm:pt-10 sm:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Min tilgang – samtaler, der skaber bevægelse</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Min tilgang - samtaler, der skaber bevægelse</h2>
             <p className="mt-6 text-lg font-sans leading-relaxed text-gray-700">
-              Min tilgang bygger på seks grundprincipper, der tilsammen afspejler, hvordan jeg arbejder – og hvad du kan forvente af et samarbejde. De handler om respekt, klarhed, erfaring og mod til forandring.
+              Min tilgang bygger på seks grundprincipper, der tilsammen afspejler, hvordan jeg arbejder - og hvad du kan forvente af et samarbejde. De handler om respekt, klarhed, erfaring og mod til forandring.
             </p>
           </div>
 
@@ -199,7 +199,7 @@ export default function Home() {
             {/* 1. Samtaler med respekt */}
             <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
               <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">Samtaler med respekt</h3>
-              <p className="text-gray-700 text-base font-sans leading-relaxed">Udvikling sker i ligeværdig dialog – ikke gennem standardløsninger.</p>
+              <p className="text-gray-700 text-base font-sans leading-relaxed">Udvikling sker i ligeværdig dialog - ikke gennem standardløsninger.</p>
             </div>
 
             {/* 2. Klarhed frem for quickfix */}
@@ -211,7 +211,7 @@ export default function Home() {
             {/* 3. Sproget som løftestang */}
             <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e8f5e8]">
               <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">Sproget som løftestang</h3>
-              <p className="text-gray-700 text-base font-sans leading-relaxed">Dine fortællinger former dine valg – og kan altid gentænkes.</p>
+              <p className="text-gray-700 text-base font-sans leading-relaxed">Dine fortællinger former dine valg - og kan altid gentænkes.</p>
             </div>
 
             {/* 4. Erfaring fra virkeligheden */}
@@ -220,10 +220,10 @@ export default function Home() {
               <p className="text-gray-700 text-base font-sans leading-relaxed">Mere end 25 års erfaring i ledelse, HR og organisatorisk udvikling.</p>
             </div>
 
-            {/* 5. Ikke en metode – men en relation */}
+            {/* 5. Ikke en metode - men en relation */}
             <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
-              <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">Ikke en metode – men en relation</h3>
-              <p className="text-gray-700 text-base font-sans leading-relaxed">Nærvær, ærlighed og respekt – uden præstationskrav.</p>
+              <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">Ikke en metode - men en relation</h3>
+              <p className="text-gray-700 text-base font-sans leading-relaxed">Nærvær, ærlighed og respekt - uden præstationskrav.</p>
             </div>
 
             {/* 6. Mod til forandring */}
@@ -255,7 +255,7 @@ export default function Home() {
       <section className="pt-12 pb-24 px-6 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Det siger andre</h2>
-          <p className="text-lg font-sans text-gray-700 mb-12">Mennesker, jeg har arbejdet sammen med – deres oplevelser og resultater.</p>
+          <p className="text-lg font-sans text-gray-700 mb-12">Mennesker, jeg har arbejdet sammen med - deres oplevelser og resultater.</p>
           <div className="grid md:grid-cols-3 gap-12 text-left text-gray-800">
             {testimonials
               .slice(0, visibleCount).map((testimonial, index) => (
@@ -272,7 +272,7 @@ export default function Home() {
                   </div>
                 )}
                 <p className="italic text-gray-700 mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
-                <p className="font-semibold text-sm text-gray-900">– {testimonial.name}</p>
+                <p className="font-semibold text-sm text-gray-900">- {testimonial.name}</p>
               </div>
             ))}
           </div>
@@ -305,7 +305,7 @@ export default function Home() {
           <div className="text-center space-y-6 mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Besøg min blog</h2>
             <p className="text-lg leading-relaxed text-gray-700 max-w-4xl mx-auto">
-              Her deler jeg refleksioner om arbejdsliv og forandring – om det, der rører os – og det, der hjælper os videre.
+              Her deler jeg refleksioner om arbejdsliv og forandring - om det, der rører os - og det, der hjælper os videre.
             </p>
           </div>
           
@@ -324,8 +324,8 @@ export default function Home() {
               </div>
       </section>
 
-      {/* Afslutning – Kontakt / Call to Action */}
-      <section className="py-24 px-6 bg-blue-50 text-center">
+      {/* Afslutning - Kontakt / Call to Action */}
+      <section className="pt-24 pb-12 px-6 bg-blue-50 text-center border-t border-gray-200">
         <div className="max-w-2xl mx-auto space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det starter her</h2>
           <div className="space-y-4">

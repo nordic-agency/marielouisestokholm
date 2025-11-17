@@ -22,7 +22,7 @@ export default function KontaktPage() {
           </h1>
           <div className="text-lg md:text-xl font-bold">
             <p>Små skridt kan skabe store bevægelser</p>
-            <p>– lad os begynde med en gratis telefonsamtale.</p>
+            <p>- lad os begynde med en gratis telefonsamtale.</p>
           </div>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function KontaktPage() {
               <div className="space-y-8">
                 <div className="space-y-4 text-lg leading-relaxed text-gray-700">
                   <p>
-                    Hvis du er nysgerrig på, hvordan et forløb kan se ud for dig – eller blot har spørgsmål – er du meget velkommen til at tage kontakt.
+                    Hvis du er nysgerrig på, hvordan et forløb kan se ud for dig - eller blot har spørgsmål - er du meget velkommen til at tage kontakt.
                   </p>
                   <p>
                     Vi starter altid med en gratis og uforpligtende telefonsamtale. Her får du mulighed for at afklare dine behov og undersøge, om vi er et godt match. Du kan læse mere om priser og praktik <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">her</Link>.

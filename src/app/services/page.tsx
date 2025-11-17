@@ -16,7 +16,7 @@ export default function HvadJegTilbyder() {
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
-          <h1 className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
+          <h1 className="text-3xl md:text-5xl leading-normal text-white font-medium px-8 py-6 inline-block">
             Jeg tilbyder samtaler, der skaber bevægelse
           </h1>
         </div>
@@ -30,7 +30,7 @@ export default function HvadJegTilbyder() {
               Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring.
             </p>
             <p>
-              Som coach og sparringspartner skaber jeg et fortroligt rum, hvor du kan tænke højt, se nyt – og handle på det, der betyder noget for dig.
+              Som coach og sparringspartner skaber jeg et fortroligt rum, hvor du kan tænke højt, se nyt - og handle på det, der betyder noget for dig.
             </p>
             <p>
               Mit udgangspunkt er altid <strong>dig og din virkelighed</strong>. Ingen standardløsninger. Nogle forløb er korte og fokuserede. Andre længere og mere dybdegående. Det kan handle om dig eller om en konkret udfordring, du står midt i.
@@ -64,7 +64,7 @@ export default function HvadJegTilbyder() {
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-20">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">
-            Når du stopper op – og vil videre
+            Når du stopper op - og vil videre
           </h2>
           <p className="text-lg font-sans text-gray-700">
             Her finder du eksempler på situationer, hvor jeg ofte hjælper.
@@ -74,7 +74,7 @@ export default function HvadJegTilbyder() {
         {/* Card 1 */}
         <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
           <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">1. Stå ved dit lederskab</h3>
-          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle - og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
           <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At være ny i rollen og ville sætte en tydelig kurs.</li>
@@ -86,7 +86,7 @@ export default function HvadJegTilbyder() {
 
         {/* Card 2 */}
         <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#d4e6f1]">
-          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">2. Tænk højt – og få sparring</h3>
+          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">2. Tænk højt - og få sparring</h3>
           <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">
             Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.
           </p>
@@ -95,18 +95,18 @@ export default function HvadJegTilbyder() {
             <li>At stå i et valg og ville tænke det igennem strategisk.</li>
             <li>At mangle en sparringspartner i rollen.</li>
             <li>At være kørt fast og have brug for nye muligheder.</li>
-            <li>At ønske ærlig feedback — uden filtre eller hensyn.</li>
+            <li>At ønske ærlig feedback - uden filtre eller hensyn.</li>
           </ul>
         </div>
 
         {/* Card 3 */}
         <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e8f5e8]">
           <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">3. Gentænk dit arbejdsliv</h3>
-          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når jobbet ikke længere matcher den, du er - eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig - en lille justering eller et større skifte.</p>
           <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At stå et nyt sted i livet og ville have arbejdslivet til at følge med.</li>
-            <li>At ville videre — på egne præmisser.</li>
+            <li>At ville videre - på egne præmisser.</li>
             <li>At føle dig drænet eller utilfreds i dit nuværende job.</li>
             <li>At vende tilbage efter en sygemelding og finde et nyt udgangspunkt.</li>
           </ul>
@@ -114,30 +114,30 @@ export default function HvadJegTilbyder() {
 
         {/* Card 4 */}
         <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#ffeaa7]">
-          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">4. Kom videre – efter en opsigelse</h3>
-          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
+          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">4. Kom videre - efter en opsigelse</h3>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når du skal videre - og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum - eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
           <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
           <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At bruge en opsigelse til at finde ny retning.</li>
             <li>At opdage, at det kræver mere end forventet at sige op selv.</li>
             <li>At genfinde troen på egne evner og et nyt ståsted.</li>
-            <li>At få hjælp til at formulere din profil — f.eks. CV og LinkedIn.</li>
+            <li>At få hjælp til at formulere din profil - f.eks. CV og LinkedIn.</li>
           </ul>
         </div>
         </div>
       </section>
 
-      {/* Dit udgangspunkt – din virkelighed */}
+      {/* Dit udgangspunkt - din virkelighed */}
       <section className="py-24 px-6 bg-white text-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
-            Dit udgangspunkt – din virkelighed
+            Dit udgangspunkt - din virkelighed
           </h2>
           
           <div className="space-y-6 text-lg font-sans leading-relaxed text-gray-700 mb-12 text-center">
             <p>Måske genkender du dig selv i én af situationerne.</p>
             <p>Måske står du et helt andet sted.</p>
-            <p>Uanset hvad, tager vi udgangspunkt i din virkelighed – og finder det forløb, der passer til dig.</p>
+            <p>Uanset hvad, tager vi udgangspunkt i din virkelighed - og finder det forløb, der passer til dig.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -161,10 +161,10 @@ export default function HvadJegTilbyder() {
               <h3 className="text-xl font-sans font-bold text-gray-900 mb-4">Lyst til inspiration?</h3>
               <div className="text-gray-700 font-sans leading-relaxed space-y-3">
                 <p>
-                  Læs mere på min blog – måske indlægget
+                  Læs mere på min blog - måske indlægget
                 </p>
                 <p>
-                  <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder – men har vi også fødder</Link>
+                  <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Vi har rødder - men har vi også fødder</Link>
                 </p>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function HvadJegTilbyder() {
                   Første skridt er en uforpligtende telefonsamtale.
                 </p>
                 <p>
-                  Vi ser, om der er et match – det er vigtigt, at det føles rigtigt for dig.
+                  Vi ser, om der er et match - det er vigtigt, at det føles rigtigt for dig.
                 </p>
               </div>
             </div>

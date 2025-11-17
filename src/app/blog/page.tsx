@@ -33,6 +33,8 @@ const query = groq`
   }
 `
 
+export const revalidate = 60 // Revalidate every 60 seconds
+
 export default async function BlogPage() {
   const posts = await client.fetch(query)
 
@@ -42,9 +44,9 @@ export default async function BlogPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl px-6 text-center">
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl mb-6 text-center">Blog</h2>
-            <p className="text-lg font-semibold text-gray-900 mb-6 text-center">Min blog – fra indsigt til handling</p>
+            <p className="text-lg font-semibold text-gray-900 mb-6 text-center">Min blog - fra indsigt til handling</p>
             <p className="text-lg leading-relaxed text-gray-700 text-center max-w-4xl mx-auto">
-              Her finder du indlæg og inspiration, som kan give dig nye perspektiver, når noget i dit arbejdsliv er i bevægelse – eller måske burde være det. Du er velkommen til at læse med, mærke efter og bruge det, der giver mening.
+              Her finder du indlæg og inspiration, som kan give dig nye perspektiver, når noget i dit arbejdsliv er i bevægelse - eller måske burde være det. Du er velkommen til at læse med, mærke efter og bruge det, der giver mening.
             </p>
             <div className="mt-16 space-y-6 lg:space-y-20">
               {posts.map((post: Post) => (

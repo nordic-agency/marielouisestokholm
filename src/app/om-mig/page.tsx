@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { AcademicCapIcon, BriefcaseIcon, SparklesIcon, MagnifyingGlassIcon, ChatBubbleLeftRightIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 
 export default function AboutPage() {
   return (
@@ -21,7 +22,7 @@ export default function AboutPage() {
         <div className="relative z-10 h-full flex items-end justify-center px-6 pb-16 md:pb-24">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
-              Jeg drives af at se mennesker finde fodfæste<br />og styrke midt i forandring.
+              Jeg drives af at se mennesker finde fodfæste<br className="md:hidden" /> og styrke midt i forandring.
             </p>
           </div>
         </div>
@@ -45,10 +46,10 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700">
               <p>
-                Jeg hedder <strong>Marie Louise Stokholm</strong> og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer – fra beslutningsbordet til den enkelte medarbejders virkelighed.
+                Jeg hedder <strong>Marie Louise Stokholm</strong> og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer - fra beslutningsbordet til den enkelte medarbejders virkelighed.
               </p>
               <p>
-                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning – både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe <strong>klarhed, mod og handlekraft</strong>, når arbejdslivet kalder på noget nyt.
+                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning - både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe <strong>klarhed, mod og handlekraft</strong>, når arbejdslivet kalder på noget nyt.
               </p>
             </div>
           </div>
@@ -58,7 +59,7 @@ export default function AboutPage() {
       {/* Min tilgang */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Min tilgang
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
@@ -69,7 +70,7 @@ export default function AboutPage() {
               Hos mig er samtalen centrum. Den er et arbejdsrum, hvor du kan tænke højt, få nye perspektiver og finde veje videre i dit arbejdsliv.
             </p>
             <p>
-              Jeg møder dig med nærvær, ærlighed og solid erfaring – altid med afsæt i din virkelighed.
+              Jeg møder dig med nærvær, ærlighed og solid erfaring - altid med afsæt i din virkelighed.
             </p>
           </div>
         </div>
@@ -78,11 +79,8 @@ export default function AboutPage() {
       {/* Fremhævet statement */}
       <section className="bg-[#e9dccb] py-16 px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center mb-4">
-            <span className="text-4xl mr-3">👋</span>
-          </div>
           <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
-            Du skal ikke præstere – du skal bare møde op.
+            Du skal ikke præstere - du skal bare møde op.
           </p>
         </div>
       </section>
@@ -90,21 +88,21 @@ export default function AboutPage() {
       {/* Sådan arbejder jeg */}
       <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
             Sådan arbejder jeg:
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🔍</span>
+                <MagnifyingGlassIcon className="w-6 h-6 text-gray-700" />
               </div>
               <p className="text-lg leading-relaxed text-gray-700">
-                Vi undersøger, hvad der holder dig tilbage – og hvor du faktisk kan rykke dig.
+                Vi undersøger, hvad der holder dig tilbage - og hvor du faktisk kan rykke dig.
               </p>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">💬</span>
+                <ChatBubbleLeftRightIcon className="w-6 h-6 text-gray-700" />
               </div>
               <p className="text-lg leading-relaxed text-gray-700">
                 Jeg lytter, stiller spørgsmål og deler mine erfaringer.
@@ -112,7 +110,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="w-12 h-12 bg-[#e9dccb] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🎯</span>
+                <RocketLaunchIcon className="w-6 h-6 text-gray-700" />
               </div>
               <p className="text-lg leading-relaxed text-gray-700">
                 Sammen skaber vi overblik og definerer de næste skridt, der giver mening for dig.
@@ -125,14 +123,14 @@ export default function AboutPage() {
       {/* Tre byggesten i mit ståsted */}
       <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
             Tre byggesten i mit ståsted
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Udvalgt uddannelse */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center mb-4">
-                <span className="text-2xl mr-3">🎓</span>
+                <AcademicCapIcon className="w-8 h-8 text-gray-700 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900">Udvalgt uddannelse</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
@@ -147,7 +145,7 @@ export default function AboutPage() {
             {/* Udvalgt erfaring */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center mb-4">
-                <span className="text-2xl mr-3">💼</span>
+                <BriefcaseIcon className="w-8 h-8 text-gray-700 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900">Udvalgt erfaring</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
@@ -162,7 +160,7 @@ export default function AboutPage() {
             {/* Praksis */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center mb-4">
-                <span className="text-2xl mr-3">🌱</span>
+                <SparklesIcon className="w-8 h-8 text-gray-700 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900">Praksis</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
@@ -179,15 +177,15 @@ export default function AboutPage() {
       {/* Samtaler, der skaber bevægelse */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
             Samtaler, der skaber bevægelse
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              Hos mig får du ikke et quickfix – men et trygt og professionelt rum, hvor vi kan undersøge, hvad der giver mening for dig.
+              Hos mig får du ikke et quickfix - men et trygt og professionelt rum, hvor vi kan undersøge, hvad der giver mening for dig.
             </p>
             <p>
-              Jeg hjælper dig med at skabe klarhed og træffe valg, der føles rigtige – ikke bare i forhold til opgaver og ansvar, men også når det gælder relationer, værdier, mod og mening.
+              Jeg hjælper dig med at skabe klarhed og træffe valg, der føles rigtige - ikke bare i forhold til opgaver og ansvar, men også når det gælder relationer, værdier, mod og mening.
             </p>
           </div>
         </div>
@@ -196,7 +194,7 @@ export default function AboutPage() {
       {/* Call to action sektion */}
       <section className="bg-blue-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Er du nysgerrig på, hvad et samtaleforløb kan betyde for dig?
           </h2>
           <div className="text-center">
@@ -206,23 +204,6 @@ export default function AboutPage() {
             >
               Kontakt
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Er du nysgerrig */}
-      <section className="bg-white py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
-            Er du nysgerrig på, hvad et samtaleforløb kan gøre for dig – og dit arbejdsliv?
-          </h2>
-          <div className="space-y-4 text-lg leading-relaxed text-gray-700">
-            <p>
-              Se mere om forløb på siden <Link href="/services" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
-            </p>
-            <p>
-              Læs mere om min tilgang – på siden <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Blog</Link>.
-            </p>
           </div>
         </div>
       </section>
