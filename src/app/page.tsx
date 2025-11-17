@@ -46,7 +46,7 @@ export default function Home() {
   ];
   const [visibleCount, setVisibleCount] = useState(6);
   return (
-    <main className="bg-white text-gray-900">
+    <main className="bg-gray-50 text-gray-900">
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center text-center px-6">
         <Image
@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* Det kan være, at du */}
-      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center bg-gray-50">
         <div className="p-8 space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det kan være, at du:</h2>
           <ul className="list-disc list-outside space-y-2 text-lg font-sans leading-relaxed text-gray-700 ml-6">
@@ -191,7 +191,7 @@ export default function Home() {
 
 
       {/* Jeg tilbyder */}
-      <section className="bg-white pt-6 pb-24 sm:pt-10 sm:pb-32">
+      <section className="bg-gray-50 pt-6 pb-24 sm:pt-10 sm:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Min tilgang - samtaler, der skaber bevægelse</h2>
@@ -258,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="pt-12 pb-24 px-6 bg-white text-gray-900">
+      <section className="pt-12 pb-24 px-6 bg-gray-50 text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Det siger andre</h2>
           <p className="text-lg font-sans text-gray-700 mb-12">Mennesker, jeg har arbejdet sammen med - deres oplevelser og resultater.</p>
@@ -333,7 +333,7 @@ export default function Home() {
       </section>
 
       {/* Afslutning - Kontakt / Call to Action */}
-      <section className="pt-24 pb-12 px-6 bg-blue-50 text-center">
+      <section className="pt-24 pb-24 px-6 bg-blue-50 text-center">
         <div className="max-w-2xl mx-auto space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det starter her</h2>
           <div className="space-y-4">
@@ -341,7 +341,7 @@ export default function Home() {
             <p className="text-lg leading-relaxed text-gray-700">Ét møde kan åbne døren til nye muligheder.</p>
             <p className="text-lg leading-relaxed text-gray-700">Du skal bare møde op.</p>
           </div>
-          <div className="pt-4">
+          <div className="pt-4 pb-8">
             <Link
               href="/kontakt"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-8 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2 text-lg"

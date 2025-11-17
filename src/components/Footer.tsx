@@ -4,7 +4,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline
 // src/components/Footer.tsx
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 border-t py-10 text-sm text-center text-gray-700">
+    <footer className="bg-blue-50 border-t py-10 text-sm text-center text-gray-700">
       <div className="max-w-4xl mx-auto px-6 space-y-2">
         <p className="text-lg font-serif font-semibold text-gray-900">Marie Louise Stokholm</p>
         <p className="text-gray-700 font-sans italic">Samtaler, der skaber bevægelse. Retning, der føles rigtig.</p>
