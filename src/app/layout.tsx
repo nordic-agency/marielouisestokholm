@@ -22,6 +22,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://marielouisestokholm
 export const metadata: Metadata = {
   title: 'Erhvervscoach med indsigt i både mennesket og organisationen',
   description: 'Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner.',
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Erhvervscoach med indsigt i både mennesket og organisationen',
     description: 'Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner.',
