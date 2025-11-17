@@ -1,4 +1,6 @@
 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <text x="16" y="22" font-family="Playfair Display, serif" font-size="18" font-weight="600" fill="#8B4513" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.5">MS</text>
+  <!-- M letter - simplified elegant serif style -->
+  <path d="M 5 22 L 5 10 L 7.5 10 L 10 16 L 12.5 10 L 15 10 L 15 22 L 12.5 22 L 12.5 13 L 10.5 18 L 9.5 18 L 7.5 13 L 7.5 22 Z" fill="#8B4513"/>
+  <!-- S letter - elegant curved serif style -->
+  <path d="M 17 10 C 17 10 17 11.5 18.5 11.5 C 20 11.5 20.5 11.5 20.5 12.5 L 20.5 13.5 C 20.5 14.5 19.5 14.5 18.5 14.5 C 17.5 14.5 17 15 17 16 C 17 17 17.5 17.5 18.5 17.5 C 19.5 17.5 20.5 17.5 20.5 18.5 L 20.5 19.5 C 20.5 20.5 19.5 21 18.5 21 C 17 21 16 20.5 16 19 C 16 18 16.5 17.5 17.5 17.5 C 18.5 17.5 19.5 17 19.5 16 C 19.5 15 19 14.5 18.5 14.5 C 17.5 14.5 16.5 14 16.5 13 L 16.5 12 C 16.5 11 17 10.5 18 10.5 C 18.5 10.5 19 10 19 10 Z" fill="#8B4513"/>
 </svg>
-
