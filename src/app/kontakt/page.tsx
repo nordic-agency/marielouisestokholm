@@ -9,7 +9,7 @@ export default function KontaktPage() {
       {/* Header Section with Tagline */}
       <section className="relative w-full h-screen flex items-center justify-center">
         <Image
-          src="/images/cover-forsiden-2.jpg"
+          src="/images/picture-8.png"
           alt="Marie Louise Stokholm"
           fill
           className="object-cover"

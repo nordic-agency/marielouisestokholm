@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
-              src="/images/foran-whiteboard.jpg"
+              src="/images/picture-3.png"
               alt="Marie Louise Stokholm"
               className="rounded-lg shadow-md object-cover w-full max-w-2xl mx-auto h-auto"
               width={800}
@@ -37,17 +37,28 @@ export default function AboutPage() {
 
       {/* Erhvervscoach med blik for både mennesket og organisationen */}
       <section className="bg-gray-50 py-24 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
-            Erhvervscoach med blik for både mennesket og organisationen
-          </h2>
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-            <p>
-              Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer – fra beslutningsbordet til den enkelte medarbejders virkelighed.
-            </p>
-            <p>
-              Jeg ved, hvor afgørende det er, at mennesker trives og finder retning – både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe klarhed, mod og handlekraft, når arbejdslivet kalder på noget nyt.
-            </p>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <Image
+              src="/images/picture-5.jpg"
+              alt="Marie Louise Stokholm"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded shadow-md object-cover"
+            />
+          </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+              Erhvervscoach med blik for både mennesket og organisationen
+            </h2>
+            <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+              <p>
+                Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer – fra beslutningsbordet til den enkelte medarbejders virkelighed.
+              </p>
+              <p>
+                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning – både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe klarhed, mod og handlekraft, når arbejdslivet kalder på noget nyt.
+              </p>
+            </div>
           </div>
         </div>
       </section>

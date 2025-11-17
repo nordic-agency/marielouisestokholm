@@ -7,7 +7,7 @@ export default function PraktikOgPriser() {
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center">
         <Image
-          src="/images/cover-forsiden-2.jpg"
+          src="/images/picture-7.jpg"
           alt="Marie Louise Stokholm"
           fill
           className="object-cover"

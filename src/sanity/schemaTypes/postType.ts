@@ -60,6 +60,13 @@ export const postType = defineType({
       title: 'Published At',
     }),
     defineField({
+      name: 'featured',
+      type: 'boolean',
+      title: 'Fremhæv på forsiden',
+      description: 'Marker denne post for at vise den på forsiden (maks. 2 posts)',
+      initialValue: false,
+    }),
+    defineField({
       name: 'body',
       type: 'blockContent',
       title: 'Body',
