@@ -4,9 +4,9 @@ import { ArrowRightIcon, LightBulbIcon, ChatBubbleLeftRightIcon } from '@heroico
 
 export default function HvadJegTilbyder() {
   return (
-    <main className="bg-gray-50 space-y-16">
+    <main className="bg-gray-50">
       {/* Full-width Header Section */}
-      <section className="relative w-full h-screen flex items-center justify-center">
+      <section className="relative w-full h-screen flex items-end justify-center">
         <Image
           src="/images/picture-6.png"
           alt="Marie Louise Stokholm"
@@ -15,19 +15,10 @@ export default function HvadJegTilbyder() {
           priority
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
-        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight mb-6">
-            Jeg tilbyder
+        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight">
+            Jeg tilbyder samtaler, der skaber bevægelse
           </h1>
-          <p className="text-xl md:text-2xl font-sans font-bold mb-8">
-            Din virkelighed. Din retning. Dit næste skridt.
-          </p>
-          <p className="text-xl md:text-2xl font-sans font-bold mb-8">
-            Samtaler, der skaber retning – med dig og for dig.
-          </p>
-          <p className="text-sm text-white/80 italic">
-            Foto: (peger...siger se med...)
-          </p>
         </div>
       </section>
 
@@ -49,7 +40,7 @@ export default function HvadJegTilbyder() {
       </section>
 
       {/* Banner sektion med billede */}
-      <section className="relative py-24 px-6">
+      <section className="relative pt-32 pb-24 px-6">
         <Image
           src="/images/foran-whiteboard.jpg"
           alt="Banner billede"
@@ -66,21 +57,26 @@ export default function HvadJegTilbyder() {
           <p className="text-lg font-sans text-white/90 mb-6">
             Læs videre på siden <Link href="/om-mig" className="text-[#e9dccb] hover:text-[#d7c3ad] font-semibold underline decoration-2 underline-offset-2">Om mig</Link>.
           </p>
-          <div className="text-sm text-white/80 italic">
-            Foto: (peger...siger se med...)
-          </div>
         </div>
       </section>
 
       {/* Forløb Cards */}
-      <section className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 pb-20">
+      <section className="max-w-6xl mx-auto px-6 pt-16 pb-20">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">
+            Når du stopper op – og vil videre
+          </h2>
+          <p className="text-lg font-sans text-gray-700">
+            Her finder du eksempler på situationer, hvor jeg ofte hjælper.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* Card 1 */}
-        <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/index-portrait.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
-          <h2 className="text-2xl font-sans font-semibold text-gray-900 tracking-tight">1. Stå ved dit lederskab</h2>
-          <p className="text-base font-sans text-gray-700 font-sans leading-relaxed">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
-          <p className="font-sans font-sans font-medium mb-3 text-base">Det kan handle om:</p>
-          <ul className="list-disc list-inside text-base font-sans text-gray-700 font-sans leading-relaxed space-y-1">
+        <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e9dccb]">
+          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">1. Stå ved dit lederskab</h3>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når du vil lede med retning, mod og menneskelighed. Som leder skal du levere, involvere og udvikle — og helst på én gang med overblik og nærvær. Hos mig får du et fortroligt rum til at tænke højt, finde ro og stå stærkt i dit lederskab.</p>
+          <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
+          <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At være ny i rollen og ville sætte en tydelig kurs.</li>
             <li>At balancere mellem bestyrelse, medarbejdere og egne værdier.</li>
             <li>At længes efter ny energi eller mening i lederrollen.</li>
@@ -89,14 +85,13 @@ export default function HvadJegTilbyder() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/om-mig-cover.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
-          <h2 className="text-2xl font-sans font-semibold text-gray-900 tracking-tight">2. Tænk højt – og få sparring</h2>
-          <p className="text-base font-sans text-gray-700 font-sans leading-relaxed">
+        <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#d4e6f1]">
+          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">2. Tænk højt – og få sparring</h3>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">
             Når du har brug for en samtalepartner, der både lytter, forstår og udfordrer. Mange står alene med et stort ansvar. Når det larmer, kan det være svært at høre sig selv. Her kan du i et fortroligt rum dele det svære, få nye perspektiver og mærke klarhed.
           </p>
-          <p className="font-sans font-medium mb-3 text-base">Det kan handle om:</p>
-          <ul className="list-disc list-inside text-base font-sans text-gray-700 font-sans leading-relaxed space-y-1">
+          <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
+          <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At stå i et valg og ville tænke det igennem strategisk.</li>
             <li>At mangle en sparringspartner i rollen.</li>
             <li>At være kørt fast og have brug for nye muligheder.</li>
@@ -105,12 +100,11 @@ export default function HvadJegTilbyder() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/foran-whiteboard.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
-          <h2 className="text-2xl font-sans font-semibold text-gray-900 tracking-tight">3. Gentænk dit arbejdsliv</h2>
-          <p className="text-base font-sans text-gray-700 font-sans leading-relaxed">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
-          <p className="font-sans font-medium mb-3 text-base">Det kan handle om:</p>
-          <ul className="list-disc list-inside text-base font-sans text-gray-700 font-sans leading-relaxed space-y-1">
+        <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#e8f5e8]">
+          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">3. Gentænk dit arbejdsliv</h3>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når jobbet ikke længere matcher den, du er — eller den, du er ved at blive. Det, der engang gav mening, gør det måske ikke længere. Vi undersøger sammen, hvad du længes efter, og hvilke muligheder der ligger foran dig — en lille justering eller et større skifte.</p>
+          <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
+          <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At stå et nyt sted i livet og ville have arbejdslivet til at følge med.</li>
             <li>At ville videre — på egne præmisser.</li>
             <li>At føle dig drænet eller utilfreds i dit nuværende job.</li>
@@ -119,24 +113,24 @@ export default function HvadJegTilbyder() {
         </div>
 
         {/* Card 4 */}
-        <div className="bg-white/90 backdrop-blur shadow-sm border border-gray-200/50 rounded-lg shadow p-6 space-y-4 transition hover:shadow-lg hover:-translate-y-1">
-          <Image src="/images/MarieLouise10027847.jpg" alt="Forløb" width={600} height={300} className="rounded-md object-cover w-full h-64 mb-4" />
-          <h2 className="text-2xl font-sans font-semibold text-gray-900 tracking-tight">4. Kom videre – efter en opsigelse</h2>
-          <p className="text-base font-sans text-gray-700 font-sans leading-relaxed">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
-          <p className="font-sans font-medium mb-3 text-base">Det kan handle om:</p>
-          <ul className="list-disc list-inside text-base font-sans text-gray-700 font-sans leading-relaxed space-y-1">
+        <div className="bg-[#f8f8f8] rounded-lg p-6 border-l-4 border-[#ffeaa7]">
+          <h3 className="text-xl font-sans font-semibold text-gray-900 mb-3">4. Kom videre – efter en opsigelse</h3>
+          <p className="text-gray-700 text-base font-sans leading-relaxed mb-3">Når du skal videre — og vil tage dig selv med i processen. En opsigelse kan ryste både identitet og selvtillid. Det kan føles som frihed, som tomrum — eller begge dele. Hos mig får både sårbarhed og strategi plads, så du kan finde fodfæste og retning.</p>
+          <p className="font-sans font-medium mb-2 text-base text-gray-900">Det kan handle om:</p>
+          <ul className="list-disc list-inside text-base font-sans text-gray-700 leading-relaxed space-y-1">
             <li>At bruge en opsigelse til at finde ny retning.</li>
             <li>At opdage, at det kræver mere end forventet at sige op selv.</li>
             <li>At genfinde troen på egne evner og et nyt ståsted.</li>
-            <li>At få hjælp til at formulere din profil — fx CV og LinkedIn.</li>
+            <li>At få hjælp til at formulere din profil — f.eks. CV og LinkedIn.</li>
           </ul>
+        </div>
         </div>
       </section>
 
       {/* Dit udgangspunkt – din virkelighed */}
       <section className="py-24 px-6 bg-white text-gray-900">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Dit udgangspunkt – din virkelighed
           </h2>
           
@@ -181,13 +175,25 @@ export default function HvadJegTilbyder() {
               <h3 className="text-xl font-sans font-bold text-gray-900 mb-4">Sådan starter vi</h3>
               <div className="text-gray-700 font-sans leading-relaxed space-y-3">
                 <p>
-                  Første skridt er en uforpligtende samtale.
+                  Første skridt er en uforpligtende telefonsamtale.
                 </p>
                 <p>
                   Vi ser, om der er et match – det er vigtigt, at det føles rigtigt for dig.
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-lg font-sans leading-relaxed text-gray-700 mb-6">
+              Lad os tage en gratis og uforpligtende samtale om, hvordan jeg kan hjælpe dig.
+            </p>
+            <Link
+              href="/kontakt"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Kontakt mig her
+            </Link>
           </div>
         </div>
       </section>

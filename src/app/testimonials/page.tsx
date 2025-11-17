@@ -588,7 +588,7 @@ export default function Testimonials() {
       {/* Call to Action */}
       <section className="py-20 px-6 bg-white text-center">
         <div className="max-w-2xl mx-auto space-y-6">
-          <h2 className="text-2xl font-semibold text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
             Klar til at opleve det selv?
           </h2>
           <p className="text-lg leading-relaxed text-gray-700">

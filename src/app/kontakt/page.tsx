@@ -17,7 +17,7 @@ export default function KontaktPage() {
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight mb-6">
             Tag kontakt til mig
           </h1>
           <div className="text-lg md:text-xl font-bold mb-8">

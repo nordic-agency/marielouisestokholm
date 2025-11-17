@@ -5,33 +5,25 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="flex flex-col w-full">
-      {/* Hero Section */}
-      <section className="bg-white pt-32 pb-16 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-xl mx-auto text-gray-900 tracking-tight mb-6">
-            Om mig – min tilgang
-          </h1>
-          <p className="mt-4 text-xl leading-relaxed text-gray-700 font-medium">
-            Jeg drives af at se mennesker finde fodfæste og styrke midt i forandring.
-          </p>
+      {/* Hero Section med billede og tekst overlay */}
+      <section className="relative w-full h-[600px] md:h-[700px] -mx-6 md:-mx-8">
+        <div className="absolute inset-0 w-full">
+          <Image
+            src="/images/picture-3.png"
+            alt="Marie Louise Stokholm"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
-      </section>
-
-      {/* Foto sektion */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
-            <Image
-              src="/images/picture-3.png"
-              alt="Marie Louise Stokholm"
-              className="rounded-lg shadow-md object-cover w-full max-w-2xl mx-auto h-auto"
-              width={800}
-              height={600}
-            />
+        <div className="relative z-10 h-full flex items-end justify-center px-6 pb-16 md:pb-24">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
+              Jeg drives af at se mennesker finde fodfæste<br />og styrke midt i forandring.
+            </p>
           </div>
-          <p className="text-lg text-gray-700 italic">
-            klarhed, mod og <span className="underline decoration-[#e9dccb] decoration-2 underline-offset-4">handlekraft</span>
-          </p>
         </div>
       </section>
 
@@ -48,15 +40,15 @@ export default function AboutPage() {
             />
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
               Erhvervscoach med blik for både mennesket og organisationen
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700">
               <p>
-                Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer – fra beslutningsbordet til den enkelte medarbejders virkelighed.
+                Jeg hedder <strong>Marie Louise Stokholm</strong> og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer – fra beslutningsbordet til den enkelte medarbejders virkelighed.
               </p>
               <p>
-                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning – både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe klarhed, mod og handlekraft, når arbejdslivet kalder på noget nyt.
+                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning – både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe <strong>klarhed, mod og handlekraft</strong>, når arbejdslivet kalder på noget nyt.
               </p>
             </div>
           </div>
@@ -66,7 +58,7 @@ export default function AboutPage() {
       {/* Min tilgang */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Min tilgang
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
@@ -98,7 +90,7 @@ export default function AboutPage() {
       {/* Sådan arbejder jeg */}
       <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
             Sådan arbejder jeg:
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -130,27 +122,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Er du nysgerrig */}
-      <section className="bg-white py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
-            Er du nysgerrig på, hvad et samtaleforløb kan gøre for dig – og dit arbejdsliv?
-          </h2>
-          <div className="space-y-4 text-lg leading-relaxed text-gray-700">
-            <p>
-              Se mere om forløb på siden <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
-            </p>
-            <p>
-              Læs mere om min tilgang – på siden <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Blog</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Tre byggesten i mit ståsted */}
       <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-12 text-center">
             Tre byggesten i mit ståsted
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -161,11 +136,11 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-gray-900">Udvalgt uddannelse</h3>
               </div>
               <ul className="space-y-3 text-gray-700">
-                <li>• Master i Ledelses- og organisationspsykologi (AU)</li>
+                <li>• Master i Ledelses- og Organisationspsykologi (AAU)</li>
                 <li>• Bestyrelsesuddannelse (CBS/Børsen)</li>
                 <li>• Certificeret coach (ICF & EMCC)</li>
                 <li>• HD i Organisation og Ledelse (CBS)</li>
-                <li>• HA-studiet (SDU)</li>
+                <li>• HA. Alm. (SDU)</li>
               </ul>
             </div>
 
@@ -204,7 +179,7 @@ export default function AboutPage() {
       {/* Samtaler, der skaber bevægelse */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
             Samtaler, der skaber bevægelse
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
@@ -221,15 +196,34 @@ export default function AboutPage() {
       {/* Call to action sektion */}
       <section className="bg-blue-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed mb-8">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
             Er du nysgerrig på, hvad et samtaleforløb kan betyde for dig?
           </h2>
-          <Link
-            href="/kontakt"
-            className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition text-lg"
-          >
-            👉 Kontakt mig
-          </Link>
+          <div className="text-center">
+            <Link
+              href="/kontakt"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition text-lg"
+            >
+              Kontakt mig
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Er du nysgerrig */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+            Er du nysgerrig på, hvad et samtaleforløb kan gøre for dig – og dit arbejdsliv?
+          </h2>
+          <div className="space-y-4 text-lg leading-relaxed text-gray-700">
+            <p>
+              Se mere om forløb på siden <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
+            </p>
+            <p>
+              Læs mere om min tilgang – på siden <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Blog</Link>.
+            </p>
+          </div>
         </div>
       </section>
 

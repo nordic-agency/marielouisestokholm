@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             {post.category?.title && (
               <span className="text-sm font-medium text-white bg-black/50 rounded px-2 py-1 mb-2">{post.category.title}</span>
             )}
-            <h1 className="text-4xl md:text-5xl font-bold mb-2 drop-shadow break-words text-center leading-tight">
+            <h1 className="text-3xl md:text-5xl font-serif font-bold mb-2 drop-shadow break-words text-center leading-tight">
               {post.title}
             </h1>
           </div>

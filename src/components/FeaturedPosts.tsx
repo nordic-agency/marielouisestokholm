@@ -1,8 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { groq } from 'next-sanity'
-import { client } from '@/sanity/lib/client'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -21,23 +19,6 @@ type FeaturedPost = {
   }
 }
 
-const query = groq`
-  *[_type == "post" && featured == true] | order(publishedAt desc) [0...2] {
-    _id,
-    title,
-    "slug": slug.current,
-    excerpt,
-    mainImage {
-      asset-> {
-        _id,
-        _type,
-        url
-      },
-      alt
-    }
-  }
-`
-
 export default function FeaturedPosts() {
   const [posts, setPosts] = useState<FeaturedPost[]>([])
   const [loading, setLoading] = useState(true)
@@ -45,8 +26,11 @@ export default function FeaturedPosts() {
   useEffect(() => {
     async function fetchPosts() {
       try {
-        const data = await client.fetch<FeaturedPost[]>(query)
-        setPosts(data || [])
+        const response = await fetch('/api/featured-posts')
+        if (response.ok) {
+          const data = await response.json()
+          setPosts(data || [])
+        }
       } catch (error) {
         console.error('Error fetching featured posts:', error)
       } finally {

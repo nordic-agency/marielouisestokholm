@@ -2,38 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  HandRaisedIcon,
-  BookOpenIcon,
-  ChatBubbleBottomCenterTextIcon,
-  PuzzlePieceIcon,
-  HeartIcon,
-  Cog6ToothIcon,
-} from "@heroicons/react/24/outline";
 import FeaturedPosts from "@/components/FeaturedPosts";
-
-import type { ComponentType } from "react";
-
-function ApproachItem({
-  Icon,
-  title,
-  children,
-}: {
-  Icon: ComponentType<{ className?: string }>
-  title: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className="flex items-start gap-4">
-      <Icon className="h-6 w-6 flex-shrink-0 text-gray-900 mt-1" aria-hidden="true" />
-      <div>
-        <p>
-          <strong>{title}</strong> {children}
-        </p>
-      </div>
-    </div>
-  );
-}
 
 
 // Example usage for a dynamic blog post page:
@@ -89,7 +58,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 max-w-4xl space-y-6 text-white">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight">
             Erhvervscoach med indsigt i både
             <br />mennesket og organisationen
           </h1>
@@ -264,60 +233,28 @@ export default function Home() {
             </div>
           </div>
 
-
-          {/* CTA knap */}
-          <div className="text-center mt-12">
+          {/* CTA knapper */}
+          <div className="mt-16 flex flex-col md:flex-row gap-4 justify-center items-center">
             <a
               href="/hvad-jeg-tilbyder"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
             >
               Her kan du læse mere om, hvad jeg tilbyder
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Min tilgang */}
-      <section className="py-24 px-6 bg-white text-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Min tilgang – samtaler, der skaber bevægelse</h2>
-          </div>
-          <p className="text-lg leading-relaxed text-gray-700 mb-12 text-center max-w-4xl mx-auto">
-            Min tilgang bygger på seks grundprincipper, der tilsammen afspejler, hvordan jeg arbejder — og hvad du kan forvente af et samarbejde. De handler om respekt, klarhed, erfaring og mod til forandring.
-          </p>
-          <div className="grid lg:grid-cols-3 gap-x-12 gap-y-10 text-lg leading-relaxed">
-            <ApproachItem Icon={HandRaisedIcon} title="Samtaler med respekt">
-              Udvikling sker i ligeværdig dialog — ikke gennem standardløsninger.
-            </ApproachItem>
-            <ApproachItem Icon={BookOpenIcon} title="Klarhed frem for quickfix">
-              Samtaler og spørgsmål, der skaber mening, retning og bevægelse.
-            </ApproachItem>
-            <ApproachItem Icon={ChatBubbleBottomCenterTextIcon} title="Sproget som løftestang">
-              Dine fortællinger former dine valg — og kan altid gentænkes.
-            </ApproachItem>
-            <ApproachItem Icon={PuzzlePieceIcon} title="Erfaring fra virkeligheden">
-              Mere end 25 års erfaring i ledelse, HR og organisatorisk udvikling.
-            </ApproachItem>
-            <ApproachItem Icon={HeartIcon} title="Ikke en metode — men en relation">
-              Nærvær, ærlighed og respekt — uden præstationskrav.
-            </ApproachItem>
-            <ApproachItem Icon={Cog6ToothIcon} title="Mod til forandring">
-              Forandring starter med bevidsthed og med viljen til at handle anderledes.
-            </ApproachItem>
-          </div>
-          <div className="text-center mt-12">
-            <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition">
-              Start med en afklarende samtale — uforpligtende og gratis
+            <a 
+              href="/praktik-og-priser" 
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            >
+              Se alle detaljer om priser og praktik
             </a>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-6 bg-white text-gray-900">
+      <section className="pt-12 pb-24 px-6 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Det siger andre</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">Det siger andre</h2>
           <p className="text-lg font-sans text-gray-700 mb-12">Mennesker, jeg har arbejdet sammen med – deres oplevelser og resultater.</p>
           <div className="grid md:grid-cols-3 gap-12 text-left text-gray-800">
             {testimonials
@@ -385,66 +322,6 @@ export default function Home() {
             </Link>
               </div>
               </div>
-      </section>
-
-      {/* Praktik & Priser */}
-      <section className="py-24 px-6 bg-white text-gray-900">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Praktik og priser</h2>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Det praktiske skal være enkelt. Her finder du information om priser, forløb og hvordan vi kommer i gang. Du betaler kun for den tid, du har brug for.
-          </p>
-          
-          {/* Pricing Table */}
-          <div className="bg-white rounded-3xl shadow-xl border border-gray-50 overflow-hidden mb-12">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-gray-100">
-                    <th className="px-16 py-12 text-left text-lg font-sans font-semibold text-gray-800">Forløb / samtale</th>
-                    <th className="px-16 py-12 text-right text-lg font-sans font-semibold text-gray-800 tracking-wide">Pris</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Første samtale (1,5 time)</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">1.800 kr.</td>
-                  </tr>
-                  <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Forløb á 3 samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">4.500 kr.</td>
-                  </tr>
-                  <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Forløb á 5 samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">7.300 kr.</td>
-                  </tr>
-                  <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Forløb á 7 samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">10.000 kr.</td>
-                  </tr>
-                  <tr className="hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium text-left">Efterfølgende samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">1.300 kr.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-              </div>
-          
-          <p className="text-sm font-sans text-gray-600 text-center mb-8">
-            Priser er inkl. moms for private og ekskl. moms for erhverv.
-          </p>
-          
-          {/* CTA knap */}
-          <div className="pt-6">
-            <a
-              href="/praktik-og-priser"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
-            >
-              Se alle detaljer om praktik og priser
-            </a>
-          </div>
-        </div>
       </section>
 
       {/* Afslutning – Kontakt / Call to Action */}

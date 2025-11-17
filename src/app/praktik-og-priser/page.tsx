@@ -15,7 +15,7 @@ export default function PraktikOgPriser() {
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight tracking-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight mb-6">
             Praktik og priser
           </h1>
           <p className="text-xl md:text-2xl font-bold mb-8">
@@ -28,7 +28,7 @@ export default function PraktikOgPriser() {
       <section className="w-full bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
               Sådan begynder vi
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
@@ -46,12 +46,12 @@ export default function PraktikOgPriser() {
       {/* Samarbejdsaftale */}
       <section className="w-full bg-gray-50 py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Samarbejdsaftale
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-lg p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Privat</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Privat</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Du har fuld fleksibilitet og kan til enhver tid ændre eller afslutte forløbet.
               </p>
@@ -60,7 +60,7 @@ export default function PraktikOgPriser() {
               </p>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Erhverv</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Erhverv</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Vi tydeliggør en fælles målsætning for forløbet og sikrer fuld fortrolighed mellem medarbejder og mig – tryghed og tillid er afgørende for udvikling.
               </p>
@@ -72,11 +72,11 @@ export default function PraktikOgPriser() {
       {/* Samtaleforløb og priser */}
       <section className="w-full bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Samtaleforløb og priser
           </h2>
-          <p className="text-lg font-sans text-gray-600 text-center mb-12">
-            Samtalerne varer 1 time og foregår enten i København eller online.
+          <p className="text-lg font-sans text-gray-700 text-center mb-12">
+            Det skal være enkelt og nemt at komme i gang. Her finder du alt det praktiske – priser, forløb og hvordan vi starter samarbejdet. Du betaler kun for den tid, du har brug for.
           </p>
           
           {/* Pricing Table */}

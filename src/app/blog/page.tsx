@@ -58,7 +58,7 @@ export default async function BlogPage() {
                       className="rounded-2xl w-full object-cover aspect-video hover:opacity-90 transition"
                     />
                   </Link>
-                  <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 leading-snug tracking-tight mt-6 mb-4 hover:underline">
+                  <h3 className="text-xl font-semibold text-gray-900 leading-snug tracking-tight mt-6 mb-4 hover:underline">
                     <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                   </h3>
                   {post.excerpt && (

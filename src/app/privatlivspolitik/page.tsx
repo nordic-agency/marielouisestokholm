@@ -4,7 +4,7 @@ export default function Privatlivspolitik() {
   return (
     <main className="bg-white min-h-screen pt-24">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8">
+        <h1 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8">
           Privatlivspolitik
         </h1>
         
