@@ -9,8 +9,18 @@ export function middleware(req: NextRequest) {
     pathname.startsWith('/_next') ||
     pathname.startsWith('/favicon') ||
     pathname.startsWith('/login') ||
-    pathname.startsWith('/api/auth')
+    pathname.startsWith('/api/auth') ||
+    pathname.startsWith('/images') ||
+    pathname.startsWith('/studio')
   ) {
+    return NextResponse.next()
+  }
+
+  // Tillad bots og crawlers (social media, search engines) at se siden
+  const userAgent = req.headers.get('user-agent') || ''
+  const isBot = /bot|crawler|spider|crawling|facebookexternalhit|LinkedInBot|Twitterbot|WhatsApp|Slackbot|SkypeUriPreview|Applebot|Googlebot|Bingbot/i.test(userAgent)
+  
+  if (isBot) {
     return NextResponse.next()
   }
 
