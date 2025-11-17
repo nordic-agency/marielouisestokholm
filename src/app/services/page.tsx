@@ -16,7 +16,7 @@ export default function HvadJegTilbyder() {
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
-          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight">
+          <h1 className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
             Jeg tilbyder samtaler, der skaber bevægelse
           </h1>
         </div>

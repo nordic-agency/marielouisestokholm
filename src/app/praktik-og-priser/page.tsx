@@ -15,17 +15,19 @@ export default function PraktikOgPriser() {
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
-          <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight mb-6">
-            Priser og praktik
-          </h1>
-          <p className="text-xl md:text-2xl font-bold mb-8">
-            Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.
-          </p>
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-3xl md:text-5xl leading-relaxed text-white font-medium px-8 pb-2 inline-block">
+              Priser og praktik
+            </h1>
+            <p className="text-xl md:text-2xl leading-relaxed text-white font-medium px-8 pt-0 py-6 inline-block">
+              Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Sådan begynder vi */}
-      <section className="w-full bg-white pt-24 pb-12 px-6">
+      <section className="w-full bg-white pt-24 pb-6 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
@@ -41,7 +43,7 @@ export default function PraktikOgPriser() {
       </section>
 
       {/* Rammer for samarbejdet */}
-      <section className="w-full bg-white pt-12 pb-24 px-6">
+      <section className="w-full bg-white pt-6 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">

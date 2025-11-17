@@ -236,7 +236,7 @@ export default function Home() {
           {/* CTA knapper */}
           <div className="mt-16 flex flex-col md:flex-row gap-4 justify-center items-center">
             <a
-              href="/hvad-jeg-tilbyder"
+              href="/services"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
             >
               Her kan du læse mere om, hvad jeg tilbyder

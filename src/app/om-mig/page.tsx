@@ -218,7 +218,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-4 text-lg leading-relaxed text-gray-700">
             <p>
-              Se mere om forløb på siden <Link href="/hvad-jeg-tilbyder" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
+              Se mere om forløb på siden <Link href="/services" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Ydelser</Link>.
             </p>
             <p>
               Læs mere om min tilgang – på siden <Link href="/blog" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">Blog</Link>.
