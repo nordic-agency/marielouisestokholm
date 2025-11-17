@@ -7,7 +7,7 @@ export default function KontaktPage() {
   return (
     <main className="bg-white min-h-screen">
       {/* Header Section with Tagline */}
-      <section className="relative w-full h-screen flex items-center justify-center">
+      <section className="relative w-full h-screen flex items-end justify-center">
         <Image
           src="/images/picture-8.png"
           alt="Marie Louise Stokholm"
@@ -16,11 +16,11 @@ export default function KontaktPage() {
           priority
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
-        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
+        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
           <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight mb-6">
             Tag kontakt til mig
           </h1>
-          <div className="text-lg md:text-xl font-bold mb-8">
+          <div className="text-lg md:text-xl font-bold">
             <p>Små skridt kan skabe store bevægelser</p>
             <p>– lad os begynde med en gratis telefonsamtale.</p>
           </div>
@@ -53,7 +53,7 @@ export default function KontaktPage() {
                     Hvis du er nysgerrig på, hvordan et forløb kan se ud for dig – eller blot har spørgsmål – er du meget velkommen til at tage kontakt.
                   </p>
                   <p>
-                    Vi starter altid med en gratis og uforpligtende samtale. Her får du mulighed for at afklare dine behov og undersøge, om vi er et godt match. Du kan læse mere om rammer, forløb og priser <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">her</Link>.
+                    Vi starter altid med en gratis og uforpligtende telefonsamtale. Her får du mulighed for at afklare dine behov og undersøge, om vi er et godt match. Du kan læse mere om priser og praktik <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">her</Link>.
                   </p>
                 </div>
 

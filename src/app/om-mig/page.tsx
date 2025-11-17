@@ -40,7 +40,7 @@ export default function AboutPage() {
             />
           </div>
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
               Erhvervscoach med blik for både mennesket og organisationen
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700">
@@ -204,7 +204,7 @@ export default function AboutPage() {
               href="/kontakt"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition text-lg"
             >
-              Kontakt mig
+              Kontakt
             </Link>
           </div>
         </div>

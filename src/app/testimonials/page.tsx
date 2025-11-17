@@ -22,7 +22,7 @@ export default function Testimonials() {
       id: 1,
       quote: "Et regulært energiboost … skarp, intuitiv og psykologisk indsigtsfuld. Udfordrer og støtter på én gang – og omsætter idéer til handling.",
       fullQuote: "Jeg har den store glæde at være i forløb hos Marie Louise – og det er et regulært energiboost. Hun er skarp, intuitiv og psykologisk indsigtsfuld, samtidig med at hun er oprigtig, empatisk og usædvanligt direkte på den gode måde.\n\nHun formår at udfordre og støtte på én gang – og hun sikrer, at der ikke kun skabes idéer, men også fremdrift og handling. Marie Louise er et nuanceret menneske, der møder mig med både humor, nysgerrighed og tilstedeværelse.\n\nJeg værdsætter især, at vores samtaler aldrig bliver bundet op på generiske modeller eller skemaer, men tager form i nu'et – med en coach, der virkelig ser, lytter og taler ind i det, der betyder noget.\n\nForløbet har gjort en markant forskel for mig, og jeg ved allerede nu, at jeg vil sende flere mennesker i hendes retning – fordi det hun kan, er sjældent og værdifuldt",
-      name: "Frederikke Abildstrup",
+      name: "Frederikke Abiltrup",
       role: "Senior Legal Counsel",
       image: "/images/testomonials/Frederikke Abildstrup, Senior Legal Counsel.jpeg"
     },
@@ -519,7 +519,7 @@ export default function Testimonials() {
               onClick={() => setVisibleCount(visibleCount + 6)}
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
             >
-              Vis flere udtalelser
+              Vis flere referancer
             </button>
           </div>
         )}
@@ -592,13 +592,13 @@ export default function Testimonials() {
             Klar til at opleve det selv?
           </h2>
           <p className="text-lg leading-relaxed text-gray-700">
-            Book en gratis og uforpligtende samtale, hvor vi kan udforske, hvordan jeg kan hjælpe dig.
+            Lad os tage en gratis og uforpligtende telefonsamtale<br />om, hvordan jeg kan hjælpe dig.
           </p>
           <a
             href="/kontakt"
             className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
           >
-            Book en samtale
+            Kontakt mig her
           </a>
         </div>
       </section>

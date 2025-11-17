@@ -13,9 +13,8 @@ export default function Header() {
 
   return (
     <header className="w-full px-6 py-4 flex justify-between items-center bg-white shadow-sm fixed top-0 left-0 z-50">
-      <Link href="/" className="flex flex-col leading-snug text-gray-600 font-playfair">
+      <Link href="/" className="text-gray-600 font-playfair">
         <span className="text-xl font-serif font-semibold tracking-tight">Marie Louise Stokholm</span>
-        <span className="text-sm font-sans font-normal text-gray-600 tracking-wide">Samtaler, der skaber retning. Med dig – og for dig</span>
       </Link>
 
       <div className="hidden md:flex items-center space-x-4">
@@ -30,7 +29,7 @@ export default function Header() {
           href="/kontakt"
           className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-base font-sans font-medium transition"
         >
-          Kontakt mig
+          Kontakt
         </Link>
       </div>
 
@@ -54,7 +53,7 @@ export default function Header() {
                    onClick={() => setMenuOpen(false)}
                    className="inline-block rounded-md bg-[#e9dccb] hover:bg-[#d7c3ad] px-4 py-2 text-gray-900 text-base font-sans font-medium transition"
                  >
-                   Kontakt mig
+                   Kontakt
                  </Link>
                </div>
              )}

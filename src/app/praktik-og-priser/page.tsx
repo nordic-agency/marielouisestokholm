@@ -5,7 +5,7 @@ export default function PraktikOgPriser() {
   return (
     <main className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center">
+      <section className="relative w-full h-screen flex items-end justify-center">
         <Image
           src="/images/picture-7.jpg"
           alt="Marie Louise Stokholm"
@@ -14,18 +14,18 @@ export default function PraktikOgPriser() {
           priority
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
-        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6">
+        <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
           <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight tracking-tight mb-6">
-            Praktik og priser
+            Priser og praktik
           </h1>
           <p className="text-xl md:text-2xl font-bold mb-8">
-            Forandring sker i bevægelsen – her finder du rammerne for dit første skridt.
+            Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.
           </p>
         </div>
       </section>
 
       {/* Sådan begynder vi */}
-      <section className="w-full bg-white py-24 px-6">
+      <section className="w-full bg-white pt-24 pb-12 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
@@ -33,10 +33,23 @@ export default function PraktikOgPriser() {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
               <p>
-                Vi starter med en gratis og uforpligtende samtale. Her afklarer vi, hvordan jeg bedst kan hjælpe dig, og om kemi og tillid er på plads – de vigtigste forudsætninger for et godt forløb.
+                Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt. Tillid og god kontakt er grundlaget for et meningsfuldt forløb. En enkelt samtale kan give indsigt, men de største forandringer sker oftest gennem et forløb over flere møder, hvor der er tid til at afprøve, reflektere og omsætte erfaringer.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rammer for samarbejdet */}
+      <section className="w-full bg-white pt-12 pb-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8">
+              Rammer for samarbejdet
+            </h2>
+            <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
               <p>
-                En enkelt samtale kan give indsigt, men de største forandringer sker typisk i et forløb over flere møder, hvor du får mulighed for at afprøve, reflektere og vende erfaringerne i næste samtale.
+                Når vi vælger at fortsætte efter den indledende samtale, tilpasses forløbet den aktuelle situation og det, der ønskes forandret. Rammen fastlægges i fællesskab – antal møder, hyppighed, fokus og om samtalerne skal foregå personligt eller online. Der er altid mulighed for justeringer undervejs, så forløbet forbliver relevant og meningsfuldt i takt med udviklingen.
               </p>
             </div>
           </div>
@@ -53,16 +66,19 @@ export default function PraktikOgPriser() {
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Privat</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Du har fuld fleksibilitet og kan til enhver tid ændre eller afslutte forløbet.
+                Der er fleksibilitet til at ændre eller afslutte forløbet efter behov.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Vi aftaler altid rammerne sammen: antal møder, varighed, fokus og om samtalerne skal være personlige eller online.
+                Samtalerne foregår i et fortroligt rum med fokus på klarhed, retning og personlig udvikling.
               </p>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Erhverv</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Vi tydeliggør en fælles målsætning for forløbet og sikrer fuld fortrolighed mellem medarbejder og mig – tryghed og tillid er afgørende for udvikling.
+                Formålet afklares fra begyndelsen, og der skabes et trygt og fortroligt rum for udvikling.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Forløbet understøtter trivsel, retning og resultater – til gavn for både medarbejder og organisation.
               </p>
             </div>
           </div>
@@ -85,30 +101,30 @@ export default function PraktikOgPriser() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-100">
-                    <th className="px-16 py-12 text-left text-lg font-sans font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
-                    <th className="px-16 py-12 text-right text-lg font-sans font-semibold text-gray-800 tracking-wide">Pris</th>
+                    <th className="px-16 py-6 text-left text-lg font-sans font-semibold text-gray-800 tracking-wide">Forløb / samtale</th>
+                    <th className="px-16 py-6 text-right text-lg font-sans font-semibold text-gray-800 tracking-wide">Pris</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium">Første samtale (1,5 time)</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">1.800 kr.</td>
+                    <td className="px-16 py-5 text-lg font-sans text-gray-700 font-medium">Første samtale (1,5 time)</td>
+                    <td className="px-16 py-5 text-xl font-serif font-bold text-[#8B4513] text-right">1.800 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium">Forløb á 3 samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">4.500 kr.</td>
+                    <td className="px-16 py-5 text-lg font-sans text-gray-700 font-medium">Forløb á 3 samtaler</td>
+                    <td className="px-16 py-5 text-xl font-serif font-bold text-[#8B4513] text-right">4.500 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium">Forløb á 5 samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">7.300 kr.</td>
+                    <td className="px-16 py-5 text-lg font-sans text-gray-700 font-medium">Forløb á 5 samtaler</td>
+                    <td className="px-16 py-5 text-xl font-serif font-bold text-[#8B4513] text-right">7.300 kr.</td>
                   </tr>
                   <tr className="border-b border-gray-50 hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium">Forløb á 7 samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">10.000 kr.</td>
+                    <td className="px-16 py-5 text-lg font-sans text-gray-700 font-medium">Forløb á 7 samtaler</td>
+                    <td className="px-16 py-5 text-xl font-serif font-bold text-[#8B4513] text-right">10.000 kr.</td>
                   </tr>
                   <tr className="hover:bg-gray-25 transition-colors duration-200">
-                    <td className="px-16 py-10 text-lg font-sans text-gray-700 font-medium">Efterfølgende samtaler</td>
-                    <td className="px-16 py-10 text-xl font-serif font-bold text-[#8B4513] text-right">1.300 kr.</td>
+                    <td className="px-16 py-5 text-lg font-sans text-gray-700 font-medium">Efterfølgende samtaler</td>
+                    <td className="px-16 py-5 text-xl font-serif font-bold text-[#8B4513] text-right">1.300 kr.</td>
                   </tr>
                 </tbody>
               </table>
@@ -121,11 +137,11 @@ export default function PraktikOgPriser() {
         </div>
       </section>
 
-      {/* Praktisk */}
+      {/* Praktik */}
       <section className="w-full bg-gray-50 py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight tracking-tight mb-8 text-center">
-            Praktisk
+            Praktik
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-lg p-8 shadow-sm">
@@ -134,13 +150,13 @@ export default function PraktikOgPriser() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Privat:</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Betaling via MobilePay eller bankoverførsel pr. samtale. Faktura/kvittering sendes på mail.
+                    Løbende betaling via MobilePay eller bankoverførsel.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Erhverv:</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Fakturering ved aftaleindgåelse med betalingsvilkår angivet på faktura.
+                    Betaling via bankoverførsel ved opstart af aftalte forløb.
                   </p>
                 </div>
               </div>
@@ -151,13 +167,22 @@ export default function PraktikOgPriser() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Mødelokaler:</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Adgang til mødelokaler i København via Regus A/S. Online-møder tilbydes også.
+                    Adgang til mødelokaler i København. Online-møder tilbydes også.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Fortrolighed:</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Jeg arbejder efter ICF&apos;s etiske retningslinjer.
+                    Jeg arbejder efter{" "}
+                    <Link 
+                      href="https://www.icfdanmark.dk/wp-content/uploads/icfs-etiske-retningslinjer-juli-2025.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#8B4513] hover:text-[#6B3410] underline"
+                    >
+                      ICF&apos;s etiske retningslinjer
+                    </Link>
+                    .
                   </p>
                 </div>
               </div>
@@ -173,7 +198,7 @@ export default function PraktikOgPriser() {
             Har du fået lyst til at tage næste skridt?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Det første telefonmøde er altid gratis og uforpligtende, så du kan mærke efter, om forløbet er det rette.
+            Det første telefonmøde er altid gratis og uforpligtende, så du kan mærke efter, om forløbet er det rette for dig.
           </p>
           <p className="text-gray-700 mb-6">
             Kontakt mig her for at aftale en indledende samtale eller stille spørgsmål
@@ -182,7 +207,7 @@ export default function PraktikOgPriser() {
             href="/kontakt"
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full shadow-sm text-gray-900 bg-[#e9dccb] hover:bg-[#d7c3ad] transition-colors duration-300"
           >
-            – jeg glæder mig til at høre fra dig.
+            Jeg glæder mig til at høre fra dig.
           </Link>
         </div>
       </section>
