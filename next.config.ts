@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-    unoptimized: true, // Tillad lokale billeder uden optimering
+    formats: ['image/avif', 'image/webp'],
+    unoptimized: true, // Nødvendigt for lokale billeder i public mappen
   },
 };
 

@@ -37,6 +37,8 @@ export default function AboutPage() {
               alt="Marie Louise Stokholm"
               width={800}
               height={600}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
               className="w-full h-auto rounded shadow-md object-cover"
             />
           </div>
@@ -200,7 +202,7 @@ export default function AboutPage() {
           <div className="text-center">
             <Link
               href="/kontakt"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition text-lg"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2 text-lg"
             >
               Kontakt
             </Link>

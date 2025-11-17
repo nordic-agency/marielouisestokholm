@@ -13,10 +13,11 @@ export default function HvadJegTilbyder() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/30 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
-          <h1 className="text-3xl md:text-5xl leading-normal text-white font-medium px-8 py-6 inline-block">
+          <h1 className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
             Jeg tilbyder samtaler, der skaber bevægelse
           </h1>
         </div>
@@ -47,6 +48,7 @@ export default function HvadJegTilbyder() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         
         <div className="absolute inset-0 bg-black/30 z-10" />
@@ -190,7 +192,7 @@ export default function HvadJegTilbyder() {
             </p>
             <Link
               href="/kontakt"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
               Kontakt mig her
             </Link>

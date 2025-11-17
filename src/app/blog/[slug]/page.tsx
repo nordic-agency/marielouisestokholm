@@ -1,5 +1,6 @@
 // import { type PageProps } from 'next'
 import React from "react"
+import Link from 'next/link'
 import { groq } from 'next-sanity'
 import { client } from '@/sanity/lib/client'
 import { PortableText, PortableTextBlockComponent } from '@portabletext/react'
@@ -36,6 +37,8 @@ const components = {
           width={800}
           height={600}
           className="my-6 rounded-lg shadow"
+          sizes="(max-width: 768px) 100vw, 800px"
+          loading="lazy"
         />
       ) : null,
   },
@@ -59,13 +62,14 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     <article className="bg-white text-gray-800">
       {post.mainImage?.asset?.url && (
         <div className="w-full h-[60vh] relative mb-6">
-          <Image
-            src={post.mainImage.asset.url}
-            alt={post.title}
-            fill
-            className="object-cover"
-            priority
-          />
+        <Image
+          src={post.mainImage.asset.url}
+          alt={post.title}
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white px-6 text-center">
             {post.category?.title && (
               <span className="text-sm font-medium text-white bg-black/50 rounded px-2 py-1 mb-2">{post.category.title}</span>
@@ -77,6 +81,17 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         </div>
       )}
 
+      {/* Breadcrumbs */}
+      <div className="max-w-3xl mx-auto px-6 pt-6">
+        <nav className="flex items-center space-x-2 text-sm text-gray-600">
+          <Link href="/" className="hover:text-gray-900 transition-colors">Forside</Link>
+          <span className="text-gray-400">/</span>
+          <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>
+          <span className="text-gray-400">/</span>
+          <span className="text-gray-900 font-medium">{post.title}</span>
+        </nav>
+      </div>
+
       <div className="max-w-3xl mx-auto px-6 mt-6 pt-8 pb-8 border-b border-gray-200">
         <div className="flex flex-col items-center space-y-2 text-center py-6">
           <Image
@@ -85,6 +100,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             width={80}
             height={80}
             className="rounded-md w-20 h-20 object-cover"
+            sizes="80px"
+            loading="lazy"
           />
           <div className="flex flex-col justify-center text-sm text-gray-700">
             <p className="font-semibold text-base">{post.author?.name || "Marie Louise Stokholm"}</p>

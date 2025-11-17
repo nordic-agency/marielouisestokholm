@@ -58,6 +58,8 @@ export default async function BlogPage() {
                       width={1280}
                       height={720}
                       className="rounded-2xl w-full object-cover aspect-video hover:opacity-90 transition"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1280px"
+                      loading="lazy"
                     />
                   </Link>
                   <h3 className="text-xl font-semibold text-gray-900 leading-snug tracking-tight mt-6 mb-4 hover:underline">
@@ -72,6 +74,8 @@ export default async function BlogPage() {
                         src={post.author?.image ? urlFor(post.author.image).width(96).height(96).url() : "/images/marielouise-avatar.jpg"}
                         alt={post.author?.name || "Marie Louise Stokholm"}
                         width={48}
+                        sizes="48px"
+                        loading="lazy"
                         height={48}
                         className="rounded-full object-cover w-12 h-12"
                       />

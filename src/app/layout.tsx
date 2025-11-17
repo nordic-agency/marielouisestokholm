@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={playfair.variable}>
+    <html lang="da" className={playfair.variable}>
       <body className={`${spaceGrotesk.variable} font-playfair antialiased`}>
         <Header />
         {children}

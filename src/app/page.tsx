@@ -55,6 +55,7 @@ export default function Home() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 max-w-4xl space-y-6 text-white">
@@ -75,6 +76,7 @@ export default function Home() {
               width={800}
               height={600}
               className="w-full h-auto rounded shadow-md object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <div className="space-y-6">
@@ -90,12 +92,12 @@ export default function Home() {
             <p className="text-lg font-sans leading-relaxed text-gray-700">
               Mit fokus er at skabe klarhed, mod og handlekraft - gennem samtaler, der forbinder indsigt med handling.
             </p>
-            <a
+            <Link
               href="/om-mig"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-sans font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-sans font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
               Læs mere om mig
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -125,6 +127,8 @@ export default function Home() {
                   width={158}
                   height={48}
                   className="h-24 w-auto object-contain grayscale opacity-70"
+                  sizes="158px"
+                  loading="lazy"
                 />
               ))}
             </div>
@@ -168,9 +172,9 @@ export default function Home() {
           <p className="text-lg font-sans leading-relaxed text-gray-700">
             En lille bevægelse kan blive begyndelsen på noget større.
           </p>
-          <a href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-sans font-semibold py-3 px-6 rounded transition">
+          <Link href="/kontakt" className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-sans font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2">
             Lad os tage den første samtale
-          </a>
+          </Link>
         </div>
         <div>
           <Image
@@ -179,6 +183,8 @@ export default function Home() {
             width={800}
             height={600}
             className="rounded-xl shadow-md w-full object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            loading="lazy"
           />
         </div>
       </section>
@@ -235,18 +241,18 @@ export default function Home() {
 
           {/* CTA knapper */}
           <div className="mt-16 flex flex-col md:flex-row gap-4 justify-center items-center">
-            <a
-              href="/services"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+            <Link
+              href="/ydelser"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
               Her kan du læse mere om, hvad jeg tilbyder
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/praktik-og-priser" 
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
               Se alle detaljer om priser og praktik
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -268,6 +274,8 @@ export default function Home() {
                       width={64}
                       height={64}
                       className="w-16 h-16 rounded-full object-cover"
+                      sizes="64px"
+                      loading="lazy"
                     />
                   </div>
                 )}
@@ -280,7 +288,7 @@ export default function Home() {
             <div className="mt-12 text-center">
               <button
                 onClick={() => setVisibleCount(visibleCount + 3)}
-                className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-2 px-4 rounded transition"
+                className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
               >
                 Vis flere udtalelser
               </button>
@@ -289,12 +297,12 @@ export default function Home() {
           
           {/* CTA til testimonials side */}
           <div className="mt-12 text-center">
-            <a
+            <Link
               href="/testimonials"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
               Find flere referencer her
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -316,7 +324,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/blog"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
               Læs flere indlæg på bloggen
             </Link>
@@ -325,7 +333,7 @@ export default function Home() {
       </section>
 
       {/* Afslutning - Kontakt / Call to Action */}
-      <section className="pt-24 pb-12 px-6 bg-blue-50 text-center border-t border-gray-200">
+      <section className="pt-24 pb-12 px-6 bg-blue-50 text-center">
         <div className="max-w-2xl mx-auto space-y-6">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">Det starter her</h2>
           <div className="space-y-4">
@@ -334,12 +342,12 @@ export default function Home() {
             <p className="text-lg leading-relaxed text-gray-700">Du skal bare møde op.</p>
           </div>
           <div className="pt-4">
-            <a
+            <Link
               href="/kontakt"
-              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-8 rounded transition text-lg"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-8 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2 text-lg"
             >
               Kontakt mig for en uforpligtende samtale
-            </a>
+            </Link>
           </div>
         </div>
       </section>
