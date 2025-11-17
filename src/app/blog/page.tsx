@@ -3,6 +3,35 @@ import { client } from '@/sanity/lib/client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
+import type { Metadata } from 'next'
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://marielouisestokholm.dk'
+
+export const metadata: Metadata = {
+  title: 'Blog - Min blog fra indsigt til handling',
+  description: 'Her finder du indlæg og inspiration, som kan give dig nye perspektiver, når noget i dit arbejdsliv er i bevægelse - eller måske burde være det. Du er velkommen til at læse med, mærke efter og bruge det, der giver mening.',
+  openGraph: {
+    title: 'Blog - Min blog fra indsigt til handling',
+    description: 'Her finder du indlæg og inspiration, som kan give dig nye perspektiver, når noget i dit arbejdsliv er i bevægelse - eller måske burde være det.',
+    images: [
+      {
+        url: `${siteUrl}/images/picture-1.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Marie Louise Stokholm - Blog',
+      }
+    ],
+    type: 'website',
+    url: `${siteUrl}/blog`,
+    siteName: 'Marie Louise Stokholm',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog - Min blog fra indsigt til handling',
+    description: 'Her finder du indlæg og inspiration, som kan give dig nye perspektiver.',
+    images: [`${siteUrl}/images/picture-1.png`],
+  },
+}
 
 type Post = {
   _id: string

@@ -1,5 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://marielouisestokholm.dk'
+
+export const metadata: Metadata = {
+  title: 'Priser og praktik - Rammerne for dit første skridt',
+  description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt. Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt.',
+  openGraph: {
+    title: 'Priser og praktik - Rammerne for dit første skridt',
+    description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt. Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt.',
+    images: [
+      {
+        url: `${siteUrl}/images/picture-7.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Marie Louise Stokholm - Priser og praktik',
+      }
+    ],
+    type: 'website',
+    url: `${siteUrl}/praktik-og-priser`,
+    siteName: 'Marie Louise Stokholm',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Priser og praktik - Rammerne for dit første skridt',
+    description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.',
+    images: [`${siteUrl}/images/picture-7.jpg`],
+  },
+}
 
 export default function PraktikOgPriser() {
   return (

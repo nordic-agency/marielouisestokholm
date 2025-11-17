@@ -1,6 +1,35 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRightIcon, LightBulbIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+import type { Metadata } from 'next';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://marielouisestokholm.dk'
+
+export const metadata: Metadata = {
+  title: 'Ydelser - Samtaler, der skaber bevægelse',
+  description: 'Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring. Som coach og sparringspartner skaber jeg et fortroligt rum, hvor du kan tænke højt, se nyt - og handle på det, der betyder noget for dig.',
+  openGraph: {
+    title: 'Ydelser - Samtaler, der skaber bevægelse',
+    description: 'Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring. Som coach og sparringspartner skaber jeg et fortroligt rum, hvor du kan tænke højt, se nyt - og handle på det, der betyder noget for dig.',
+    images: [
+      {
+        url: `${siteUrl}/images/picture-6.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Marie Louise Stokholm - Ydelser',
+      }
+    ],
+    type: 'website',
+    url: `${siteUrl}/ydelser`,
+    siteName: 'Marie Louise Stokholm',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ydelser - Samtaler, der skaber bevægelse',
+    description: 'Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring.',
+    images: [`${siteUrl}/images/picture-6.png`],
+  },
+}
 
 export default function HvadJegTilbyder() {
   return (

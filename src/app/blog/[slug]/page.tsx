@@ -6,6 +6,8 @@ import { client } from '@/sanity/lib/client'
 import { PortableText, PortableTextBlockComponent } from '@portabletext/react'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
+import type { Metadata } from 'next'
+
 export const revalidate = 60 // Revalidate every 60 seconds
 
 export async function generateStaticParams() {
@@ -19,9 +21,10 @@ export async function generateStaticParams() {
 
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
+  excerpt,
   publishedAt,
   body,
-  "mainImage": mainImage{asset->{url}},
+  mainImage,
   "slug": slug.current,
   author->{name, image},
   category->{title}
@@ -50,6 +53,62 @@ const components = {
   }
 }
 
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const { slug } = params
+  const post = await client.fetch(query, { slug })
+
+  if (!post) {
+    return {
+      title: 'Indlæg ikke fundet',
+    }
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://marielouisestokholm.dk'
+  
+  // Optimize image for Open Graph (1200x630 is standard OG image size, LinkedIn requires min 1200x627)
+  // Ensure absolute URL for LinkedIn compatibility
+  const imageUrl = post.mainImage 
+    ? urlFor(post.mainImage).width(1200).height(630).url() 
+    : ''
+
+  // Ensure absolute URL - LinkedIn requires absolute URLs
+  const absoluteImageUrl = imageUrl.startsWith('http') 
+    ? imageUrl 
+    : imageUrl.startsWith('//') 
+      ? `https:${imageUrl}`
+      : imageUrl
+
+  const description = post.excerpt || `${post.title} - Blog indlæg fra Marie Louise Stokholm`
+
+  return {
+    title: post.title,
+    description: description,
+    openGraph: {
+      title: post.title,
+      description: description,
+      images: absoluteImageUrl ? [
+        {
+          url: absoluteImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ] : [],
+      type: 'article',
+      url: `${siteUrl}/blog/${slug}`,
+      publishedTime: post.publishedAt,
+      authors: post.author?.name ? [post.author.name] : ['Marie Louise Stokholm'],
+      siteName: 'Marie Louise Stokholm',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: description,
+      images: absoluteImageUrl ? [absoluteImageUrl] : [],
+    },
+  }
+}
+
 export default async function BlogPost({ params }: { params: { slug: string } }) {
   const { slug } = params
   const post = await client.fetch(query, { slug })
@@ -60,10 +119,10 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
   return (
     <article className="bg-white text-gray-800">
-      {post.mainImage?.asset?.url && (
+      {post.mainImage && (
         <div className="w-full h-[60vh] relative mb-6">
         <Image
-          src={post.mainImage.asset.url}
+          src={urlFor(post.mainImage).width(1920).height(1080).url()}
           alt={post.title}
           fill
           className="object-cover"
