@@ -65,7 +65,7 @@ export default function HvadJegTilbyder() {
       {/* Forløb Cards */}
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-20">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-4">
             Når du stopper op - og vil videre
           </h2>
           <p className="text-lg font-sans text-gray-700">
@@ -132,7 +132,7 @@ export default function HvadJegTilbyder() {
       {/* Dit udgangspunkt - din virkelighed */}
       <section className="py-24 px-6 bg-white text-gray-900">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Dit udgangspunkt - din virkelighed
           </h2>
           

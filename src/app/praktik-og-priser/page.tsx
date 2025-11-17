@@ -177,14 +177,14 @@ export default function PraktikOgPriser() {
                   <h4 className="font-semibold text-gray-900 mb-2">Fortrolighed:</h4>
                   <p className="text-gray-700 leading-relaxed">
                     Jeg arbejder efter{" "}
-                    <Link 
+                    <a 
                       href="https://www.icfdanmark.dk/wp-content/uploads/icfs-etiske-retningslinjer-juli-2025.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#8B4513] hover:text-[#6B3410] underline"
                     >
                       ICF&apos;s etiske retningslinjer
-                    </Link>
+                    </a>
                     .
                   </p>
                 </div>

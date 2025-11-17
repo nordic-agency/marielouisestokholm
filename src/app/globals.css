@@ -50,7 +50,7 @@ body {
 }
 
 .animate-slide {
-  animation: slide 40s linear infinite;
+  animation: slide 25s linear infinite;
 }
 
 .fade-in-up {

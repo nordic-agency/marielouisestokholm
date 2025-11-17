@@ -16,7 +16,7 @@ module.exports = {
         },
       },
       animation: {
-        slide: 'slide 40s linear infinite',
+        slide: 'slide 25s linear infinite',
       },
     },
   },

@@ -463,7 +463,7 @@ export default function Testimonials() {
             Referencer & evalueringer - erfaringer fra virkeligheden
           </h1>
           <p className="text-lg leading-relaxed text-gray-700">
-            Godkendte udtalelser fra kunder og klienter.
+            Godkendte udtalelser fra kunder og kandidater.
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
             Udvalgte cases og citater, der viser både proces og effekt - menneskeligt, fagligt og konkret.
@@ -588,7 +588,7 @@ export default function Testimonials() {
       {/* Call to Action */}
       <section className="py-20 px-6 bg-white text-center">
         <div className="max-w-2xl mx-auto space-y-6">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight">
             Klar til at opleve det selv?
           </h2>
           <p className="text-lg leading-relaxed text-gray-700">

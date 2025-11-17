@@ -107,7 +107,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <p className="text-center text-sm text-gray-500 mb-10">Jeg har hjulpet medarbejdere ansat hos blandt andre</p>
           <div className="overflow-hidden relative w-full">
-            <div className="flex animate-slide whitespace-nowrap gap-16">
+            <div className="flex animate-slide whitespace-nowrap gap-2 md:gap-16">
               {[
                 "/images/logocloud/atea.png",
                 "/images/logocloud/cowi.png",
