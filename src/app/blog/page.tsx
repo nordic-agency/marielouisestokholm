@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Her finder du indlæg og inspiration, som kan give dig nye perspektiver, når noget i dit arbejdsliv er i bevægelse - eller måske burde være det.',
     images: [
       {
-        url: `${siteUrl}/images/picture-1.png`,
+        url: `${siteUrl}/images/picture-3.png`,
         width: 1200,
         height: 630,
         alt: 'Marie Louise Stokholm - Blog',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Blog - Min blog fra indsigt til handling',
     description: 'Her finder du indlæg og inspiration, som kan give dig nye perspektiver.',
-    images: [`${siteUrl}/images/picture-1.png`],
+    images: [`${siteUrl}/images/picture-3.png`],
   },
 }
 

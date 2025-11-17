@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt. Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt.',
     images: [
       {
-        url: `${siteUrl}/images/picture-7.jpg`,
+        url: `${siteUrl}/images/picture-3.png`,
         width: 1200,
         height: 630,
         alt: 'Marie Louise Stokholm - Priser og praktik',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Priser og praktik - Rammerne for dit første skridt',
     description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.',
-    images: [`${siteUrl}/images/picture-7.jpg`],
+    images: [`${siteUrl}/images/picture-3.png`],
   },
 }
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Små skridt kan skabe store bevægelser - lad os begynde med en gratis telefonsamtale. Kontakt mig for at aftale en indledende samtale eller stille spørgsmål om priser og praktik.',
     images: [
       {
-        url: `${siteUrl}/images/picture-8.png`,
+        url: `${siteUrl}/images/picture-3.png`,
         width: 1200,
         height: 630,
         alt: 'Marie Louise Stokholm - Kontakt',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tag kontakt til mig - Små skridt kan skabe store bevægelser',
     description: 'Små skridt kan skabe store bevægelser - lad os begynde med en gratis telefonsamtale.',
-    images: [`${siteUrl}/images/picture-8.png`],
+    images: [`${siteUrl}/images/picture-3.png`],
   },
 }
 

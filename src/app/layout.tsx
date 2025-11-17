@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner.',
     images: [
       {
-        url: `${siteUrl}/images/picture-1.png`,
+        url: `${siteUrl}/images/picture-3.png`,
         width: 1200,
         height: 630,
         alt: 'Marie Louise Stokholm - Erhvervscoach',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Erhvervscoach med indsigt i både mennesket og organisationen',
     description: 'Jeg hedder Marie Louise Stokholm og har mere end 25 års erfaring som leder og HR-direktør.',
-    images: [`${siteUrl}/images/picture-1.png`],
+    images: [`${siteUrl}/images/picture-3.png`],
   },
 }
 

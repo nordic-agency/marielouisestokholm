@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring. Som coach og sparringspartner skaber jeg et fortroligt rum, hvor du kan tænke højt, se nyt - og handle på det, der betyder noget for dig.',
     images: [
       {
-        url: `${siteUrl}/images/picture-6.png`,
+        url: `${siteUrl}/images/picture-3.png`,
         width: 1200,
         height: 630,
         alt: 'Marie Louise Stokholm - Ydelser',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ydelser - Samtaler, der skaber bevægelse',
     description: 'Jeg hjælper dig med at finde klarhed, mod og handlekraft, når arbejdslivet kalder på forandring.',
-    images: [`${siteUrl}/images/picture-6.png`],
+    images: [`${siteUrl}/images/picture-3.png`],
   },
 }
 
