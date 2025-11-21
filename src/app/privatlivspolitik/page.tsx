@@ -44,6 +44,9 @@ export default function Privatlivspolitik() {
               <li><strong>Coachingdata:</strong> Notater fra coaching-sessioner og mål</li>
               <li><strong>Tekniske data:</strong> IP-adresse, browser type, besøgstider på hjemmesiden</li>
             </ul>
+            <p className="text-lg font-sans text-gray-700 leading-relaxed mt-4 mb-4">
+              <strong>Kontaktformular:</strong> Når du udfylder kontaktformularen på hjemmesiden, indsamler vi følgende oplysninger: Fornavn, efternavn, email-adresse, telefonnummer (valgfrit) og besked. Disse oplysninger behandles via email-service provideren Resend for at kunne besvare din henvendelse.
+            </p>
           </section>
 
           <section className="mb-12">
@@ -75,7 +78,7 @@ export default function Privatlivspolitik() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">6. Deling af oplysninger</h2>
+            <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">6. Deling af oplysninger og databehandlere</h2>
             <p className="text-lg font-sans text-gray-700 leading-relaxed mb-4">
               Vi deler ikke dine personlige oplysninger med tredjeparter, medmindre:
             </p>
@@ -84,6 +87,13 @@ export default function Privatlivspolitik() {
               <li>Det er nødvendigt for at levere ydelsen (f.eks. fakturering)</li>
               <li>Vi er juridisk forpligtet til det</li>
               <li>Det er nødvendigt for at beskytte vores legitime interesser</li>
+            </ul>
+            <p className="text-lg font-sans text-gray-700 leading-relaxed mt-6 mb-4">
+              <strong>Databehandlere:</strong> Vi bruger følgende databehandlere til at behandle dine oplysninger:
+            </p>
+            <ul className="list-disc list-inside text-lg font-sans text-gray-700 leading-relaxed space-y-2 ml-6">
+              <li><strong>Resend:</strong> Vi bruger Resend (resend.com) til at sende emails fra kontaktformularen. Resend er en databehandler, der behandler email-data i overensstemmelse med GDPR. Resend's privatlivspolitik: <a href="https://resend.com/legal/privacy-policy" className="text-[#8B4513] hover:text-[#A0522D] underline" target="_blank" rel="noopener noreferrer">resend.com/legal/privacy-policy</a></li>
+              <li><strong>Vercel:</strong> Hjemmesiden hostes på Vercel, som kan have adgang til tekniske data (IP-adresse, besøgstider). Vercel's privatlivspolitik: <a href="https://vercel.com/legal/privacy-policy" className="text-[#8B4513] hover:text-[#A0522D] underline" target="_blank" rel="noopener noreferrer">vercel.com/legal/privacy-policy</a></li>
             </ul>
           </section>
 
@@ -97,8 +107,11 @@ export default function Privatlivspolitik() {
               <li>At overholde juridiske forpligtelser (regnskabsdata opbevares i 5 år)</li>
               <li>At beskytte vores legitime interesser</li>
             </ul>
-            <p className="text-lg font-sans text-gray-700 leading-relaxed mt-4">
+            <p className="text-lg font-sans text-gray-700 leading-relaxed mt-4 mb-4">
               Coaching-notater og følsomme oplysninger slettes typisk efter 3 år, medmindre du ønsker længere opbevaring.
+            </p>
+            <p className="text-lg font-sans text-gray-700 leading-relaxed mt-4 mb-4">
+              <strong>Kontaktformular:</strong> Oplysninger fra kontaktformularen (navn, email, telefonnummer, besked) opbevares så længe det er nødvendigt for at behandle din henvendelse og følge op på den. Typisk slettes disse oplysninger efter 2 år, medmindre der er en pågående forretningsrelation eller juridisk forpligtelse til længere opbevaring. Du kan til enhver tid anmode om sletning af dine oplysninger.
             </p>
           </section>
 
@@ -121,13 +134,8 @@ export default function Privatlivspolitik() {
           <section className="mb-12">
             <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">9. Cookies og tracking</h2>
             <p className="text-lg font-sans text-gray-700 leading-relaxed mb-4">
-              Vores hjemmeside bruger cookies til at forbedre brugeroplevelsen. Vi bruger:
+              Vores hjemmeside bruger kun nødvendige cookies til at hjemmesiden fungerer korrekt (f.eks. til at huske login-status). Vi bruger ikke analytiske cookies eller tracking-teknologier.
             </p>
-            <ul className="list-disc list-inside text-lg font-sans text-gray-700 leading-relaxed space-y-2 ml-6">
-              <li><strong>Nødvendige cookies:</strong> For at hjemmesiden fungerer korrekt</li>
-              <li><strong>Analytiske cookies:</strong> For at forstå, hvordan hjemmesiden bruges</li>
-              <li><strong>Funktionelle cookies:</strong> For at huske dine præferencer</li>
-            </ul>
             <p className="text-lg font-sans text-gray-700 leading-relaxed mt-4">
               Du kan til enhver tid ændre dine cookie-indstillinger i din browser.
             </p>

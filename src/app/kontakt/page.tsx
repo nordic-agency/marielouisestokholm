@@ -11,6 +11,7 @@ export default function KontaktPage() {
     email: '',
     phoneNumber: '',
     message: '',
+    consent: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
@@ -21,6 +22,13 @@ export default function KontaktPage() {
     setSubmitStatus({ type: null, message: '' });
 
     try {
+      // Validering af samtykke
+      if (!formData.consent) {
+        setSubmitStatus({ type: 'error', message: 'Du skal acceptere privatlivspolitikken for at sende beskeden.' });
+        setIsSubmitting(false);
+        return;
+      }
+
       // Send email via API route (Resend)
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -43,6 +51,7 @@ export default function KontaktPage() {
         email: '',
         phoneNumber: '',
         message: '',
+        consent: false,
       });
     } catch (error) {
       console.error('Email send error:', error);
@@ -53,9 +62,11 @@ export default function KontaktPage() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const target = e.target;
+    const value = target.type === 'checkbox' ? (target as HTMLInputElement).checked : target.value;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [target.name]: value,
     });
   };
 
@@ -202,6 +213,29 @@ export default function KontaktPage() {
                   </div>
                 </div>
               </div>
+              
+              {/* GDPR Samtykke */}
+              <div className="mt-6">
+                <div className="flex items-start">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    checked={formData.consent}
+                    onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
+                    required
+                    className="mt-1 h-4 w-4 rounded border-gray-300 text-[#8B4513] focus:ring-[#8B4513]"
+                  />
+                  <label htmlFor="consent" className="ml-3 text-sm text-gray-700">
+                    Jeg accepterer, at mine personlige oplysninger behandles i henhold til{' '}
+                    <Link href="/privatlivspolitik" className="text-[#8B4513] hover:text-[#A0522D] underline font-semibold" target="_blank">
+                      privatlivspolitikken
+                    </Link>
+                    . *
+                  </label>
+                </div>
+              </div>
+              
               <div className="mt-8 flex justify-end">
                 <button
                   type="submit"
