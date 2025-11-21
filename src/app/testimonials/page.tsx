@@ -121,7 +121,8 @@ export default function Testimonials() {
       quote: "Hun så mig og min situation - tog coachingen i mit tempo, improviserede og udfordrede. Jeg voksede af det.",
       fullQuote: "Jeg føler virkelig, at Marie Louise så mig og min situation. Hun gennemgik ikke bare en rutine, men tog coachingen i mit tempo, var i stand til at improvisere og skifte emne, hvis det var nødvendigt i en session.\n\nOg hun udfordrede mig, hvilket ikke var let i øjeblikket, men hjalp mig med at vokse undervejs, supertilfreds med hele coachingoplevelsen. Jeg kan varmt anbefale Marie Louise til dem, der har behov for en dygtig coach.",
       name: "Anne Brusberg",
-      role: "Contracts and Proposals Director"
+      role: "Contracts and Proposals Director",
+      image: "/images/testomonials/Anne Westergaard.jpeg"
     },
     {
       id: 14,
@@ -486,6 +487,8 @@ export default function Testimonials() {
                       width={64}
                       height={64}
                       className="w-16 h-16 rounded-full object-cover mr-4 flex-shrink-0"
+                      sizes="64px"
+                      loading="lazy"
                     />
                   ) : (
                     <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -519,7 +522,7 @@ export default function Testimonials() {
               onClick={() => setVisibleCount(visibleCount + 6)}
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition"
             >
-              Vis flere referancer
+              Vis flere referencer
             </button>
           </div>
         )}

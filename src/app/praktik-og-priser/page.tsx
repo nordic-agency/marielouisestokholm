@@ -5,17 +5,17 @@ import type { Metadata } from 'next';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://marielouisestokholm.dk'
 
 export const metadata: Metadata = {
-  title: 'Priser og praktik - Rammerne for dit første skridt',
+  title: 'Praktik og priser - Rammerne for dit første skridt',
   description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt. Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt.',
   openGraph: {
-    title: 'Priser og praktik - Rammerne for dit første skridt',
+    title: 'Praktik og priser - Rammerne for dit første skridt',
     description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt. Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt.',
     images: [
       {
         url: `${siteUrl}/images/picture-3.png`,
         width: 1200,
         height: 630,
-        alt: 'Marie Louise Stokholm - Priser og praktik',
+        alt: 'Marie Louise Stokholm - Praktik og priser',
       }
     ],
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Priser og praktik - Rammerne for dit første skridt',
+    title: 'Praktik og priser - Rammerne for dit første skridt',
     description: 'Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.',
     images: [`${siteUrl}/images/picture-3.png`],
   },
@@ -34,7 +34,7 @@ export default function PraktikOgPriser() {
   return (
     <main className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-end justify-center">
+      <section className="relative w-full h-screen flex items-end justify-center border-b-8 border-white">
         <Image
           src="/images/picture-7.jpg"
           alt="Marie Louise Stokholm"
@@ -47,7 +47,7 @@ export default function PraktikOgPriser() {
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl leading-relaxed text-white font-medium px-8 pb-2 inline-block">
-              Priser og praktik
+              Praktik og priser
             </h1>
             <p className="text-xl md:text-2xl leading-relaxed text-white font-medium px-8 pt-0 py-6 inline-block">
               Forandring sker i bevægelsen - her finder du rammerne for dit første skridt.
@@ -65,7 +65,10 @@ export default function PraktikOgPriser() {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
               <p>
-                Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt. Tillid og god kontakt er grundlaget for et meningsfuldt forløb. En enkelt samtale kan give indsigt, men de største forandringer sker oftest gennem et forløb over flere møder, hvor der er tid til at afprøve, reflektere og omsætte erfaringer.
+                Vi starter med en gratis og uforpligtende telefonsamtale for at afklare, hvordan jeg bedst kan støtte processen, og om samarbejdet føles rigtigt. Tillid og god kontakt er grundlaget for et meningsfuldt forløb.
+              </p>
+              <p>
+                En enkelt samtale kan give indsigt, men de største forandringer sker oftest gennem et forløb over flere møder, hvor der er tid til at afprøve, reflektere og omsætte erfaringer.
               </p>
             </div>
           </div>
@@ -81,7 +84,10 @@ export default function PraktikOgPriser() {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
               <p>
-                Når vi vælger at fortsætte efter den indledende samtale, tilpasses forløbet den aktuelle situation og det, der ønskes forandret. Rammen fastlægges i fællesskab - antal møder, hyppighed, fokus og om samtalerne skal foregå personligt eller online. Der er altid mulighed for justeringer undervejs, så forløbet forbliver relevant og meningsfuldt i takt med udviklingen.
+                Når vi vælger at fortsætte efter den indledende samtale, tilpasses forløbet den aktuelle situation og det, der ønskes forandret. Rammen fastlægges i fællesskab - antal møder, hyppighed, fokus og om samtalerne skal foregå personligt eller online.
+              </p>
+              <p>
+                Der er altid mulighed for justeringer undervejs, så forløbet forbliver relevant og meningsfuldt i takt med udviklingen.
               </p>
             </div>
           </div>
@@ -123,9 +129,6 @@ export default function PraktikOgPriser() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Samtaleforløb og priser
           </h2>
-          <p className="text-lg font-sans text-gray-700 text-center mb-12">
-            Det skal være enkelt og nemt at komme i gang. Her finder du alt det praktiske - priser, forløb og hvordan vi starter samarbejdet. Du betaler kun for den tid, du har brug for.
-          </p>
           
           {/* Pricing Table */}
           <div className="bg-white rounded-3xl shadow-xl border border-gray-50 overflow-hidden mb-4">
@@ -163,9 +166,10 @@ export default function PraktikOgPriser() {
             </div>
           </div>
           
-          <p className="text-sm font-sans text-gray-600 text-center mb-16">
-            Priser er inkl. moms for private og ekskl. moms for erhverv.
-          </p>
+          <div className="text-sm font-sans text-gray-600 text-center mb-16 space-y-1">
+            <p>Samtalerne er som udgangspunkt af 1 times varighed medmindre andet er aftalt.</p>
+            <p>Priser er inkl. moms for private og ekskl. moms for erhverv.</p>
+          </div>
         </div>
       </section>
 

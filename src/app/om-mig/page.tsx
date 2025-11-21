@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section med billede og tekst overlay */}
-      <section className="relative w-full h-[600px] md:h-[700px] -mx-6 md:-mx-8">
+      <section className="relative w-screen h-[600px] md:h-[700px] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] pt-24">
         <div className="absolute inset-0 w-full">
           <Image
             src="/images/picture-3.png"
@@ -51,7 +51,13 @@ export default function AboutPage() {
                 Jeg hedder <strong>Marie Louise Stokholm</strong> og har mere end 25 års erfaring som leder og HR-direktør med udvikling af ledere, medarbejdere og organisationer - fra beslutningsbordet til den enkelte medarbejders virkelighed.
               </p>
               <p>
-                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning - både for dem selv og for fællesskabet omkring dem. I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner. Min motivation er at hjælpe mennesker med at skabe <strong>klarhed, mod og handlekraft</strong>, når arbejdslivet kalder på noget nyt.
+                Jeg ved, hvor afgørende det er, at mennesker trives og finder retning - både for dem selv og for fællesskabet omkring dem.
+              </p>
+              <p>
+                I dag driver jeg min egen virksomhed, hvor jeg coacher, rådgiver og fungerer som sparringspartner.
+              </p>
+              <p>
+                Min motivation er at hjælpe mennesker med at skabe <strong>klarhed, mod og handlekraft</strong>, når arbejdslivet kalder på noget nyt.
               </p>
             </div>
           </div>
@@ -135,12 +141,24 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-snug tracking-tight mb-8 text-center">
             Er du nysgerrig på, hvad et samtaleforløb kan betyde for dig?
           </h2>
-          <div className="text-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <Link
               href="/kontakt"
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2 text-lg"
             >
-              Kontakt
+              Kontakt mig gerne
+            </Link>
+            <Link
+              href="/ydelser"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2 text-lg"
+            >
+              Se mere om forløb
+            </Link>
+            <Link
+              href="/blog"
+              className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-4 px-8 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2 text-lg"
+            >
+              Læs mere om min tilgang
             </Link>
           </div>
         </div>

@@ -35,16 +35,16 @@ export default function HvadJegTilbyder() {
   return (
     <main className="bg-gray-50">
       {/* Full-width Header Section */}
-      <section className="relative w-full h-screen flex items-end justify-center">
+      <section className="relative w-full h-screen flex items-end justify-center border-b-8 border-white">
         <Image
           src="/images/picture-6.png"
           alt="Marie Louise Stokholm"
           fill
-          className="object-cover"
+          className="object-cover md:object-[center_25%] object-center"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/30 z-10" />
+        <div className="absolute inset-0 bg-black/20 z-10" />
         <div className="relative z-20 text-center text-white max-w-6xl mx-auto px-6 pb-16 md:pb-24">
           <h1 className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
             Jeg tilbyder samtaler, der skaber bevægelse

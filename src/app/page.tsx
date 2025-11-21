@@ -48,12 +48,12 @@ export default function Home() {
   return (
     <main className="bg-gray-50 text-gray-900">
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center text-center px-6">
+      <section className="relative min-h-screen flex items-center justify-center text-center px-6 border-b-8 border-white">
         <Image
           src="/images/picture-1.png"
           alt="Marie Louise Stokholm forsidebillede"
           fill
-          className="object-cover"
+          className="object-cover md:object-[center_25%] object-center"
           priority
           sizes="100vw"
         />
@@ -105,7 +105,7 @@ export default function Home() {
       {/* Logo Cloud */}
       <section className="w-full px-6 pt-2 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <p className="text-center text-sm text-gray-500 mb-10">Jeg har hjulpet medarbejdere ansat hos blandt andre</p>
+          <p className="text-center text-sm text-gray-500 mb-10">Jeg har hjulpet medarbejdere ansat hos blandt andre:</p>
           <div className="overflow-hidden relative w-full">
             <div className="flex animate-slide whitespace-nowrap gap-2 md:gap-16">
               {[
@@ -251,7 +251,7 @@ export default function Home() {
               href="/praktik-og-priser" 
               className="inline-block bg-[#e9dccb] hover:bg-[#d7c3ad] text-gray-900 font-semibold py-3 px-6 rounded transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#e9dccb] focus:ring-offset-2"
             >
-              Se alle detaljer om priser og praktik
+              Se alle detaljer om praktik og priser
             </Link>
           </div>
         </div>

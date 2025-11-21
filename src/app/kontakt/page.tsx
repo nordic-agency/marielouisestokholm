@@ -2,12 +2,67 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function KontaktPage() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    message: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      // Send email via API route (Resend)
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Kunne ikke sende email');
+      }
+
+      setSubmitStatus({ type: 'success', message: data.message || 'Besked sendt! Du modtager en bekræftelse på email.' });
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Email send error:', error);
+      setSubmitStatus({ type: 'error', message: 'Der opstod en fejl. Prøv venligst igen eller kontakt mig direkte via email.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <main className="bg-white min-h-screen">
       {/* Header Section with Tagline */}
-      <section className="relative w-full h-screen flex items-end justify-center">
+      <section className="relative w-full h-screen flex items-end justify-center border-b-8 border-white">
         <Image
           src="/images/picture-8.png"
           alt="Marie Louise Stokholm"
@@ -32,19 +87,7 @@ export default function KontaktPage() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-              <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
-                <svg className="absolute inset-0 size-full mask-[radial-gradient(100%_100%_at_top_right,white,transparent)] stroke-gray-200" aria-hidden="true">
-                  <defs>
-                    <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="100%" y="-1" patternUnits="userSpaceOnUse">
-                      <path d="M130 200V.5M.5 .5H200" fill="none" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" strokeWidth="0" fill="white" />
-                  <svg x="100%" y="-1" className="overflow-visible fill-gray-50">
-                    <path d="M-470.5 0h201v201h-201Z" strokeWidth="0" />
-                  </svg>
-                  <rect width="100%" height="100%" strokeWidth="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-                </svg>
+              <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 lg:w-1/2">
               </div>
               
               {/* New Content Section */}
@@ -54,7 +97,7 @@ export default function KontaktPage() {
                     Hvis du er nysgerrig på, hvordan et forløb kan se ud for dig - eller blot har spørgsmål - er du meget velkommen til at tage kontakt.
                   </p>
                   <p>
-                    Vi starter altid med en gratis og uforpligtende telefonsamtale. Her får du mulighed for at afklare dine behov og undersøge, om vi er et godt match. Du kan læse mere om priser og praktik <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">her</Link>.
+                    Vi starter altid med en gratis og uforpligtende telefonsamtale. Her får du mulighed for at afklare dine behov og undersøge, om vi er et godt match. Du kan læse mere om praktik og priser <Link href="/praktik-og-priser" className="text-[#8B4513] hover:text-[#A0522D] font-semibold underline decoration-2 underline-offset-2">her</Link>.
                   </p>
                 </div>
 
@@ -73,46 +116,99 @@ export default function KontaktPage() {
               </div>
             </div>
           </div>
-          <form action="#" method="POST" className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48">
+          <form onSubmit={handleSubmit} className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+              {submitStatus.type && (
+                <div className={`mb-6 rounded-md p-4 ${
+                  submitStatus.type === 'success' 
+                    ? 'bg-green-50 text-green-800 border border-green-200' 
+                    : 'bg-red-50 text-red-800 border border-red-200'
+                }`}>
+                  <p className="text-sm font-medium">{submitStatus.message}</p>
+                </div>
+              )}
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">Fornavn</label>
+                  <label htmlFor="firstName" className="block text-sm/6 font-semibold text-gray-900">Fornavn *</label>
                   <div className="mt-2.5">
-                    <input type="text" name="first-name" id="first-name" autoComplete="given-name" className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+                    <input 
+                      type="text" 
+                      name="firstName" 
+                      id="firstName" 
+                      autoComplete="given-name" 
+                      required
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" 
+                    />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="last-name" className="block text-sm/6 font-semibold text-gray-900">Efternavn</label>
+                  <label htmlFor="lastName" className="block text-sm/6 font-semibold text-gray-900">Efternavn *</label>
                   <div className="mt-2.5">
-                    <input type="text" name="last-name" id="last-name" autoComplete="family-name" className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+                    <input 
+                      type="text" 
+                      name="lastName" 
+                      id="lastName" 
+                      autoComplete="family-name" 
+                      required
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" 
+                    />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900">Email</label>
+                  <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900">Email *</label>
                   <div className="mt-2.5">
-                    <input type="email" name="email" id="email" autoComplete="email" className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+                    <input 
+                      type="email" 
+                      name="email" 
+                      id="email" 
+                      autoComplete="email" 
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" 
+                    />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-gray-900">Telefonnummer</label>
+                  <label htmlFor="phoneNumber" className="block text-sm/6 font-semibold text-gray-900">Telefonnummer</label>
                   <div className="mt-2.5">
-                    <input type="tel" name="phone-number" id="phone-number" autoComplete="tel" className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
+                    <input 
+                      type="tel" 
+                      name="phoneNumber" 
+                      id="phoneNumber" 
+                      autoComplete="tel" 
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" 
+                    />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-900">Besked</label>
+                  <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-900">Besked *</label>
                   <div className="mt-2.5">
-                    <textarea name="message" id="message" rows={4} className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
+                    <textarea 
+                      name="message" 
+                      id="message" 
+                      rows={4} 
+                      required
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                    ></textarea>
                   </div>
                 </div>
               </div>
               <div className="mt-8 flex justify-end">
                 <button
                   type="submit"
-                  className="rounded-md bg-[#efe8df] px-4 py-2 text-sm font-semibold text-gray-800 shadow-sm hover:bg-[#e8e0d6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8cfc5]"
+                  disabled={isSubmitting}
+                  className="rounded-md bg-[#efe8df] px-4 py-2 text-sm font-semibold text-gray-800 shadow-sm hover:bg-[#e8e0d6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8cfc5] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send besked
+                  {isSubmitting ? 'Sender...' : 'Send besked'}
                 </button>
               </div>
             </div>
