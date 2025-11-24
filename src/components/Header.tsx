@@ -68,7 +68,7 @@ export default function Header() {
                        : 'hover:text-gray-900'
                    }`}
                  >
-                   Min blog
+                   Blog
                  </Link>
                  <Link 
                    href="/praktik-og-priser"
@@ -78,7 +78,7 @@ export default function Header() {
                        : 'hover:text-gray-900'
                    }`}
                  >
-                   Praktik og priser
+                   Praktik
                  </Link>
                </nav>
         <Link
@@ -145,7 +145,7 @@ export default function Header() {
                        : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                    }`}
                  >
-                   Min blog
+                   Blog
                  </Link>
                  <Link 
                    href="/praktik-og-priser" 
@@ -156,7 +156,7 @@ export default function Header() {
                        : 'text-gray-700 font-medium hover:text-gray-900 hover:bg-gray-50'
                    }`}
                  >
-                   Praktik og priser
+                   Praktik
                  </Link>
                  <div className="pt-4 mt-2 border-t border-gray-200">
                    <Link

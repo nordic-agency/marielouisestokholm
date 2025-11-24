@@ -53,7 +53,7 @@ export default function Home() {
           src="/images/picture-1.png"
           alt="Marie Louise Stokholm forsidebillede"
           fill
-          className="object-cover md:object-[center_25%] object-center"
+          className="object-cover md:object-[center_10%] object-center"
           priority
           sizes="100vw"
         />

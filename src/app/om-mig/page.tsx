@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="relative z-10 h-full flex items-end justify-center px-6 pb-16 md:pb-24">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-4xl leading-relaxed text-white font-medium px-8 py-6 inline-block">
-              Jeg drives af at se mennesker finde fodfæste<br className="md:hidden" /> og styrke midt i forandring.
+              Jeg drives af at se mennesker finde fodfæste<br className="md:hidden" /> og styrke midt i forandring
             </p>
           </div>
         </div>
