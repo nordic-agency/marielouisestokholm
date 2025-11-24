@@ -92,8 +92,8 @@ export default function Privatlivspolitik() {
               <strong>Databehandlere:</strong> Vi bruger følgende databehandlere til at behandle dine oplysninger:
             </p>
             <ul className="list-disc list-inside text-lg font-sans text-gray-700 leading-relaxed space-y-2 ml-6">
-              <li><strong>Resend:</strong> Vi bruger Resend (resend.com) til at sende emails fra kontaktformularen. Resend er en databehandler, der behandler email-data i overensstemmelse med GDPR. Resend's privatlivspolitik: <a href="https://resend.com/legal/privacy-policy" className="text-[#8B4513] hover:text-[#A0522D] underline" target="_blank" rel="noopener noreferrer">resend.com/legal/privacy-policy</a></li>
-              <li><strong>Vercel:</strong> Hjemmesiden hostes på Vercel, som kan have adgang til tekniske data (IP-adresse, besøgstider). Vercel's privatlivspolitik: <a href="https://vercel.com/legal/privacy-policy" className="text-[#8B4513] hover:text-[#A0522D] underline" target="_blank" rel="noopener noreferrer">vercel.com/legal/privacy-policy</a></li>
+              <li><strong>Resend:</strong> Vi bruger Resend (resend.com) til at sende emails fra kontaktformularen. Resend er en databehandler, der behandler email-data i overensstemmelse med GDPR. Resend&apos;s privatlivspolitik: <a href="https://resend.com/legal/privacy-policy" className="text-[#8B4513] hover:text-[#A0522D] underline" target="_blank" rel="noopener noreferrer">resend.com/legal/privacy-policy</a></li>
+              <li><strong>Vercel:</strong> Hjemmesiden hostes på Vercel, som kan have adgang til tekniske data (IP-adresse, besøgstider). Vercel&apos;s privatlivspolitik: <a href="https://vercel.com/legal/privacy-policy" className="text-[#8B4513] hover:text-[#A0522D] underline" target="_blank" rel="noopener noreferrer">vercel.com/legal/privacy-policy</a></li>
             </ul>
           </section>
 
