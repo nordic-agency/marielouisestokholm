@@ -58,7 +58,7 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
-        <div className="relative z-20 max-w-4xl space-y-6 text-white">
+        <div className="relative z-20 max-w-4xl space-y-6 text-white mt-40 md:mt-56">
           <h1 className="text-3xl md:text-5xl leading-normal text-white font-medium px-8 py-6 inline-block">
             Erhvervscoach med indsigt i både
             <br />mennesket og organisationen
